@@ -81,6 +81,23 @@ REVIEW_IDS = {
     3307, 3495,  # Ersatzteile nach Bedarf: redaktionelle Entscheidung offen
 }
 
+TITLE_OVERRIDES = {
+    3529: "Giesserei Blöcher",
+    3994: "Giesserei Blöcher",
+}
+
+DESCRIPTION_OVERRIDES = {
+    3529: "Aluminium-Sandguss, Modellbau und 3D-gedruckte Formen und Kerne.",
+    3994: "Aluminium sand casting, model making and 3D-printed molds and cores.",
+}
+
+EXTRA_ASSETS = [
+    "2020/06/logo_gb_340x156_transparent.png",
+    "2020/06/logo_giesserei-bloecher_340x156_white.png",
+    "2020/06/favicon_32x32.png",
+    "2023/11/giesserei-bloecher_gebaeude_breit.jpg",
+]
+
 SHORTCODE_TAG_RE = re.compile(r"\[/?av_[^\]]+\]", re.I | re.S)
 WP_COMMENT_RE = re.compile(r"<!--\s*/?wp:[^>]*-->", re.I)
 HTML_TAG_RE = re.compile(r"<[^>]+>")
@@ -181,12 +198,14 @@ def yaml_quote(value) -> str:
 
 def front_matter(page: dict, translation_key: str, review: list[str]) -> str:
     meta = page.get("meta") or {}
-    desc = meta.get("_yoast_wpseo_metadesc") or ""
+    page_id = int(page["id"])
+    title = TITLE_OVERRIDES.get(page_id, page.get("title", ""))
+    desc = DESCRIPTION_OVERRIDES.get(page_id, meta.get("_yoast_wpseo_metadesc") or "")
     seo_title = meta.get("_yoast_wpseo_title") or ""
 
     lines = [
         "---",
-        f"title: {yaml_quote(page.get('title', ''))}",
+        f"title: {yaml_quote(title)}",
         f"description: {yaml_quote(desc)}",
         f"translationKey: {yaml_quote(translation_key)}",
         "draft: false",
@@ -227,6 +246,17 @@ def copy_images(data: dict) -> int:
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest)
         copied += 1
+
+    for rel in EXTRA_ASSETS:
+        src = UPLOADS / rel
+        if not src.is_file():
+            continue
+        dest = dest_root / rel
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        if not dest.exists():
+            shutil.copy2(src, dest)
+            copied += 1
+
     return copied
 
 
