@@ -165,6 +165,33 @@ def html_to_markdownish(value: str) -> str:
     return value.strip()
 
 
+def normalize_imported_body(body: str, page_title: str) -> str:
+    lines = body.splitlines()
+
+    # Remove first imported Markdown heading when it duplicates the Hugo page title.
+    title_norm = re.sub(r"\s+", " ", page_title or "").strip().lower()
+    removed_title = False
+    out = []
+
+    for line in lines:
+        stripped = line.strip()
+
+        if not removed_title:
+            m = re.match(r"^#{1,6}\s+(.+?)\s*$", stripped)
+            if m:
+                heading_norm = re.sub(r"\s+", " ", m.group(1)).strip().lower()
+                if heading_norm == title_norm:
+                    removed_title = True
+                    continue
+
+        # Imported lines must never become Markdown indented code accidentally.
+        out.append(stripped)
+
+    body = "\n".join(out)
+    body = re.sub(r"\n{3,}", "\n\n", body)
+    return body.strip()
+
+
 def extract_content(raw: str) -> tuple[str, list[str]]:
     review = []
     work = WP_COMMENT_RE.sub("", raw or "")
@@ -302,6 +329,7 @@ def migrate(source: Path) -> None:
 
         lang, relpath, translation_key = mapping
         body, review = extract_content(page.get("content_raw") or "")
+        body = normalize_imported_body(body, TITLE_OVERRIDES.get(page_id, page.get("title", "")))
 
         target = ROOT / "content" / lang / relpath
         target.parent.mkdir(parents=True, exist_ok=True)
