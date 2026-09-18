@@ -1,6 +1,6 @@
 ---
 title: "How to find us"
-description: ""
+description: "Directions to Giesserei Blöcher GmbH, Zur Wolfskaute 1 in 35216 Biedenkopf, Germany."
 translationKey: "directions"
 draft: false
 migration:
@@ -8,36 +8,29 @@ migration:
   source_url: "https://www.bloecher.de/en/about-us/how-to-find-us/"
   source_slug: "how-to-find-us"
   modified: "2024-03-18T14:29:58+00:00"
-migration_review:
-  - "image:3466"
-  - "shortcode:av_cell_one_fourth"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_layout_row"
-  - "shortcode:av_one_full"
 ---
 
-# How to find us
+## Address
 
-We look forward to your visit!
-Giesserei Blöcher GmbH
-Zur Wolfskaute 1
-35216 Biedenkopf
+**Giesserei Blöcher GmbH**  
+Zur Wolfskaute 1  
+35216 Biedenkopf  
+Germany
 
-06461/9551-0
+Phone: [+49 (0)6461 9551-0](tel:+49646195510)
 
-From the direction of Dillenburg (A45):
+## From Dillenburg via A45
 
- 	Take B 253 to the outskirts of Biedenkopf.
- 	Turn left before the bridge.
- 	Continue straight into the industrial area "Am roten Stein".
- 	After about 200 meters, turn right onto the street "Zur Wolfskaute".
- 	First building on the left side.
+1. Follow B 253 to the outskirts of Biedenkopf.
+2. Turn left before the bridge.
+3. Continue straight into the “Am roten Stein” industrial area.
+4. After about 200 m, turn right into “Zur Wolfskaute”.
+5. Giesserei Blöcher is the first building on the left.
 
-From the direction of Marburg (A5/A7):
+## From Marburg via A5/A7
 
- 	Take B 62 to the entrance of Biedenkopf.
- 	Turn right after the bridge.
- 	Continue straight into the industrial area "Am roten Stein".
- 	After 200 meters, turn right onto the street "Zur Wolfskaute".
- 	First building on the left side.
+1. Follow B 62 to the entrance of Biedenkopf.
+2. Turn right after the bridge.
+3. Continue straight into the “Am roten Stein” industrial area.
+4. After about 200 m, turn right into “Zur Wolfskaute”.
+5. Giesserei Blöcher is the first building on the left.
