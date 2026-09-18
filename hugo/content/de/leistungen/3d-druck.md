@@ -1,6 +1,6 @@
 ---
-title: "3D-Druck"
-description: ""
+title: "3D-Sanddruck"
+description: "Direkte additive Fertigung von Sandformen und Sandkernen bis 1.800 × 900 × 900 mm – ohne Modell und Kernkasten."
 translationKey: "3d-print"
 draft: false
 migration:
@@ -8,20 +8,32 @@ migration:
   source_url: "https://www.bloecher.de/leistungen/3d-druck/"
   source_slug: "3d-druck"
   modified: "2024-02-20T17:22:19+00:00"
-migration_review:
-  - "image:3831"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
 ---
 
-# 3D-Druck
+Mit 3D-Sanddruck stellen wir Formen und Kerne direkt aus digitalen Daten her. Ein physisches Modell oder ein Kernkasten ist dafür nicht erforderlich.
 
-Wir stellen [Abgüsse aus Aluminium](https://www.bloecher.de/leistungen/aluminium-sandguss/) mit verlorenen Formen aus einem gebundenen Sand her. Für die Herstellung der Sandformen werden üblicherweise [Modelle](https://www.bloecher.de/leistungen/modellbau/) (positive Abbildungen des späteren Abgusses) benötigt. Ein Ausnahme bildet die direkte Herstellung von Formen und Kernen mittels 3D-Druck.
+## Sandformen direkt aus CAD-Daten
 
-Dazu setzen wir einen modernen 3D-Drucker ein. Schicht für Schicht entstehen so - ganz ohne Modell - die benötigten Sandformen und -kerne. Komplexe Geometrien und Kleinserien sind so wirtschaftlich herstellbar.
+Beim klassischen Sandguss entsteht die Form durch Abformen eines [Gießereimodells](/leistungen/modellbau/). Der 3D-Sanddruck überspringt diesen Schritt: Die Formgeometrie wird direkt aus dem CAD-Datensatz aufgebaut.
 
-Der Formsand wird schichtweise mit einem spezielen Knickarmroboter aufgetragen. Das Bindersystem wird selektiv aufgedruckt - nur dort härtet der Sand aus. Dadurch verschieben sich Grenzen der Herstellbarkeit und Wirtschaftlichkeit.
+Das ist besonders interessant für:
 
-Unser maximale Abmessungen für 3D-gedruckte Sandformen oder Kerne: 1.800 x 900 x 900 mm
+- komplexe Geometrien
+- Einzelteile und Prototypen
+- kleine Serien
+- kurzfristige Änderungen
+- Bauteile, bei denen klassische Modelltechnik unwirtschaftlich wäre
+
+## So funktioniert der 3D-Sanddruck
+
+Der Formsand wird schichtweise aufgetragen. Ein Bindersystem wird selektiv dort eingebracht, wo der Sand aushärten soll.
+
+Schicht für Schicht entstehen so vollständige Sandformen oder Sandkerne. Dadurch lassen sich Geometrien herstellen, die mit klassischer Modell- und Kernkastentechnik nur mit hohem Aufwand oder gar nicht realisierbar wären.
+
+## Maximale Abmessungen
+
+Unsere maximale Baugröße für 3D-gedruckte Sandformen und Kerne beträgt:
+
+**1.800 × 900 × 900 mm**
+
+Die gedruckten Formen und Kerne werden anschließend direkt für den [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) eingesetzt.
