@@ -11,8 +11,8 @@
  * migration-relevant public content. It never prints wp-config.php or DB credentials.
  */
 
-if (PHP_SAPI !== 'cli') {
-    fwrite(fopen('php://stderr', 'w'), "CLI only.\n");
+if (!isset($argv) || !is_array($argv)) {
+    fwrite(fopen('php://stderr', 'w'), "Command-line arguments unavailable.\n");
     exit(1);
 }
 
