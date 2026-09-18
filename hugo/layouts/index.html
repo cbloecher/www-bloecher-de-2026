@@ -1,6 +1,64 @@
 {{ define "main" }}
-<section class="home">
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+{{ $de := eq .Site.Language.Lang "de" }}
+{{ $hero := resources.Get "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg" }}
+<section class="hero{{ if $hero }} hero--image{{ end }}"{{ with $hero }} style="--hero-image:url('{{ .RelPermalink }}')"{{ end }}>
+  <div class="hero__overlay"></div>
+  <div class="hero__inner">
+    <p class="eyebrow">{{ if $de }}Aluminium-Sandguss{{ else }}Aluminium sand casting{{ end }}</p>
+    <h1>{{ if $de }}Wir formen Zukunft.<br>Stück für Stück.{{ else }}We shape the future.<br>Piece by piece.{{ end }}</h1>
+    <p class="hero__lead">
+      {{ if $de }}
+        Anspruchsvolle Gussteile, Prototypen und Kleinserien – vom Modell bis zum fertigen Bauteil.
+      {{ else }}
+        Complex castings, prototypes and small series – from model to finished component.
+      {{ end }}
+    </p>
+    <div class="hero__actions">
+      <a class="button button--primary" href="{{ if $de }}{{ "/leistungen/" | relLangURL }}{{ else }}{{ "/services/" | relLangURL }}{{ end }}">
+        {{ if $de }}Leistungen ansehen{{ else }}Explore services{{ end }}
+      </a>
+      <a class="button button--ghost" href="{{ if $de }}{{ "/unternehmen/kontakt/" | relLangURL }}{{ else }}{{ "/about-us/contact-us/" | relLangURL }}{{ end }}">
+        {{ if $de }}Kontakt{{ else }}Contact{{ end }}
+      </a>
+    </div>
+  </div>
 </section>
+
+<section class="facts">
+  <div class="facts__inner">
+    <div class="fact"><strong>2.500 kg</strong><span>{{ if $de }}Bauteilgewicht bis ca.{{ else }}component weight up to approx.{{ end }}</span></div>
+    <div class="fact"><strong>6 m³</strong><span>{{ if $de }}Größenordnung bis ca.{{ else }}volume up to approx.{{ end }}</span></div>
+    <div class="fact"><strong>3D</strong><span>{{ if $de }}gedruckte Formen und Kerne{{ else }}printed molds and cores{{ end }}</span></div>
+  </div>
+</section>
+
+<section class="home-section">
+  <div class="section-heading">
+    <p class="eyebrow">{{ if $de }}Kompetenzen{{ else }}Capabilities{{ end }}</p>
+    <h2>{{ if $de }}Von CAD-Daten zum Gussteil{{ else }}From CAD data to casting{{ end }}</h2>
+  </div>
+  <div class="card-grid">
+    <a class="card" href="{{ if $de }}{{ "/leistungen/aluminium-sandguss/" | relLangURL }}{{ else }}{{ "/services/aluminium-sand-casting/" | relLangURL }}{{ end }}">
+      <span class="card__number">01</span>
+      <h3>{{ if $de }}Aluminium-Sandguss{{ else }}Aluminium sand casting{{ end }}</h3>
+      <p>{{ if $de }}Einzelteile, Prototypen und Kleinserien für anspruchsvolle Anwendungen.{{ else }}Single parts, prototypes and small series for demanding applications.{{ end }}</p>
+    </a>
+    <a class="card" href="{{ if $de }}{{ "/leistungen/modellbau/" | relLangURL }}{{ else }}{{ "/services/model-making/" | relLangURL }}{{ end }}">
+      <span class="card__number">02</span>
+      <h3>{{ if $de }}Modellbau{{ else }}Model making{{ end }}</h3>
+      <p>{{ if $de }}Werkzeuge und Modelle als Grundlage für reproduzierbare Gussergebnisse.{{ else }}Tools and models as the basis for reproducible casting results.{{ end }}</p>
+    </a>
+    <a class="card" href="{{ if $de }}{{ "/leistungen/3d-druck/" | relLangURL }}{{ else }}{{ "/services/3d-print/" | relLangURL }}{{ end }}">
+      <span class="card__number">03</span>
+      <h3>{{ if $de }}3D-Sanddruck{{ else }}3D sand printing{{ end }}</h3>
+      <p>{{ if $de }}Werkzeuglose Formen und Kerne für komplexe Geometrien und schnelle Iterationen.{{ else }}Tool-less molds and cores for complex geometries and fast iteration.{{ end }}</p>
+    </a>
+  </div>
+</section>
+
+{{ with .Content }}
+<section class="home-section home-section--content">
+  <div class="prose">{{ . }}</div>
+</section>
+{{ end }}
 {{ end }}
