@@ -1,0 +1,16 @@
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
+    <nav aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptnavigation{{ else }}Main navigation{{ end }}">
+      <a href="{{ .Site.Home.RelPermalink }}">{{ if eq .Site.Language.Lang "de" }}Start{{ else }}Home{{ end }}</a>
+      {{ range .Site.Sections.ByWeight }}
+        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ end }}
+    </nav>
+    <nav class="language-switch" aria-label="Language">
+      {{ range .AllTranslations }}
+        <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}">{{ upper .Language.Lang }}</a>
+      {{ end }}
+    </nav>
+  </div>
+</header>
