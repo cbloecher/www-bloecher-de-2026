@@ -112,17 +112,23 @@ function attachment_info($attachmentId) {
     ];
 }
 
-$postTypes = ['page'];
-$posts = get_posts([
-    'post_type' => $postTypes,
-    'post_status' => ['publish'],
-    'numberposts' => -1,
-    'orderby' => [
-        'menu_order' => 'ASC',
-        'title' => 'ASC',
-    ],
-    'suppress_filters' => true,
-]);
+global $wpdb;
+
+$postIds = $wpdb->get_col(
+    "SELECT ID
+     FROM {$wpdb->posts}
+     WHERE post_type = 'page'
+       AND post_status = 'publish'
+     ORDER BY menu_order ASC, post_title ASC"
+);
+
+$posts = [];
+foreach ($postIds as $postId) {
+    $post = get_post((int) $postId);
+    if ($post instanceof WP_Post) {
+        $posts[] = $post;
+    }
+}
 
 $exportPosts = [];
 $attachmentIds = [];
