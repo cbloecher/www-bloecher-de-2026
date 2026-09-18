@@ -1,0 +1,40 @@
+baseURL = "https://hugo.bloecher.de/"
+title = "Giesserei Blöcher GmbH"
+defaultContentLanguage = "de"
+defaultContentLanguageInSubdir = false
+disableDefaultLanguageRedirect = false
+enableRobotsTXT = true
+canonifyURLs = false
+relativeURLs = false
+
+[build]
+  writeStats = true
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML"]
+  page = ["HTML"]
+
+[languages]
+  [languages.de]
+    languageCode = "de-DE"
+    languageName = "Deutsch"
+    contentDir = "content/de"
+    weight = 1
+    title = "Giesserei Blöcher GmbH"
+
+  [languages.en]
+    languageCode = "en-GB"
+    languageName = "English"
+    contentDir = "content/en"
+    weight = 2
+    title = "Giesserei Blöcher GmbH"
+
+[params]
+  environment = "staging"
+  companyName = "Giesserei Blöcher GmbH"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
