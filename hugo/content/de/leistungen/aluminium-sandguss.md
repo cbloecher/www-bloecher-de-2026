@@ -1,6 +1,6 @@
 ---
-title: "Aluminium Sandguss"
-description: ""
+title: "Aluminium-Sandguss"
+description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg Stückgewicht und rund 6 m³ Volumen."
 translationKey: "aluminium-sand-casting"
 draft: false
 migration:
@@ -8,101 +8,65 @@ migration:
   source_url: "https://www.bloecher.de/leistungen/aluminium-sandguss/"
   source_slug: "aluminium-sandguss"
   modified: "2024-02-24T19:28:32+00:00"
-migration_review:
-  - "image:3824"
-  - "shortcode:av_cell"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_masonry_gallery"
-  - "shortcode:av_one_fourth"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
-  - "shortcode:av_one_third"
-  - "shortcode:av_row"
-  - "shortcode:av_section"
-  - "shortcode:av_table"
-  - "shortcode:av_two_third"
 ---
 
-# Aluminium Sandguss
+Wir fertigen Aluminium-Sandgussteile als Einzelstücke, Prototypen und in kleinen Serien.
 
-Wir gießen für Sie. Wenn's drauf ankommt, auch über Nacht. Einzelstücke genauso wie Produkte in Kleinstserie.
+## Leistungsumfang
 
- 	Aluminium-Sandgussteile in allen gängigen Legierungen
- 	bis ca. 2.500 kg Stückgewicht
- 	in nahezu jeder Dimension mit bis zu rund 6 m³ Volumen
- 	mit eingegossenen [Temperierungen aus Edelstahl](https://www.bloecher.de/leistungen/temperierung/)
+- Aluminium-Sandgussteile in gängigen Legierungen
+- Stückgewichte bis ca. **2.500 kg**
+- Bauteilgrößen bis rund **6 m³ Volumen**
+- eingegossene [Temperierungen aus Edelstahl](/leistungen/temperierung/)
+- klassische Modelltechnik oder direkt 3D-gedruckte Formen und Kerne
 
-Typische Anwendungen sind Formwerkzeuge, Lehren (-gestelle), Getriebegehäuse oder Grund-/Trägerplatten.
+Typische Anwendungen sind Formwerkzeuge, Lehren und Lehrengestelle, Getriebegehäuse sowie Grund- und Trägerplatten.
 
-Durch den Einsatz von [3D-Druck](https://www.bloecher.de/leistungen/3d-druck/) ist Sandguss auch ohne Modell und Kernkasten möglich. Das ermöglicht Zeitersparnis für den ersten Abguss und wirtschaftliche Fertigung für einzelne Abgüsse wie [Prototypen oder Ersatzteile](https://www.bloecher.de/prototypen-ersatzteil/).
+Durch [3D-Sanddruck](/leistungen/3d-druck/) ist Sandguss auch ohne Modell und Kernkasten möglich. Das verkürzt den Weg zum ersten Abguss und kann Einzelteile, [Prototypen und Ersatzteile](/prototypen-ersatzteil/) wirtschaftlich machen.
 
-### Sandguss
+## Der Sandgussprozess
 
-Gießen ist ein Urformverfahren, bei dem flüssiges Material in eine Form gegossen wird, um ein bestimmtes Bauteil oder Produkt herzustellen. Das Material erstarrt in der Form und nimmt deren Gestalt an. Gießen wird häufig für die Herstellung von Metallteilen verwendet, kann aber auch für andere Materialien wie Kunststoff oder Glas eingesetzt werden. Das Verfahren ermöglicht die Herstellung komplexer Geometrien und ist daher für eine Vielzahl von Anwendungen geeignet. Es gibt verschiedene Gießverfahren, darunter **Sandgießen**, Druckgießen und Feingießen, die sich in Bezug auf die verwendeten Materialien, die Formgebung und die erzielbare Genauigkeit unterscheiden.
+Beim Sandguss wird flüssiges Aluminium in eine Form aus gebundenem Sand gegossen. Nach dem Erstarren wird die verlorene Form zerstört und das Gussteil entnommen.
 
-Giesserei Blöcher stellt Aluminumabgüsse im Sandgussverfahren her.
+### 1. Form- und Kernherstellung
 
-Der Sandgussprozess lässt sich in vier Hauptphasen unterteilen:
+Die Sandform bildet die Negativgeometrie des späteren Gussteils. Sie entsteht entweder durch Abformen eines Modells oder direkt im 3D-Sanddruck.
 
-**1. Form- und Kernherstellung**: Zunächst wird eine Form aus Sand erstellt, die die genaue Negativform des zu gießenden Objekts darstellt. Diese Form wird Abformung eines Modells mit Sand in einem Formkasten erstellt.
+Für Hohlräume werden Sandkerne eingesetzt. Sie definieren die Innengeometrie des Bauteils.
 
-Falls das Gussstück Hohlräume aufweisen soll, werden sogenannte Kerne aus Sand in die Form eingelegt. Diese Kerne sind so geformt, dass sie die Hohlräume im fertigen Gussstück erzeugen.
+### 2. Gießen
 
-**2. Gießen**: In diesem Schritt wird das flüssige Metall in die vorbereitete Form gegossen. Das Metall füllt die Form aus.  - und die Hohlräume der Kerne aus und nimmt die gewünschte Form an.
+Das flüssige Aluminium wird in die vorbereitete Form gegossen und füllt den durch Form und Kerne vorgegebenen Bauraum aus.
 
-**3. Erstarren und Abkühlen**: Nach dem Gießen muss das Metall in der Form erstarren und abkühlen. Die Zeit, die das Metall zum Erstarren und Abkühlen benötigt, hängt von der Größe und Form des Gussstücks sowie von der Art des verwendeten Metalls ab.
+### 3. Erstarren und Abkühlen
 
-**4. Entformen und Nachbearbeitung**: Nachdem das Metall vollständig erstarrt und abgekühlt ist, wird das Gussstück aus der Form genommen. Dabei wird die Form und evtl. vorhandene Kerne zerstört. Anschließend wird das Gussstück von Sandresten gereinigt und es erfolgt eine weitere Nachbearbeitung, wie zum Beispiel das Entfernen von Graten oder Verschleifen und Sandstrahlen der Oberfläche.
+Das Metall erstarrt in der Form. Die erforderliche Abkühlzeit hängt unter anderem von Größe und Geometrie des Gussteils ab.
 
-### Vorteile von Sandguss
+### 4. Entformen und Nachbearbeiten
 
-Gießen als Urformverfahren bietet eine Reihe von Vorteilen:
+Nach dem Abkühlen werden Form und Kerne entfernt. Anschließend wird das Gussteil von Sandresten befreit und je nach Anforderung weiterbearbeitet, beispielsweise durch Entgraten, Schleifen oder Sandstrahlen.
 
-**Komplexe Geometrien**: Mit Gießen können komplexe und detaillierte Formen hergestellt werden, die mit anderen Verfahren wie Schmieden oder Fräsen schwer oder gar nicht realisierbar sind.
+## Vorteile des Sandgusses
 
-**Wirtschaftlichkeit**: Gießen ist oft kosteneffektiver als andere Fertigungsverfahren. Werkzeug und Modellkosten können durch den Einsatz moderner Technologien eingespart werden.
+Sandguss eignet sich besonders für große und geometrisch anspruchsvolle Aluminiumbauteile sowie für kleine Stückzahlen.
 
-**Geringer Materialverlust**: Im Vergleich zu abtragenden Verfahren wie Fräsen oder Drehen, bei denen Material entfernt wird, um die gewünschte Form zu erreichen, ist der Materialverlust beim Gießen in der Regel geringer.
+Wesentliche Vorteile sind:
 
-**Geringere Bearbeitung nach dem Gießen**: In vielen Fällen kann das gegossene Teil direkt ohne oder mit nur geringer Nachbearbeitung verwendet werden.
+- komplexe Geometrien
+- hohe Flexibilität bei Änderungen
+- große Bauteile
+- kleine Losgrößen
+- geringe Werkzeugkosten bei geeigneter Verfahrenskombination
+- Integration zusätzlicher Funktionen, beispielsweise Temperierrohre
 
-**Flexibilität**: Gießen ermöglicht eine hohe Flexibilität in Bezug auf die Gestaltung und Änderung von Formen.
+## Aluminiumlegierungen
 
-**Große Teile**: Mit Gießen können auch sehr große Teile hergestellt werden, die mit anderen Verfahren schwierig oder unmöglich zu fertigen wären.
+Auf der bestehenden Website werden unter anderem folgende Legierungen genannt:
 
-**Gute mechanische Eigenschaften**: Gegossene Teile können gute mechanische Eigenschaften aufweisen, insbesondere wenn es um die Herstellung von Teilen aus Metalllegierungen geht.
+| Kurzbezeichnung | Werkstoff / Norm | Hinweis |
+| --- | --- | --- |
+| 226 | G-Al Si9 Cu3 / EN-AC46200 | gut gießbare Universallegierung, gut spanbar |
+| UFO90 / Unifont®-90 | G-Al Zn10 Si8 Mg | selbstaushärtende Legierung mit guten Festigkeits- und Dehnungseigenschaften |
+| Si7 (A357) | G-Al Si7 Mg | Aluminium-Silizium-Magnesium-Legierung |
 
-**Möglichkeit zur Integration von Funktionen**: Beim Gießen können Funktionen wie Gewinde, Rippen, Temperier-Kanäle oder andere Elemente direkt in das Teil integriert werden, ohne dass zusätzliche Bearbeitungsschritte erforderlich sind.
-
-**Geringe Losgrößen**: Gießen eignet sich auch für die Herstellung kleiner Losgrößen, was es zu einer flexiblen Option für Prototypen und Kleinserien macht.
-
-## Aluminium Gussteile
-
-## Aluminium Legierungen
-
-Unsere Kurzbezeichnung
-
-G-Al
-
-CEN  (Euro-Norm) und DIN
-
-226
-
-G-AL Si9 Cu3
-
-EN-AC46200
-
-Sehr gut gießbare Universallegierung. Geringere Neigung zum Einfallen und zu Innenlunker. Sehr gut spanbar. Wird meistens nicht ausgehärtet.
-
-Unifont(R)-90 [UFO90]
-
-G-Al ZN10 Si8 Mg
-
-Selbstaushärtende Legierung mit sehr guten Festigkeits- und Dehnungseigenschaften,
-
-Si7 (A357)
-
-G-Al Si7 Mg
-
-Abgekürzte Legierungsbestandteile: Aluminium (Al), Silizium (Si), Eisen (Fe), Kupfer (Cu), Mangan (Mn), Magnesium (Mg), Nickel (Ni), Zink (Zn), Titan (Ti)
+Weitere Legierungen stimmen wir nach Bauteil und Anwendung ab.
