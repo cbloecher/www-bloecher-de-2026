@@ -1,6 +1,6 @@
 ---
 title: "About us"
-description: ""
+description: "Giesserei Blöcher in Biedenkopf combines three generations of foundry experience with modern manufacturing and measurement technologies."
 translationKey: "company"
 draft: false
 migration:
@@ -8,21 +8,24 @@ migration:
   source_url: "https://www.bloecher.de/en/about-us/"
   source_slug: "about-us"
   modified: "2024-02-08T13:28:44+00:00"
-migration_review:
-  - "image:3821"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_two_third"
 ---
 
-# About us
+Giesserei Blöcher combines long-standing foundry experience with modern manufacturing technology at its Biedenkopf site.
 
-Tradition and Innovation. Under this motto, we operate our foundry in Biedenkopf.
+## Tradition and innovation
 
-Tradition means the connection of the Blöcher family to the foundry craft through three generations.
+The Blöcher family has been connected with the foundry trade for three generations.
 
-Innovation stands for the most modern technology in a new plant. In addition to modern molding and melting processes, rapid prototyping and rapid tooling are the technologies with which we meet the high demands of our customers. Take advantage of our technology, training, experience, and teamwork for optimal support and handling of your orders.
+At the same time, we continuously develop our processes and technical capabilities. These include modern molding and melting processes as well as digital technologies for model making, 3D sand printing and measurement.
 
-We look forward to welcoming you as a customer to our house soon!
+## Short paths in-house
+
+A key part of our approach is the close integration of individual production steps.
+
+In-house model making, foundry operations and complementary digital technologies enable direct coordination from data to finished casting.
+
+## Working together
+
+We combine technology, experience and professional training with close teamwork.
+
+Our aim is reliable and flexible project execution, particularly where individual solutions and small quantities are required.
