@@ -1,6 +1,6 @@
 ---
-title: "Quality Management"
-description: ""
+title: "Quality and Certification"
+description: "Quality and environmental management at Giesserei Blöcher with ISO 9001 and ISO 14001 certification."
 translationKey: "quality"
 draft: false
 migration:
@@ -8,24 +8,32 @@ migration:
   source_url: "https://www.bloecher.de/en/about-us/quality-management/"
   source_slug: "quality-management"
   modified: "2024-02-08T08:36:03+00:00"
-migration_review:
-  - "image:3825"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_two_third"
 ---
 
-# QM Certification
+We regard quality and environmental management as continuous tasks within our processes and daily operations.
 
-Zertifikat ISO 9001
+## ISO 9001
 
-We have opted for certification according to ISO 9001 and ISO 14001 because we believe that it offers numerous benefits for our company:
+Certification according to **ISO 9001** supports us in systematically managing and improving processes, products and services.
 
- 	We are committed to continuously improving and ensuring the quality of our processes, products, and services. With the ISO 9001 certification, we can demonstrate this commitment while simultaneously increasing our customer satisfaction.
- 	We care about our environment. The ISO 14001 certification proves that we are actively working to reduce our environmental impact. We want to emphasize that we are taking social responsibility, ensuring our compliance with environmental regulations, and reducing costs through more efficient use of our resources.
- 	We aim to gain competitive advantages and open up new markets. Many companies and public contractors require their suppliers and partners to be certified according to these standards. Our certifications enable us to meet these requirements.
- 	We want to proactively manage risks. By implementing the ISO standards, we can identify and mitigate potential problems early on.
+Key aspects include:
 
-Overall, we view these certifications as a helpful framework that supports us in implementing best practices and running a more efficient and effective operation.
+- controlled and traceable processes
+- continuous improvement
+- reliable quality
+- orientation towards customer requirements
+
+## ISO 14001
+
+With certification according to **ISO 14001**, we follow a structured approach to environmental management.
+
+This includes in particular:
+
+- reducing environmental impacts
+- efficient use of resources
+- compliance with relevant environmental requirements
+- systematic handling of environmental aspects and risks
+
+## Management system as a working framework
+
+We do not regard certification as an end in itself, but as a framework for efficient, transparent and continuously improved operations.
