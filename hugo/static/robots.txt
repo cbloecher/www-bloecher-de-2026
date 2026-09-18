@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hugo.bloecher.de/sitemap.xml
