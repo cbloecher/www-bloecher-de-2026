@@ -149,6 +149,18 @@ def html_to_markdownish(value: str) -> str:
     )
     value = HTML_TAG_RE.sub("", value)
     value = value.replace("\r", "")
+
+    # Prevent accidental Markdown code blocks caused by indentation left by
+    # stripped Avia wrappers.
+    value = "\n".join(line.strip() for line in value.splitlines())
+
+    # Remove known editor placeholder text from the legacy site.
+    value = re.sub(
+        r"(?im)^\s*Gib hier den Inhalt des Meilensteines\s*$",
+        "",
+        value,
+    )
+
     value = BLANK_RE.sub("\n\n", value)
     return value.strip()
 
@@ -166,6 +178,12 @@ def extract_content(raw: str) -> tuple[str, list[str]]:
         title = clean_inline(a.get("heading") or m.group("body"))
         tag = (a.get("tag") or "h2").lower()
         level = {"h1": 1, "h2": 2, "h3": 3, "h4": 4, "h5": 5, "h6": 6}.get(tag, 2)
+
+        # The Hugo page template owns the single page H1. Legacy Avia H1s
+        # become section headings instead of producing duplicate H1s.
+        if level == 1:
+            level = 2
+
         return "\n\n" + ("#" * level) + " " + title + "\n\n"
 
     work = HEADING_RE.sub(heading_replace, work)
