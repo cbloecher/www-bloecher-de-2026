@@ -121,7 +121,7 @@ $posts = get_posts([
         'menu_order' => 'ASC',
         'title' => 'ASC',
     ],
-    'suppress_filters' => false,
+    'suppress_filters' => true,
 ]);
 
 $exportPosts = [];
