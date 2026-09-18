@@ -1,6 +1,6 @@
 ---
 title: "Temperierung"
-description: ""
+description: "Konturfolgende Temperierung durch eingegossene Edelstahlrohre für Werkzeug- und Formguss."
 translationKey: "temperature-control"
 draft: false
 migration:
@@ -8,19 +8,22 @@ migration:
   source_url: "https://www.bloecher.de/leistungen/temperierung/"
   source_slug: "temperierung"
   modified: "2023-11-02T22:25:21+00:00"
-migration_review:
-  - "image:3807"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_two_third"
 ---
 
-# Temperierungen
+Temperierkanäle können direkt in ein Aluminiumgussteil integriert werden. Dazu werden Edelstahlrohre vor dem Gießen in die Form eingebracht und anschließend mit Aluminium umgossen.
 
-Konturfolgende Temperierung aus eingegossenem V2A-Rohr
+## Konturfolgende Temperierung
 
-Wenn Gewindeeinsätze, Rohre oder ähnliche Teile während des Gießprozesses in das Gussteil integriert werden, spricht man von einem Verbundguss oder auch von Verbundgießen. Dabei werden die Einlegeteile in die Gussform eingebracht und mit dem flüssigen Metall umgossen, sodass sie nach dem Erstarren fest mit dem Gussteil verbunden sind. Dieses Verfahren kann angewendet werden, um die mechanischen Eigenschaften des Gussteils zu verbessern oder um zusätzliche Funktionselemente zu integrieren.
+Im Werkzeugguss nutzen wir eingegossene Edelstahlrohre, um das spätere Werkzeug je nach Anwendung zu kühlen oder zu beheizen.
 
-In Werkzeugguss können **Temperierungen** eingegossen werden, um das fertige Werkzeug je nach Anwendung zu kühlen oder aufzuheizen. Dazu werden nach Vorgabe Edelstahlrohre dem Konturverlauf folgend in die Form eingebracht. Es sind verschiedene Rohrdurchmesser und Anschlüsse standardmäßig bei uns verfügbar.
+Die Rohre werden nach Vorgabe dem Konturverlauf folgend in der Form positioniert. Dadurch lässt sich die Temperierung nah an die wirksame Werkzeugoberfläche führen.
+
+Verschiedene Rohrdurchmesser und Anschlüsse sind standardmäßig verfügbar.
+
+## Verbundguss mit Einlegeteilen
+
+Das Eingießen von Rohren, Gewindeeinsätzen oder anderen Funktionsteilen ist eine Form des Verbundgusses.
+
+Die Einlegeteile werden vor dem Gießen in der Form positioniert. Beim Gießen umschließt das flüssige Aluminium die Einlegeteile und verbindet sie nach dem Erstarren dauerhaft mit dem Gussteil.
+
+So können zusätzliche Funktionen bereits im Gießprozess in das Bauteil integriert werden.
