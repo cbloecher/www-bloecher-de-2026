@@ -2,7 +2,7 @@ baseURL = "https://hugo.bloecher.de/"
 title = "Giesserei Blöcher GmbH"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
-disableDefaultLanguageRedirect = false
+disableDefaultLanguageRedirect = true
 enableRobotsTXT = true
 canonifyURLs = false
 relativeURLs = false
@@ -17,15 +17,15 @@ relativeURLs = false
 
 [languages]
   [languages.de]
-    languageCode = "de-DE"
-    languageName = "Deutsch"
+    locale = "de-DE"
+    label = "Deutsch"
     contentDir = "content/de"
     weight = 1
     title = "Giesserei Blöcher GmbH"
 
   [languages.en]
-    languageCode = "en-GB"
-    languageName = "English"
+    locale = "en-GB"
+    label = "English"
     contentDir = "content/en"
     weight = 2
     title = "Giesserei Blöcher GmbH"
