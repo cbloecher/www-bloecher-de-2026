@@ -12,7 +12,7 @@
  */
 
 if (PHP_SAPI !== 'cli') {
-    fwrite(STDERR, "CLI only.\n");
+    fwrite(fopen('php://stderr', 'w'), "CLI only.\n");
     exit(1);
 }
 
@@ -20,13 +20,13 @@ $wpRoot = $argv[1] ?? null;
 $output = $argv[2] ?? (__DIR__ . '/../export/wordpress-content.json');
 
 if (!$wpRoot) {
-    fwrite(STDERR, "Usage: php export-wordpress-content.php /path/to/wordpress [output.json]\n");
+    fwrite(fopen('php://stderr', 'w'), "Usage: php export-wordpress-content.php /path/to/wordpress [output.json]\n");
     exit(2);
 }
 
 $wpLoad = rtrim($wpRoot, '/\\') . '/wp-load.php';
 if (!is_file($wpLoad)) {
-    fwrite(STDERR, "wp-load.php not found: {$wpLoad}\n");
+    fwrite(fopen('php://stderr', 'w'), "wp-load.php not found: {$wpLoad}\n");
     exit(3);
 }
 
@@ -34,7 +34,7 @@ define('WP_USE_THEMES', false);
 require_once $wpLoad;
 
 if (!function_exists('get_posts')) {
-    fwrite(STDERR, "WordPress did not load correctly.\n");
+    fwrite(fopen('php://stderr', 'w'), "WordPress did not load correctly.\n");
     exit(4);
 }
 
@@ -209,7 +209,7 @@ $data = [
 
 $dir = dirname($output);
 if (!is_dir($dir) && !mkdir($dir, 0775, true) && !is_dir($dir)) {
-    fwrite(STDERR, "Cannot create output directory: {$dir}\n");
+    fwrite(fopen('php://stderr', 'w'), "Cannot create output directory: {$dir}\n");
     exit(5);
 }
 
@@ -219,15 +219,15 @@ $json = json_encode(
 );
 
 if ($json === false) {
-    fwrite(STDERR, "JSON encoding failed: " . json_last_error_msg() . "\n");
+    fwrite(fopen('php://stderr', 'w'), "JSON encoding failed: " . json_last_error_msg() . "\n");
     exit(6);
 }
 
 if (file_put_contents($output, $json . PHP_EOL) === false) {
-    fwrite(STDERR, "Cannot write output: {$output}\n");
+    fwrite(fopen('php://stderr', 'w'), "Cannot write output: {$output}\n");
     exit(7);
 }
 
-fwrite(STDOUT, "[OK] Exported " . count($exportPosts) . " published pages to {$output}\n");
-fwrite(STDOUT, "[OK] Languages: " . implode(', ', $languages) . "\n");
-fwrite(STDOUT, "[OK] Referenced attachments: " . count($attachments) . "\n");
+fwrite(fopen('php://stdout', 'w'), "[OK] Exported " . count($exportPosts) . " published pages to {$output}\n");
+fwrite(fopen('php://stdout', 'w'), "[OK] Languages: " . implode(', ', $languages) . "\n");
+fwrite(fopen('php://stdout', 'w'), "[OK] Referenced attachments: " . count($attachments) . "\n");
