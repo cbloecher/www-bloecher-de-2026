@@ -4,6 +4,7 @@ defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
 enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "rss"]
 canonifyURLs = false
 relativeURLs = false
 
@@ -11,7 +12,7 @@ relativeURLs = false
   writeStats = true
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML"]
   section = ["HTML"]
   page = ["HTML"]
 
