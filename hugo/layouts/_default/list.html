@@ -1,14 +1,31 @@
 {{ define "main" }}
 <section class="page-list">
-  <header class="page-header">
+  <header class="page-header page-header--section">
+    <p class="eyebrow">{{ if eq .Site.Language.Lang "de" }}Übersicht{{ else }}Overview{{ end }}</p>
     <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
   </header>
-  {{ with .Content }}<div class="page-content">{{ . }}</div>{{ end }}
-  {{ range .Pages }}
-    <article>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ with .Description }}<p>{{ . }}</p>{{ end }}
-    </article>
+
+  {{ with .Content }}
+    <div class="page-content page-content--section">{{ . }}</div>
+  {{ end }}
+
+  {{ if .Pages }}
+  <section class="subpage-section" aria-labelledby="subpages-title">
+    <div class="section-heading">
+      <p class="eyebrow">{{ if eq .Site.Language.Lang "de" }}Themen{{ else }}Topics{{ end }}</p>
+      <h2 id="subpages-title">{{ if eq .Site.Language.Lang "de" }}Im Detail{{ else }}In detail{{ end }}</h2>
+    </div>
+    <div class="card-grid card-grid--subpages">
+      {{ range .Pages.ByWeight }}
+        <a class="card" href="{{ .RelPermalink }}">
+          <span class="card__number">→</span>
+          <h3>{{ .LinkTitle }}</h3>
+          {{ with .Description }}<p>{{ . }}</p>{{ end }}
+        </a>
+      {{ end }}
+    </div>
+  </section>
   {{ end }}
 </section>
 {{ end }}
