@@ -1,8 +1,8 @@
 :root {
   --content-width: 76rem;
   --space: clamp(1.1rem, 3vw, 2.2rem);
-  --green: #2f7f3b;
-  --green-dark: #245f2d;
+  --green: #f26a21;
+  --green-dark: #c95212;
   --black: #121416;
   --text: #24272a;
   --muted: #6d7378;
