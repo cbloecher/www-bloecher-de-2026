@@ -1,6 +1,6 @@
 ---
-title: "3D-Print"
-description: ""
+title: "3D Sand Printing"
+description: "Direct additive production of sand molds and cores up to 1,800 × 900 × 900 mm without a physical pattern or core box."
 translationKey: "3d-print"
 draft: false
 migration:
@@ -8,20 +8,32 @@ migration:
   source_url: "https://www.bloecher.de/en/services/3d-print/"
   source_slug: "3d-print"
   modified: "2024-02-20T18:53:55+00:00"
-migration_review:
-  - "image:3831"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
 ---
 
-# 3D Printing
+With 3D sand printing, we produce molds and cores directly from digital data. No physical pattern or core box is required.
 
-We produce [castings from aluminum](https://www.bloecher.de/en/services/aluminium-sandcasting/) using lost molds made of bonded sand. Typically, [models](https://www.bloecher.de/en/services/model-making/) (positive representations of the later casting) are required for the production of the sand molds. An exception is the direct production of molds and cores using 3D printing.
+## Sand molds directly from CAD data
 
-For this, we use a modern 3D printer. Layer by layer, without the need for a model, the required sand molds and cores are created. Complex geometries and small series can thus be manufactured economically.
+In conventional sand casting, the mold is produced using a [foundry pattern](/en/services/model-making/). 3D sand printing skips this step: the mold geometry is built directly from the CAD dataset.
 
-The mold sand is applied layer by layer with a special articulated arm robot. The binder system is selectively printed - only there does the sand harden. This shifts the boundaries of manufacturability and economy.
+This is particularly useful for:
 
-Our maximum dimensions for 3D-printed sand molds or cores: 1,800 x 900 x 900 mm.
+- complex geometries
+- single parts and prototypes
+- small batches
+- short-term design changes
+- components for which conventional pattern equipment would be uneconomical
+
+## How 3D sand printing works
+
+Molding sand is applied layer by layer. A binder system is selectively deposited where the sand is to harden.
+
+Layer by layer, complete sand molds or cores are created. This enables geometries that would be difficult or impossible to achieve economically with conventional model and core-box technology.
+
+## Maximum dimensions
+
+Our maximum build size for 3D-printed sand molds and cores is:
+
+**1,800 × 900 × 900 mm**
+
+The printed molds and cores are then used directly for [aluminium sand casting](/en/services/aluminium-sand-casting/).
