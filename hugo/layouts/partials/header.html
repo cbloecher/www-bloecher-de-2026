@@ -1,15 +1,31 @@
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="brand" href="{{ .Site.Home.RelPermalink }}">{{ .Site.Title }}</a>
-    <nav aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptnavigation{{ else }}Main navigation{{ end }}">
+    <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+      {{ with resources.Get "images/imported/2020/06/logo_gb_340x156_transparent.png" }}
+        <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="Giesserei Blöcher">
+      {{ else }}
+        <span class="brand__text">Giesserei Blöcher</span>
+      {{ end }}
+    </a>
+
+    <nav class="main-nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptnavigation{{ else }}Main navigation{{ end }}">
       <a href="{{ .Site.Home.RelPermalink }}">{{ if eq .Site.Language.Lang "de" }}Start{{ else }}Home{{ end }}</a>
-      {{ range .Site.Sections.ByWeight }}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+      {{ if eq .Site.Language.Lang "de" }}
+        <a href="{{ "/leistungen/" | relLangURL }}">Leistungen</a>
+        <a href="{{ "/unternehmen/" | relLangURL }}">Unternehmen</a>
+        <a href="{{ "/unternehmen/kontakt/" | relLangURL }}">Kontakt</a>
+      {{ else }}
+        <a href="{{ "/services/" | relLangURL }}">Services</a>
+        <a href="{{ "/about-us/" | relLangURL }}">About us</a>
+        <a href="{{ "/about-us/contact-us/" | relLangURL }}">Contact</a>
       {{ end }}
     </nav>
+
     <nav class="language-switch" aria-label="Language">
       {{ range .AllTranslations }}
-        <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}">{{ upper .Language.Lang }}</a>
+        <a href="{{ .RelPermalink }}" lang="{{ .Language.Lang }}"{{ if eq $.Site.Language.Lang .Language.Lang }} aria-current="page"{{ end }}>
+          {{ upper .Language.Lang }}
+        </a>
       {{ end }}
     </nav>
   </div>
