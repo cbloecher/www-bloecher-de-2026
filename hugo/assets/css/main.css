@@ -253,3 +253,35 @@ p { margin-top: 0; }
   .main-nav { gap: 1rem; font-size: .92rem; }
   .hero__actions .button { width: 100%; justify-content: center; }
 }
+
+
+/* Content pages */
+.page-header--section { max-width: 62rem; }
+.page-lead {
+  max-width: 46rem;
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+}
+.page-content--section { margin-bottom: clamp(3rem, 7vw, 6rem); }
+.page-content > h2:first-child,
+.prose > h2:first-child { margin-top: 0; }
+.page-content h2,
+.prose h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.75rem);
+  margin-top: 3.5rem;
+  margin-bottom: 1.1rem;
+}
+.page-content h3,
+.prose h3 {
+  font-size: clamp(1.25rem, 2.2vw, 1.7rem);
+  margin-top: 2.5rem;
+  margin-bottom: .8rem;
+}
+.page-content ul,
+.prose ul { padding-left: 1.2rem; }
+.page-content li,
+.prose li { margin-bottom: .4rem; }
+.subpage-section { margin-top: clamp(4rem, 8vw, 7rem); }
+.card-grid--subpages .card { min-height: 13rem; }
+.card-grid--subpages .card__number { margin-bottom: 2.25rem; font-size: 1.4rem; }
