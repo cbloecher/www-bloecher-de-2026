@@ -1,6 +1,6 @@
 ---
 title: "Unternehmen"
-description: ""
+description: "Giesserei Blöcher in Biedenkopf: drei Generationen Gießerhandwerk verbunden mit moderner Fertigungs- und Messtechnik."
 translationKey: "company"
 draft: false
 migration:
@@ -8,21 +8,24 @@ migration:
   source_url: "https://www.bloecher.de/unternehmen/"
   source_slug: "unternehmen"
   modified: "2024-02-24T21:00:29+00:00"
-migration_review:
-  - "image:3821"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_two_third"
 ---
 
-# Über uns
+Giesserei Blöcher verbindet langjährige Erfahrung im Gießerhandwerk mit moderner Fertigungstechnik am Standort Biedenkopf.
 
-Tradition und Innovation. Unter diesem Motto betreiben wir unsere Gießerei in Biedenkopf.
+## Tradition und Innovation
 
-Tradition bedeutet die Verbundenheit der Familie Blöcher über drei Generationen mit dem Gießerhandwerk.
+Die Familie Blöcher ist seit drei Generationen mit dem Gießerhandwerk verbunden.
 
-Innovation steht für modernste Technik in einem neuen Werk. Neben modernen Form- und Schmelzverfahren sind Rapid Prototyping und Rapid Tooling die Technologien, mit denen wir die hohen Ansprüche unserer Kunden erfüllen. Nutzen Sie unsere Technik, Ausbildung, Erfahrung und Teamfähigkeit zur optimalen Betreuung und Abwicklung Ihrer Aufträge.
+Gleichzeitig entwickeln wir unsere Verfahren und technischen Möglichkeiten kontinuierlich weiter. Dazu gehören moderne Form- und Schmelzverfahren ebenso wie digitale Technologien für Modellbau, 3D-Sanddruck und Messtechnik.
 
-Wir freuen uns, Sie bald als Kunde in unserem Haus begrüßen zu dürfen!
+## Kurze Wege im eigenen Haus
+
+Ein wichtiger Teil unseres Ansatzes ist die enge Verzahnung der einzelnen Arbeitsschritte.
+
+Eigener Modellbau, Gießerei und ergänzende digitale Verfahren ermöglichen direkte Abstimmung und kurze Wege vom Datensatz bis zum fertigen Gussteil.
+
+## Zusammenarbeit
+
+Wir verbinden Technik, Erfahrung und fachliche Ausbildung mit enger Abstimmung im Team.
+
+Ziel ist eine zuverlässige und flexible Bearbeitung von Kundenprojekten – besonders dort, wo individuelle Lösungen und kleine Stückzahlen gefragt sind.
