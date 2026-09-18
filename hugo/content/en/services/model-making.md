@@ -1,6 +1,6 @@
 ---
-title: "model making"
-description: ""
+title: "Model Making"
+description: "In-house foundry model making for EPS patterns with 5-axis machining up to 8,000 × 4,000 × 2,000 mm."
 translationKey: "model-making"
 draft: false
 migration:
@@ -8,20 +8,31 @@ migration:
   source_url: "https://www.bloecher.de/en/services/model-making/"
   source_slug: "model-making"
   modified: "2024-02-20T17:45:36+00:00"
-migration_review:
-  - "image:3817"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
 ---
 
-# model making
+Many aluminium sand castings require a physical pattern from which the later sand mold is produced. Our in-house model shop keeps coordination between design, model making and foundry short and direct.
 
-We produce [castings from aluminum](https://www.bloecher.de/en/services/aluminium-sandcasting/) using lost molds made of bonded sand. Typically, models (positive images of the later casting) are required for the production of the sand molds. An exception is the direct production of molds and cores using [3D printing](https://www.bloecher.de/en/services/3d-print/).
+## Patterns for sand casting
 
-A distinction is made between permanent models (for example, made of wood) and lost models. This refers to the reusability after molding in foundry sand. For individual parts, the production of sand molds with casting models made of expanded polystyrene (EPS; colloquially known as Styrofoam) is regularly the most economical approach. These models are generally only usable once - hence lost models. The model is destroyed during the casting process, making it a single-use template. This method is particularly cost-effective for unique or limited production runs.
+A foundry pattern is the positive representation of the later casting. Molding creates the negative geometry of the sand mold.
 
-For the production of the models, we have our own foundry model construction (pattern shop), which enables us to quickly and flexibly implement the requirements of our customers. This literally means we have short paths. Optimal coordination between the foundry and model construction is thus ensured. Transport time and damage are eliminated.
+A distinction is made between reusable permanent patterns and expendable patterns. For single parts and small quantities, patterns made from expanded polystyrene (EPS) are often an economical solution.
 
-We produce the models by milling from EPS blocks. For this, we use a 5-axis milling machine with a working area of 8,000 x 4,000 x 2,000 mm.
+## In-house EPS model making
+
+We manufacture EPS patterns in-house. This allows changes and casting-specific requirements to be coordinated directly between model shop and foundry.
+
+Benefits include:
+
+- short coordination paths
+- flexible implementation of changes
+- no external transport time
+- reduced risk of transport damage
+
+## 5-axis machining
+
+The patterns are milled from EPS blocks.
+
+For this purpose, we use a 5-axis milling machine with a working area of **8,000 × 4,000 × 2,000 mm**.
+
+Where a physical pattern is not economical or suitable, sand molds and cores can alternatively be produced directly by [3D sand printing](/en/services/3d-print/).
