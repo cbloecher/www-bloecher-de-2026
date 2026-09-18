@@ -1,6 +1,6 @@
 ---
 title: "Kontakt"
-description: ""
+description: "Kontakt zur Giesserei Blöcher GmbH in Biedenkopf – Telefon, E-Mail und Anschrift."
 translationKey: "contact"
 draft: false
 migration:
@@ -8,28 +8,17 @@ migration:
   source_url: "https://www.bloecher.de/unternehmen/kontakt/"
   source_slug: "kontakt"
   modified: "2024-02-24T21:25:46+00:00"
-migration_review:
-  - "shortcode:av_contact"
-  - "shortcode:av_contact_field"
-  - "shortcode:av_font_icon"
-  - "shortcode:av_hr"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
 ---
 
-# Kontakt
+## Giesserei Blöcher GmbH
 
-## Nehmen Sie Kontakt mit uns auf
+Zur Wolfskaute 1  
+35216 Biedenkopf  
+Deutschland
 
-**Giesserei Blöcher GmbH**
-Zur Wolfskaute 1
-35216 Biedenkopf
-[**Deutschland](https://goo.gl/maps/ckBb4Z9BSMB5tsXWA)
+**Telefon:** [+49 (0)6461 9551-0](tel:+49646195510)  
+**E-Mail:** [info@bloecher.de](mailto:info@bloecher.de)
 
-**
+## Ihr Weg zu uns
 
- [+49 (0)6461 9551-0](tel:+49646195510)
-
-[info@bloecher.de](mailto:info@bloecher.de)
-
- [https://www.bloecher.de/](https://www.bloecher.de/)
+Eine Wegbeschreibung finden Sie auf der Seite [Anfahrt](/unternehmen/anfahrt/).
