@@ -1,6 +1,6 @@
 ---
-title: "Aluminium Sandcasting"
-description: ""
+title: "Aluminium Sand Casting"
+description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg and around 6 m³."
 translationKey: "aluminium-sand-casting"
 draft: false
 migration:
@@ -8,99 +8,65 @@ migration:
   source_url: "https://www.bloecher.de/en/services/aluminium-sandcasting/"
   source_slug: "aluminium-sandcasting"
   modified: "2024-02-25T12:17:33+00:00"
-migration_review:
-  - "image:3824"
-  - "shortcode:av_cell"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_masonry_gallery"
-  - "shortcode:av_one_fourth"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_half"
-  - "shortcode:av_one_third"
-  - "shortcode:av_row"
-  - "shortcode:av_section"
-  - "shortcode:av_table"
-  - "shortcode:av_two_third"
 ---
 
-# Aluminum sand casting
+We manufacture aluminium sand castings as single parts, prototypes and in small batches.
 
-We cast for you. When it matters, even overnight. Individual pieces as well as products in small series.
+## Capabilities
 
- 	Aluminum sand castings in all common alloys
- 	up to approximately 2,500 kg piece weight
- 	in nearly any dimension with up to around 6 m³ volume
- 	with [integrated stainless steel tempering](https://www.bloecher.de/en/services/temperature-control/)
+- aluminium sand castings in common alloys
+- part weights up to approx. **2,500 kg**
+- part sizes up to around **6 m³**
+- integrated stainless-steel [temperature control](/en/services/temperature-control/)
+- conventional patterns or directly 3D-printed molds and cores
 
-Typical applications include molds, fixtures, gearbox housings, or base/platen plates.
+Typical applications include molds, fixtures, gearbox housings and base or carrier plates.
 
-Through the use of [3D printing](https://www.bloecher.de/en/services/3d-print/), sand casting is also possible without a pattern and core box. This allows time savings for the initial casting and economical production for individual castings such as [prototypes or spare parts](https://www.bloecher.de/en/prototypes-and-spare-parts/).
+With [3D sand printing](/en/services/3d-print/), sand casting is possible without a physical pattern or core box. This shortens the route to the first casting and can make single parts, [prototypes and spare parts](/en/prototypes-and-spare-parts/) economical.
 
-## advantages of casting as a versatile and efficient manufacturing process
+## The sand casting process
 
-Casting is a primary shaping process where liquid material is poured into a mold to manufacture a specific component or product. The material solidifies in the mold, taking its shape. Casting is often used for the production of metal parts but can also be applied to other materials such as plastic or glass. The process allows for the production of complex geometries and is therefore suitable for a variety of applications. There are different casting processes, including **sand casting**, die casting, and precision casting, which differ in terms of the materials used, shaping, and achievable accuracy.
+In sand casting, liquid aluminium is poured into a bonded sand mold. After solidification, the expendable mold is destroyed and the casting is removed.
 
-Giesserei Blöcher produces aluminum castings using the sand casting process.
+### 1. Mold and core making
 
-The sand casting process can be divided into four main phases:
+The sand mold defines the negative geometry of the later casting. It can be produced by molding around a physical pattern or directly by 3D sand printing.
 
- 	**Mold and core making:** Initially, a mold is created from sand, which represents the exact negative shape of the object to be cast. This mold is made by molding sand around a model in a molding box.
+Sand cores are used to create internal cavities.
 
-If the casting is to have cavities, so-called cores made of sand are placed in the mold. These cores are shaped to create the cavities in the finished casting.
+### 2. Pouring
 
- 	**Pouring:** In this step, the liquid metal is poured into the prepared mold. The metal fills the mold - and the cavities of the cores, taking on the desired shape.
- 	**Solidification and cooling:** After pouring, the metal must solidify and cool in the mold. The time the metal needs to solidify and cool depends on the size and shape of the casting as well as the type of metal used.
- 	**Demolding and finishing:** Once the metal has completely solidified and cooled, the casting is removed from the mold. This process destroys the mold and any existing cores. The casting is then cleaned of sand residues, and further finishing, such as removing burrs or grinding and sandblasting the surface, is carried out.
+Liquid aluminium is poured into the prepared mold and fills the space defined by mold and cores.
 
-Casting as a primary shaping process offers a number of advantages:
+### 3. Solidification and cooling
 
-**Complex Geometries:** Casting can produce complex and detailed shapes that are difficult or impossible to achieve with other processes such as forging or milling.
+The metal solidifies inside the mold. Cooling time depends on factors such as the size and geometry of the casting.
 
-**Cost-Effectiveness:** Casting is often more cost-effective than other manufacturing processes, especially for the production of large quantities.
+### 4. Demolding and finishing
 
-**Low Material Waste:** Compared to subtractive processes like milling or turning, where material is removed to achieve the desired shape, material loss in casting is generally lower.
+After cooling, mold and cores are removed. The casting is cleaned and finished as required, for example by deburring, grinding or sandblasting.
 
-**Less Post-Casting Processing:** In many cases, the cast part can be used directly with little or no further processing.
+## Advantages of sand casting
 
-**Flexibility:** Casting allows for high flexibility in terms of design and modification of shapes.
+Sand casting is particularly suitable for large and geometrically demanding aluminium parts as well as for small quantities.
 
-**Large Parts:** Casting can also produce very large parts that would be difficult or impossible to manufacture with other processes.
+Key advantages include:
 
-**Good Mechanical Properties:** Cast parts can exhibit good mechanical properties, especially when it comes to manufacturing parts from metal alloys.
+- complex geometries
+- high flexibility for design changes
+- large parts
+- small batch sizes
+- reduced tooling effort when combined with suitable technologies
+- integration of additional functions such as temperature-control tubes
 
-**Possibility to Integrate Features:** Casting allows for the integration of features such as threads, ribs, cooling channels, or other elements directly into the part without the need for additional processing steps.
+## Aluminium alloys
 
-**Small Batch Sizes:** Casting is also suitable for producing small batch sizes, making it a flexible option for prototypes and small series production.
+The existing website lists, among others, the following alloys:
 
-## Aluminium Castings
+| Short designation | Material / standard | Note |
+| --- | --- | --- |
+| 226 | G-Al Si9 Cu3 / EN-AC46200 | versatile castable alloy with good machinability |
+| UFO90 / Unifont®-90 | G-Al Zn10 Si8 Mg | self-hardening alloy with good strength and elongation properties |
+| Si7 (A357) | G-Al Si7 Mg | aluminium-silicon-magnesium alloy |
 
-## Aluminium Alloys
-
-Our Short Designation
-
-G-Al
-
-CEN  (Euro-Norm) und DIN
-
-Remarks
-
-226
-
-G-AL Si9 Cu3
-
-EN-AC46200
-
-Highly castable universal alloy. Less tendency to sag and internal shrinkage cavities. Very good machinability. It is usually not hardened.
-
-UFO90 [Unifont(R)-90 ]
-
-G-Al ZN10 Si8 Mg
-
-Self-hardening alloy with very good strength and elongation properties.
-
-Si7 (A357)
-
-G-Al Si7 Mg
-
-Abbreviated alloy components: Aluminum (Al), Silicon (Si), Iron (Fe), Copper (Cu), Manganese (Mn), Magnesium (Mg), Nickel (Ni), Zinc (Zn), Titanium (Ti).
+Additional alloys can be selected according to component and application.
