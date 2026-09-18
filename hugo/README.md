@@ -59,3 +59,23 @@ Quelle:
 ```
 
 Der Konverter unter `tools/migrate_wordpress.py` erzeugt zunächst reviewbare Hugo-Inhaltsdateien.
+
+
+## WordPress-Inhalte importieren
+
+Vom Verzeichnis `hugo/`:
+
+```bash
+python3 tools/migrate_wordpress.py
+```
+
+Der Importer erzeugt bzw. aktualisiert:
+
+```text
+content/de/
+content/en/
+assets/images/imported/
+```
+
+Er ist bewusst konservativ. Nicht sicher konvertierbare Avia-Bausteine werden als
+`migration_review` im Front Matter bzw. als `MIGRATION-REVIEW` im Inhalt markiert.
