@@ -1,5 +1,19 @@
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p>&copy; {{ now.Year }} Giesserei Blöcher GmbH</p>
+    <div>
+      <strong>Giesserei Blöcher GmbH</strong>
+      <p>{{ if eq .Site.Language.Lang "de" }}Aluminium-Sandguss · Modellbau · 3D-Sanddruck{{ else }}Aluminium sand casting · Model making · 3D sand printing{{ end }}</p>
+    </div>
+    <nav aria-label="{{ if eq .Site.Language.Lang "de" }}Footer-Navigation{{ else }}Footer navigation{{ end }}">
+      {{ if eq .Site.Language.Lang "de" }}
+        <a href="{{ "/unternehmen/kontakt/" | relLangURL }}">Kontakt</a>
+        <a href="{{ "/impressum/" | relLangURL }}">Impressum</a>
+        <a href="{{ "/datenschutzerklaerung/" | relLangURL }}">Datenschutz</a>
+      {{ else }}
+        <a href="{{ "/about-us/contact-us/" | relLangURL }}">Contact</a>
+        <a href="{{ "/about-us/" | relLangURL }}">Company</a>
+      {{ end }}
+    </nav>
+    <p class="site-footer__copyright">&copy; {{ now.Year }} Giesserei Blöcher GmbH</p>
   </div>
 </footer>
