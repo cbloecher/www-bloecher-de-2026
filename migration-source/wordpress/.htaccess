@@ -1,0 +1,41 @@
+###
+# BEGIN cbloecher
+
+# XML auch mit passendem Header ausliefern
+<IfModule mod_mime.c>
+    AddType application/xml .xml
+</IfModule>
+
+SetEnv session.use_cookies='0';
+# scheinbar wirkungslos 9.5.2021
+
+#php_value session.use_cookies 0;
+#Fehlermeldung: internal Server Error
+
+
+# Redirect nach Wechsel zu Wordpress, 4.11.2023/cb
+Redirect 301 /firmenprofil.php /unternehmen/ 
+Redirect 301 /fullservice.php /leistungen/
+Redirect 301 /wegbeschreibung.php /unternehmen/anfahrt/
+Redirect 301 /gussstory.php /leistungen/aluminium-sandguss/   
+Redirect 301 /leistungen.php /leistungen/
+Redirect 301 /jobs.php /jobs/
+
+# END cbloecher
+###
+
+# BEGIN WordPress
+# Die Anweisungen (Zeilen) zwischen „BEGIN WordPress“ und „END WordPress“ sind
+# dynamisch generiert und sollten nur über WordPress-Filter geändert werden.
+# Alle Änderungen an den Anweisungen zwischen diesen Markierungen werden überschrieben.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

@@ -1,0 +1,22 @@
+# Lokale Rohdaten / Secrets
+mysqldump.txt
+wp-config.php
+.env
+.htpasswd
+*.pem
+*.key
+
+# Backups
+wp-backup/
+*.sql
+*.sql.gz
+*.tar
+*.tgz
+*.zip
+
+# Lokale Backup-Skripte mit Zugangsdaten
+wp-backup.sh
+
+# Betriebssystem-Metadaten
+.DS_Store
+Thumbs.db

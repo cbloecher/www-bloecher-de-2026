@@ -1,0 +1,8 @@
+wordpress/wp-content/plugins/duplicate-post/duplicate-post.php: * Version:     4.7
+wordpress/wp-content/plugins/envato-market/envato-market.php: * Version: 2.0.12
+wordpress/wp-content/plugins/google-sitemap-generator/sitemap.php: * Version: 4.1.21
+wordpress/wp-content/plugins/janolaw-agb-hosting/janolaw_agb.php:Version: 4.4.13
+wordpress/wp-content/plugins/media-cleaner/media-cleaner.php:Version: 6.9.3
+wordpress/wp-content/plugins/media-file-renamer/media-file-renamer.php:Version: 6.1.0
+wordpress/wp-content/plugins/polylang/polylang.php: * Version:           3.8.9
+wordpress/wp-content/plugins/wordpress-seo/wp-seo.php: * Version:     22.1
