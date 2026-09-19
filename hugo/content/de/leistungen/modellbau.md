@@ -3,6 +3,9 @@ title: "Modellbau"
 description: "Eigener Gießereimodellbau für EPS-Modelle mit 5-Achs-Bearbeitung bis 8.000 × 4.000 × 2.000 mm."
 translationKey: "model-making"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
+  alt: "Fräse im Gießereimodellbau"
 migration:
   wordpress_id: 3655
   source_url: "https://www.bloecher.de/leistungen/modellbau/"
