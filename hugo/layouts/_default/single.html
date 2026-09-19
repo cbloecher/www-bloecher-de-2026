@@ -8,6 +8,10 @@
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
   </header>
+  {{ partial "page-media.html" . }}
+  {{ if and .Params.legal_review (eq .Site.Params.environment "staging") }}
+    <aside class="review-note"><strong>Hinweis:</strong> Arbeitsstand für die Migration. Vor Produktivschaltung rechtlich prüfen.</aside>
+  {{ end }}
   <div class="page-content prose">
     {{ .Content }}
   </div>
