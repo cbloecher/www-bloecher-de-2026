@@ -1,0 +1,39 @@
+:root {
+  --pc-container: 70.625rem;
+  --pc-section-padding: clamp(4rem, 8vw, 7rem);
+  --pc-font-display: Arial, Helvetica, "Helvetica Neue", sans-serif;
+}
+
+.site-header {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.site-header__inner {
+  min-height: 5.5rem;
+}
+
+.brand img,
+.site-logo img {
+  max-height: 4.75rem;
+  width: auto;
+}
+
+.hero__title,
+.section-head__title,
+.page-header h1 {
+  letter-spacing: -.02em;
+}
+
+.eyebrow,
+.stat__value {
+  color: #ed9c10;
+}
+
+.button,
+.button--primary {
+  border-radius: 0;
+}
+
+.site-footer {
+  border-top: 1px solid #f2f2f2;
+}
