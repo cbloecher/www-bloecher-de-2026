@@ -1,0 +1,23 @@
+banner:
+  enable: true
+  image: "images/bloecher-hero.jpg"
+  contents: "**Wir formen Zukunft.** Stück für Stück."
+  button:
+    contents: "Leistungen ansehen"
+    url: "leistungen/"
+items:
+  - type: highlights
+    items_per_row: 3
+    items:
+      - title: "2.500 kg"
+        icon: fa-cube
+        content: "Bauteilgewicht bis ca."
+      - title: "6 m³"
+        icon: fa-expand
+        content: "Bauteilvolumen bis ca."
+      - title: "3D"
+        icon: fa-layer-group
+        content: "Gedruckte Sandformen und Kerne"
+  - type: heading
+    heading: "Von CAD-Daten zum Gussteil"
+    contents: "Aluminium-Sandguss, eigener Modellbau und 3D-Sanddruck für Einzelteile, Prototypen und Kleinserien."
