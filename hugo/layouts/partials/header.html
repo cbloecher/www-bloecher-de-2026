@@ -12,16 +12,16 @@
   <div class="site-header__navrow">
     <nav class="main-nav" aria-label="{{ if eq .Site.Language.Lang "de" }}Hauptnavigation{{ else }}Main navigation{{ end }}">
       {{ if eq .Site.Language.Lang "de" }}
-        <a href="{{ "/guss-fuer-werkzeuge-formen/" | relLangURL }}">Werkzeuge + Formen</a>
-        <a href="{{ "/prototypen-ersatzteil/" | relLangURL }}">Prototypen + Ersatzteile</a>
-        <a href="{{ "/leistungen/" | relLangURL }}">Leistungen</a>
-        <a href="{{ "/jobs/" | relLangURL }}">Jobs</a>
-        <a href="{{ "/unternehmen/" | relLangURL }}">Unternehmen</a>
+        <a href="{{ "guss-fuer-werkzeuge-formen/" | relLangURL }}">Werkzeuge + Formen</a>
+        <a href="{{ "prototypen-ersatzteil/" | relLangURL }}">Prototypen + Ersatzteile</a>
+        <a href="{{ "leistungen/" | relLangURL }}">Leistungen</a>
+        <a href="{{ "jobs/" | relLangURL }}">Jobs</a>
+        <a href="{{ "unternehmen/" | relLangURL }}">Unternehmen</a>
       {{ else }}
-        <a href="{{ "/tools-and-molds/" | relLangURL }}">Tools + Molds</a>
-        <a href="{{ "/prototypes-and-spare-parts/" | relLangURL }}">Prototypes + Spare Parts</a>
-        <a href="{{ "/services/" | relLangURL }}">Services</a>
-        <a href="{{ "/about-us/" | relLangURL }}">About us</a>
+        <a href="{{ "tools-and-molds/" | relLangURL }}">Tools + Molds</a>
+        <a href="{{ "prototypes-and-spare-parts/" | relLangURL }}">Prototypes + Spare Parts</a>
+        <a href="{{ "services/" | relLangURL }}">Services</a>
+        <a href="{{ "about-us/" | relLangURL }}">About us</a>
       {{ end }}
     </nav>
 
