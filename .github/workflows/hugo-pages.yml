@@ -1,9 +1,10 @@
-name: Build and deploy Hugo to Pages
+name: Build and deploy Hugo previews to Pages
 
 on:
   push:
     branches:
       - main
+      - theme-universal
     paths:
       - "hugo/**"
       - ".github/workflows/hugo-pages.yml"
@@ -26,8 +27,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout baseline
         uses: actions/checkout@v6
+        with:
+          ref: main
+          path: baseline
+
+      - name: Checkout Universal experiment
+        uses: actions/checkout@v6
+        with:
+          ref: theme-universal
+          path: universal
 
       - name: Install Hugo
         shell: bash
@@ -42,16 +52,29 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Build Hugo
+      - name: Prepare Universal theme
         shell: bash
         run: |
           set -euxo pipefail
-          hugo             --source ./hugo             --destination ./public             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          bash universal/hugo/tools/setup-universal-theme.sh
+
+      - name: Build baseline
+        shell: bash
+        run: |
+          set -euxo pipefail
+          mkdir -p publish
+          hugo             --source ./baseline/hugo             --destination "${GITHUB_WORKSPACE}/publish"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/"
+
+      - name: Build Universal preview
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo             --source ./universal/hugo             --destination "${GITHUB_WORKSPACE}/publish/universal"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/universal/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./hugo/public
+          path: ./publish
 
   deploy:
     environment:
