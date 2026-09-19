@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - theme-universal
+      - theme-arcana
     paths:
       - "hugo/**"
       - ".github/workflows/hugo-pages.yml"
@@ -39,6 +40,12 @@ jobs:
           ref: theme-universal
           path: universal
 
+      - name: Checkout Arcana experiment
+        uses: actions/checkout@v6
+        with:
+          ref: theme-arcana
+          path: arcana
+
       - name: Install Hugo
         shell: bash
         run: |
@@ -58,6 +65,12 @@ jobs:
           set -euxo pipefail
           bash universal/hugo/tools/setup-universal-theme.sh
 
+      - name: Prepare Arcana theme
+        shell: bash
+        run: |
+          set -euxo pipefail
+          bash arcana/hugo/tools/setup-arcana-theme.sh
+
       - name: Build baseline
         shell: bash
         run: |
@@ -70,6 +83,12 @@ jobs:
         run: |
           set -euxo pipefail
           hugo             --source ./universal/hugo             --destination "${GITHUB_WORKSPACE}/publish/universal"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/universal/"
+
+      - name: Build Arcana preview
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo             --source ./arcana/hugo             --destination "${GITHUB_WORKSPACE}/publish/arcana"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/arcana/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
