@@ -1,6 +1,6 @@
 baseURL = "https://hugo.bloecher.de/"
 title = "Giesserei Blöcher GmbH"
-theme = "bloecher-custom"
+theme = "hugo-universal-theme"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
@@ -8,6 +8,7 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "rss"]
 canonifyURLs = false
 relativeURLs = false
+summaryLength = 40
 
 [build]
   writeStats = true
@@ -25,6 +26,27 @@ relativeURLs = false
     weight = 1
     title = "Giesserei Blöcher GmbH"
 
+    [[languages.de.menu.main]]
+      name = "Werkzeuge + Formen"
+      url = "guss-fuer-werkzeuge-formen/"
+      weight = 10
+    [[languages.de.menu.main]]
+      name = "Prototypen + Ersatzteile"
+      url = "prototypen-ersatzteil/"
+      weight = 20
+    [[languages.de.menu.main]]
+      name = "Leistungen"
+      url = "leistungen/"
+      weight = 30
+    [[languages.de.menu.main]]
+      name = "Jobs"
+      url = "jobs/"
+      weight = 40
+    [[languages.de.menu.main]]
+      name = "Unternehmen"
+      url = "unternehmen/"
+      weight = 50
+
   [languages.en]
     locale = "en-GB"
     label = "English"
@@ -32,9 +54,69 @@ relativeURLs = false
     weight = 2
     title = "Giesserei Blöcher GmbH"
 
+    [[languages.en.menu.main]]
+      name = "Tools + Molds"
+      url = "tools-and-molds/"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Prototypes + Spare Parts"
+      url = "prototypes-and-spare-parts/"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "Services"
+      url = "services/"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "About us"
+      url = "about-us/"
+      weight = 40
+
 [params]
   environment = "staging"
   companyName = "Giesserei Blöcher GmbH"
+  author = "Giesserei Blöcher GmbH"
+  defaultDescription = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck."
+  style = "default"
+
+  disabled_logo = false
+  logo_text = "Giesserei Blöcher"
+  logo = "img/logo.png"
+  logo_small = "img/logo.png"
+
+  dropdown_mouse_over = true
+  enableGoogleMaps = false
+  contact_url = "unternehmen/kontakt/"
+  address = """<p><strong>Giesserei Blöcher GmbH</strong><br>Zur Wolfskaute 1<br>35216 Biedenkopf</p>"""
+  copyright = "Giesserei Blöcher GmbH"
+
+  [params.topbar]
+    enable = false
+
+  [params.carouselHomepage]
+    enable = false
+
+  [params.features]
+    enable = false
+
+  [params.testimonials]
+    enable = false
+
+  [params.see_more]
+    enable = false
+
+  [params.clients]
+    enable = false
+
+  [params.recent_posts]
+    enable = false
+
+  [params.widgets]
+    categories = false
+    tags = false
+    search = false
+
+  [params.footer.recent_posts]
+    enable = false
 
 [markup]
   [markup.goldmark]
