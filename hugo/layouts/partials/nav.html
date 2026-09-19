@@ -1,0 +1,29 @@
+<header class="bloecher-header">
+  <div class="container bloecher-brand-row">
+    <a class="bloecher-brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+      <img src="{{ "img/logo.png" | relURL }}" alt="Giesserei Blöcher">
+    </a>
+  </div>
+
+  <div class="bloecher-nav-row">
+    <div class="container bloecher-nav-inner">
+      <button type="button" class="navbar-toggle bloecher-toggle" data-toggle="collapse" data-target="#navigation" aria-label="Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav class="navbar-collapse collapse" id="navigation" aria-label="Main navigation">
+        <ul class="nav navbar-nav bloecher-main-nav">
+          {{ range .Site.Menus.main.ByWeight }}
+            <li><a href="{{ .URL | relLangURL }}">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </nav>
+
+      <nav class="bloecher-language" aria-label="Language">
+        {{ range .AllTranslations }}
+          <a href="{{ .RelPermalink }}"{{ if eq $.Site.Language.Lang .Language.Lang }} class="active"{{ end }}>{{ upper .Language.Lang }}</a>
+        {{ end }}
+      </nav>
+    </div>
+  </div>
+</header>
