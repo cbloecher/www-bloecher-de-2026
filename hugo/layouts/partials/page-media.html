@@ -1,0 +1,31 @@
+{{ $key := .Params.translationKey | default "" }}
+{{ $image := "" }}
+{{ $alt := .Title }}
+
+{{ $images := dict
+  "aluminium-sand-casting" "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
+  "model-making" "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
+  "3d-print" "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
+  "temperature-control" "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
+  "3d-scan" "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
+  "company" "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg"
+  "quality" "images/imported/2023/11/giesserei-bloecher_zertifikat_de_iso9001_iso14001.png"
+  "prototypes-spares" "images/imported/2023/11/giesserei-bloecher_motorblock_06x06.jpg"
+  "tools-molds" "images/imported/2023/11/giesserei-bloecher_teppichwerkzeug_blau_12x08.jpg"
+  "jobs" "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg"
+}}
+
+{{ if isset $images $key }}{{ $image = index $images $key }}{{ end }}
+{{ if $image }}
+  {{ with resources.Get $image }}
+    {{ $small := .Resize "480x webp q82" }}
+    {{ $large := .Process "webp q84" }}
+    <figure class="bloecher-page-media">
+      <img src="{{ $large.RelPermalink }}"
+           srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} {{ .Width }}w"
+           sizes="(max-width: 768px) 100vw, 800px"
+           width="{{ $large.Width }}" height="{{ $large.Height }}"
+           alt="{{ $alt }}">
+    </figure>
+  {{ end }}
+{{ end }}
