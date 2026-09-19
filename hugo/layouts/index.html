@@ -14,10 +14,10 @@
       {{ end }}
     </p>
     <div class="hero__actions">
-      <a class="button button--primary" href="{{ if $de }}{{ "/leistungen/" | relLangURL }}{{ else }}{{ "/services/" | relLangURL }}{{ end }}">
+      <a class="button button--primary" href="{{ if $de }}{{ "leistungen/" | relLangURL }}{{ else }}{{ "services/" | relLangURL }}{{ end }}">
         {{ if $de }}Leistungen ansehen{{ else }}Explore services{{ end }}
       </a>
-      <a class="button button--ghost" href="{{ if $de }}{{ "/unternehmen/kontakt/" | relLangURL }}{{ else }}{{ "/about-us/contact-us/" | relLangURL }}{{ end }}">
+      <a class="button button--ghost" href="{{ if $de }}{{ "unternehmen/kontakt/" | relLangURL }}{{ else }}{{ "about-us/contact-us/" | relLangURL }}{{ end }}">
         {{ if $de }}Kontakt{{ else }}Contact{{ end }}
       </a>
     </div>
@@ -38,17 +38,17 @@
     <h2>{{ if $de }}Von CAD-Daten zum Gussteil{{ else }}From CAD data to casting{{ end }}</h2>
   </div>
   <div class="card-grid">
-    <a class="card" href="{{ if $de }}{{ "/leistungen/aluminium-sandguss/" | relLangURL }}{{ else }}{{ "/services/aluminium-sand-casting/" | relLangURL }}{{ end }}">
+    <a class="card" href="{{ if $de }}{{ "leistungen/aluminium-sandguss/" | relLangURL }}{{ else }}{{ "services/aluminium-sand-casting/" | relLangURL }}{{ end }}">
       <span class="card__number">01</span>
       <h3>{{ if $de }}Aluminium-Sandguss{{ else }}Aluminium sand casting{{ end }}</h3>
       <p>{{ if $de }}Einzelteile, Prototypen und Kleinserien für anspruchsvolle Anwendungen.{{ else }}Single parts, prototypes and small series for demanding applications.{{ end }}</p>
     </a>
-    <a class="card" href="{{ if $de }}{{ "/leistungen/modellbau/" | relLangURL }}{{ else }}{{ "/services/model-making/" | relLangURL }}{{ end }}">
+    <a class="card" href="{{ if $de }}{{ "leistungen/modellbau/" | relLangURL }}{{ else }}{{ "services/model-making/" | relLangURL }}{{ end }}">
       <span class="card__number">02</span>
       <h3>{{ if $de }}Modellbau{{ else }}Model making{{ end }}</h3>
       <p>{{ if $de }}Werkzeuge und Modelle als Grundlage für reproduzierbare Gussergebnisse.{{ else }}Tools and models as the basis for reproducible casting results.{{ end }}</p>
     </a>
-    <a class="card" href="{{ if $de }}{{ "/leistungen/3d-druck/" | relLangURL }}{{ else }}{{ "/services/3d-print/" | relLangURL }}{{ end }}">
+    <a class="card" href="{{ if $de }}{{ "leistungen/3d-druck/" | relLangURL }}{{ else }}{{ "services/3d-print/" | relLangURL }}{{ end }}">
       <span class="card__number">03</span>
       <h3>{{ if $de }}3D-Sanddruck{{ else }}3D sand printing{{ end }}</h3>
       <p>{{ if $de }}Werkzeuglose Formen und Kerne für komplexe Geometrien und schnelle Iterationen.{{ else }}Tool-less molds and cores for complex geometries and fast iteration.{{ end }}</p>
