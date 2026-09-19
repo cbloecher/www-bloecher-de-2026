@@ -46,7 +46,7 @@ jobs:
         shell: bash
         run: |
           set -euxo pipefail
-          hugo             --source ./hugo             --destination ./public             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo             --source ./hugo             --destination ./public             --cleanDestinationDir             --minify             --baseURL "https://cbloecher.github.io/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
