@@ -3,6 +3,9 @@ title: "Temperierung"
 description: "Konturfolgende Temperierung durch eingegossene Edelstahlrohre für Werkzeug- und Formguss."
 translationKey: "temperature-control"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
+  alt: "Eingegossene Edelstahlrohre zur Temperierung"
 migration:
   wordpress_id: 3725
   source_url: "https://www.bloecher.de/leistungen/temperierung/"
