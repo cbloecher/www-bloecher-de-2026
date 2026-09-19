@@ -1,6 +1,6 @@
 ---
 title: "Jobs"
-description: ""
+description: "Arbeiten bei Giesserei Blöcher in Biedenkopf – Tätigkeiten in Gießerei, Schweißerei und Gussnachbearbeitung."
 translationKey: "jobs"
 draft: false
 migration:
@@ -8,37 +8,37 @@ migration:
   source_url: "https://www.bloecher.de/jobs/"
   source_slug: "jobs"
   modified: "2023-11-02T11:11:09+00:00"
-migration_review:
-  - "image:3822"
-  - "shortcode:av_hr"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_two_third"
 ---
 
-# Jobs
+Wir arbeiten als Team an individuellen Gussteilen, Werkzeugen und Kleinserien. Flexibilität, handwerkliches Können und technische Erfahrung sind dabei wichtige Bestandteile unserer täglichen Arbeit.
 
-In einem freundlichen Arbeitsklima erfüllen wir die hohen Anforderungen unserer Kunden durch Flexibilität und Leistungsbereitschaft.
+## Tätigkeitsbereiche
 
-Zur Erweiterung unseres engagierten jungen Teams suchen wir zum schnellstmöglichen Eintritt:
+Auf dem bisherigen Webauftritt wurden insbesondere Mitarbeiterinnen und Mitarbeiter für folgende Bereiche gesucht:
 
-**Gießereimechaniker (m/w/d)**
+### Gießereimechanik
 
- 	Fachrichtung Handformguss
+Schwerpunkt Handformguss und die Herstellung anspruchsvoller Aluminium-Sandgussteile.
 
-**Schweißer (m/w/d)**
+### Schweißen
 
- 	Vorwiegend Edelstahl. Kein Schweißzeugnis erforderlich.
+Vorwiegend Arbeiten mit Edelstahl, unter anderem im Zusammenhang mit eingegossenen Temperierungen.
 
-**Gussputzer (m/w/d)**
+### Gussnachbearbeitung
 
- 	Zum Schleifen und Sandstrahlen von größeren Einzelstücken aus Aluminiumguss.
+Schleifen, Putzen und Sandstrahlen von größeren Einzelstücken aus Aluminiumguss.
 
-**Schmelzer (m/w/d)**
+### Schmelzbetrieb
 
-Wir freuen uns auf [Ihre Bewerbung zum schnellstmöglichen Eintritt!](https://www.bloecher.de/kontakt.php)
+Tätigkeiten rund um Schmelze und Gießprozess.
 
-Wenn Sie sich auf eine unserer offenen Positionen bewerben möchten, uns eine **Initiativbewerbung** senden wollen oder Fragen haben, dann nehmen Sie einfach mit uns Kontakt auf: über unser [Kontaktformular](https://www.bloecher.de/unternehmen/kontakt/)oder per Mail an [info@bloecher.de](mailto:info@bloecher.de).
+## Bewerbung und Kontakt
 
-Wir freuen uns über Ihr Interesse.
+Ob und welche Stellen aktuell zu besetzen sind, erfährst Du direkt bei uns.
+
+Für Bewerbungen, Initiativbewerbungen oder Fragen:
+
+**E-Mail:** [info@bloecher.de](mailto:info@bloecher.de)  
+**Telefon:** [+49 (0)6461 9551-0](tel:+49646195510)
+
+Weitere Kontaktdaten findest Du unter [Kontakt](/unternehmen/kontakt/).
