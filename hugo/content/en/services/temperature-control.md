@@ -3,6 +3,9 @@ title: "Temperature Control"
 description: "Contour-following temperature control using cast-in stainless-steel tubes for tool and mold castings."
 translationKey: "temperature-control"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
+  alt: "Cast-in stainless-steel tubes for temperature control"
 migration:
   wordpress_id: 4028
   source_url: "https://www.bloecher.de/en/services/temperature-control/"
