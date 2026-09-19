@@ -1,6 +1,6 @@
 ---
-title: "Prototypes and Spare Parts"
-description: ""
+title: "Prototypes + Spare Parts"
+description: "Single parts, prototypes and spare parts based on existing CAD data, drawings or digitised components."
 translationKey: "prototypes-spares"
 draft: false
 migration:
@@ -8,52 +8,40 @@ migration:
   source_url: "https://www.bloecher.de/en/prototypes-and-spare-parts/"
   source_slug: "prototypes-and-spare-parts"
   modified: "2024-02-20T16:25:30+00:00"
-migration_review:
-  - "image:3327"
-  - "image:3329"
-  - "image:3330"
-  - "image:3331"
-  - "image:3823"
-  - "shortcode:av_gallery"
-  - "shortcode:av_hr"
-  - "shortcode:av_icon_box"
-  - "shortcode:av_image"
-  - "shortcode:av_one_fifth"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_section"
 ---
 
-# Prototypes + Spare Parts
+For single parts, prototypes and spare parts, we combine digital geometry capture, model making, 3D sand printing and aluminium sand casting.
 
-## We manufacture according to...
+## Starting point: data, drawing or existing component
 
-Import interfaces for all common formats
+Depending on the situation, different data sources can be used:
 
-Construction according to drawing for further processing
+- existing CAD data in common formats
+- technical drawings
+- digitisation of an existing component
+- reverse engineering
+- redesign of existing geometries
 
-Digitization, Reverse engineering, or Re-design
+This also makes it possible to recreate components where original patterns or tooling are no longer available.
 
-## No matter how big - no matter what material.
+## Tool-less production for small quantities
 
-## READY TO USE
+Additive manufacturing is particularly useful when only one part or a small quantity is required.
 
-### 3D-Scan
+With [3D sand printing](/en/services/3d-print/), sand molds and cores can be produced directly from digital data. A physical pattern or core box is not necessarily required.
 
-### 3D sand printinh
+## From scan to casting
 
-### 3D printing
+Depending on the task, the process chain can include several steps:
 
-### Aluminum sand casting
+1. capture geometry or import existing data
+2. prepare or adapt the design data
+3. produce pattern, sand mold or core
+4. [aluminium sand casting](/en/services/aluminium-sand-casting/)
+5. if required, 3D scanning for inspection or as a basis for further machining
 
-### Machining
+## Variants and improvements
 
-## YOUR ADVANTAGES
+The digital process chain makes variants and individual adaptations easier to implement.
 
-The use of additive manufacturing technologies enables the economical production of individual parts or comparatively small quantities in particular.
-
-Tool-free production based on data also opens up the opportunity to eliminate known weak points or to improve or extend the original function of the cast part.
-
-Our own 3D printer for sand molds and in-house model making give us full control over planning and execution. Variants or customizations are easy to implement thanks to the process. Fast and flexible.
-
-## EXAMPLES
+When recreating an existing component, known weak points can be considered or functions can be adapted where technically appropriate and agreed with the customer.
