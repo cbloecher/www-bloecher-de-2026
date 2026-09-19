@@ -6,12 +6,12 @@
     </div>
     <nav aria-label="{{ if eq .Site.Language.Lang "de" }}Footer-Navigation{{ else }}Footer navigation{{ end }}">
       {{ if eq .Site.Language.Lang "de" }}
-        <a href="{{ "/unternehmen/kontakt/" | relLangURL }}">Kontakt</a>
-        <a href="{{ "/impressum/" | relLangURL }}">Impressum</a>
-        <a href="{{ "/datenschutzerklaerung/" | relLangURL }}">Datenschutz</a>
+        <a href="{{ "unternehmen/kontakt/" | relLangURL }}">Kontakt</a>
+        <a href="{{ "impressum/" | relLangURL }}">Impressum</a>
+        <a href="{{ "datenschutzerklaerung/" | relLangURL }}">Datenschutz</a>
       {{ else }}
-        <a href="{{ "/about-us/contact-us/" | relLangURL }}">Contact</a>
-        <a href="{{ "/about-us/" | relLangURL }}">Company</a>
+        <a href="{{ "about-us/contact-us/" | relLangURL }}">Contact</a>
+        <a href="{{ "about-us/" | relLangURL }}">Company</a>
       {{ end }}
     </nav>
     <p class="site-footer__copyright">&copy; {{ now.Year }} Giesserei Blöcher GmbH</p>
