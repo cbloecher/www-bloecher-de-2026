@@ -1,6 +1,6 @@
 baseURL = "https://hugo.bloecher.de/"
 title = "Giesserei Blöcher GmbH"
-theme = "bloecher-custom"
+theme = "hugo-arcana"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
@@ -8,9 +8,6 @@ enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "rss"]
 canonifyURLs = false
 relativeURLs = false
-
-[build]
-  writeStats = true
 
 [outputs]
   home = ["HTML"]
@@ -20,21 +17,63 @@ relativeURLs = false
 [languages]
   [languages.de]
     locale = "de-DE"
-    label = "Deutsch"
+    languageName = "Deutsch"
     contentDir = "content/de"
     weight = 1
     title = "Giesserei Blöcher GmbH"
 
+    [[languages.de.menu.main]]
+      name = "Werkzeuge + Formen"
+      pageRef = "/guss-fuer-werkzeuge-formen"
+      weight = 10
+    [[languages.de.menu.main]]
+      name = "Prototypen + Ersatzteile"
+      pageRef = "/prototypen-ersatzteil"
+      weight = 20
+    [[languages.de.menu.main]]
+      name = "Leistungen"
+      pageRef = "/leistungen"
+      weight = 30
+    [[languages.de.menu.main]]
+      name = "Jobs"
+      pageRef = "/jobs"
+      weight = 40
+    [[languages.de.menu.main]]
+      name = "Unternehmen"
+      pageRef = "/unternehmen"
+      weight = 50
+
   [languages.en]
     locale = "en-GB"
-    label = "English"
+    languageName = "English"
     contentDir = "content/en"
     weight = 2
     title = "Giesserei Blöcher GmbH"
 
+    [[languages.en.menu.main]]
+      name = "Tools + Molds"
+      pageRef = "/tools-and-molds"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Prototypes + Spare Parts"
+      pageRef = "/prototypes-and-spare-parts"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "Services"
+      pageRef = "/services"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "About us"
+      pageRef = "/about-us"
+      weight = 40
+
 [params]
-  environment = "staging"
-  companyName = "Giesserei Blöcher GmbH"
+  description = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck."
+  show_post_dates = false
+
+  [params.footer]
+    [params.footer.contact_form]
+      enabled = false
 
 [markup]
   [markup.goldmark]
