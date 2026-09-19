@@ -1,6 +1,6 @@
 ---
-title: "casted tools and molds"
-description: ""
+title: "Tools + Molds"
+description: "Aluminium castings for tools and molds, including integrated temperature-control tubing where required."
 translationKey: "tools-molds"
 draft: false
 migration:
@@ -8,28 +8,31 @@ migration:
   source_url: "https://www.bloecher.de/en/tools-and-molds/"
   source_slug: "tools-and-molds"
   modified: "2024-02-20T19:09:57+00:00"
-migration_review:
-  - "image:3262"
-  - "shortcode:av_gallery"
-  - "shortcode:av_image"
-  - "shortcode:av_one_fifth"
-  - "shortcode:av_one_third"
-  - "shortcode:av_section"
-  - "shortcode:av_three_fifth"
-  - "shortcode:av_two_third"
 ---
 
-Aluminium Castings for Tools + Molds
+A core area of Giesserei Blöcher is aluminium tool casting for molds and tooling.
 
-Giesserei Blöcher specializes in the production of tool casting for molds and tools made of aluminum. Typical applications include:
+## Typical applications
 
- 	Thermoforming for body parts
- 	Blow molding for containers
- 	Rotational molding for hollow bodies
- 	Deformation tools for cabin linings
- 	Foam molds for covers and instrument panels made of technical plastics
- 	Tools for shaping natural fiber composite materials
+Aluminium castings are used for a range of tooling applications, including:
 
-If tempering is necessary, we include stainless steel pipes in the castings with connections according to specifications. The dimensions of the (tempered) aluminum tools can reach dimensions of up to 3,000 x 2,200 x 1,200 mm.
+- thermoforming tools for body parts
+- blow molds for containers
+- rotational molds for hollow bodies
+- forming tools for cabin linings
+- foam molds for covers and instrument panels made from engineering plastics
+- tools for shaping natural-fibre composite materials
 
-## Examples
+## Temperature-controlled tools
+
+Where temperature control is required, stainless-steel tubes can be integrated into the casting according to specification.
+
+The tubes follow the required contour and can be provided with the specified connections. See [Temperature Control](/en/services/temperature-control/) for more information.
+
+## Dimensions
+
+According to the existing service range, temperature-controlled aluminium tools can reach dimensions of approximately
+
+**3,000 × 2,200 × 1,200 mm**.
+
+Actual feasibility depends on geometry, tool design and casting concept.
