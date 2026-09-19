@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
+<body>
+<div id="all">
+  {{ partial "nav.html" . }}
+
+  <main class="container bloecher-page">
+    <header class="bloecher-page-header">
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="bloecher-page-lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ partial "page-media.html" . }}
+
+    {{ with .Content }}<article class="bloecher-prose">{{ . }}</article>{{ end }}
+
+    {{ if .Pages }}
+      <section class="row bloecher-subpages">
+        {{ range .Pages.ByWeight }}
+          <div class="col-md-4">
+            <a href="{{ .RelPermalink }}">
+              <h2>{{ .Title }}</h2>
+              {{ with .Description }}<p>{{ . }}</p>{{ end }}
+            </a>
+          </div>
+        {{ end }}
+      </section>
+    {{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+</div>
+{{ partial "scripts.html" . }}
+</body>
+</html>
