@@ -3,6 +3,9 @@ title: "Model Making"
 description: "In-house foundry model making for EPS patterns with 5-axis machining up to 8,000 × 4,000 × 2,000 mm."
 translationKey: "model-making"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
+  alt: "Milling machine in the foundry model shop"
 migration:
   wordpress_id: 4026
   source_url: "https://www.bloecher.de/en/services/model-making/"
