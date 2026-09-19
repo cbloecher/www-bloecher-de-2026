@@ -3,6 +3,9 @@ title: "Aluminium-Sandguss"
 description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg Stückgewicht und rund 6 m³ Volumen."
 translationKey: "aluminium-sand-casting"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
+  alt: "Aluminium-Sandguss in der Giesserei Blöcher"
 migration:
   wordpress_id: 3616
   source_url: "https://www.bloecher.de/leistungen/aluminium-sandguss/"
