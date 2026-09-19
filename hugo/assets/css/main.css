@@ -407,3 +407,49 @@ p { margin-top: 0; }
   .language-switch { right: 0; }
   .section-nav__inner { justify-content: flex-start; }
 }
+
+
+/* Page imagery and migration notes */
+.page-media {
+  width: min(100% - 2 * var(--space), 50rem);
+  margin: -1rem auto 3rem;
+  overflow: hidden;
+}
+
+.page-media img {
+  width: 100%;
+  max-height: 32rem;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+.review-note {
+  width: min(100% - 2 * var(--space), 50rem);
+  margin: 0 auto 2rem;
+  padding: .9rem 1rem;
+  border-left: 3px solid var(--green-dark);
+  background: #fff7ee;
+  color: #5f5146;
+  font-size: .9rem;
+}
+
+.page-content table,
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+}
+
+.page-content th,
+.page-content td,
+.prose th,
+.prose td {
+  padding: .65rem .75rem;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (max-width: 52rem) {
+  .page-media { margin-top: 0; }
+}
