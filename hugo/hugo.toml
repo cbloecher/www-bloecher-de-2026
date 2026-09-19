@@ -1,21 +1,29 @@
 baseURL = "https://hugo.bloecher.de/"
 title = "Giesserei Blöcher GmbH"
-theme = "bloecher-custom"
+theme = "hugo-theme-pico-corp"
+locale = "de-DE"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
 enableRobotsTXT = true
-disableKinds = ["taxonomy", "term", "rss"]
+capitalizeListTitles = false
+summaryLength = 22
 canonifyURLs = false
 relativeURLs = false
 
-[build]
-  writeStats = true
+[pagination]
+  pagerSize = 6
 
-[outputs]
-  home = ["HTML"]
-  section = ["HTML"]
-  page = ["HTML"]
+[imaging]
+  quality = 82
+  resampleFilter = "Lanczos"
+  hint = "photo"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = false
+  [markup.highlight]
+    noClasses = false
 
 [languages]
   [languages.de]
@@ -25,6 +33,27 @@ relativeURLs = false
     weight = 1
     title = "Giesserei Blöcher GmbH"
 
+    [[languages.de.menu.main]]
+      name = "Werkzeuge + Formen"
+      pageRef = "/guss-fuer-werkzeuge-formen"
+      weight = 10
+    [[languages.de.menu.main]]
+      name = "Prototypen + Ersatzteile"
+      pageRef = "/prototypen-ersatzteil"
+      weight = 20
+    [[languages.de.menu.main]]
+      name = "Leistungen"
+      pageRef = "/leistungen"
+      weight = 30
+    [[languages.de.menu.main]]
+      name = "Jobs"
+      pageRef = "/jobs"
+      weight = 40
+    [[languages.de.menu.main]]
+      name = "Unternehmen"
+      pageRef = "/unternehmen"
+      weight = 50
+
   [languages.en]
     locale = "en-GB"
     label = "English"
@@ -32,11 +61,80 @@ relativeURLs = false
     weight = 2
     title = "Giesserei Blöcher GmbH"
 
-[params]
-  environment = "staging"
-  companyName = "Giesserei Blöcher GmbH"
+    [[languages.en.menu.main]]
+      name = "Tools + Molds"
+      pageRef = "/tools-and-molds"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Prototypes + Spare Parts"
+      pageRef = "/prototypes-and-spare-parts"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "Services"
+      pageRef = "/services"
+      weight = 30
+    [[languages.en.menu.main]]
+      name = "About us"
+      pageRef = "/about-us"
+      weight = 40
 
-[markup]
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
+[params]
+  description = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck."
+  companyName = "Giesserei Blöcher GmbH"
+  legalName = "Giesserei Blöcher GmbH"
+  tagline = "Aluminium-Sandguss aus Biedenkopf"
+  email = "info@bloecher.de"
+  phone = "+49 (0)6461 9551-0"
+  phoneHref = "+49646195510"
+  primaryColor = "#ed9c10"
+  primaryColorDark = "#f6bd63"
+  radius = "0rem"
+  headingFont = "sans"
+  logo = "images/logo.png"
+  logoDark = "images/logo.png"
+  defaultScheme = "light"
+  showSchemeToggle = false
+  showBreadcrumbs = true
+  showReadingTime = false
+  showRelated = false
+
+  [params.address]
+    street = "Zur Wolfskaute 1"
+    postalCode = "35216"
+    city = "Biedenkopf"
+    region = "Hessen"
+    country = "Deutschland"
+    countryCode = "DE"
+
+  [params.announcement]
+    enabled = false
+
+  [params.navCta]
+    label = "Kontakt"
+    url = "/unternehmen/kontakt/"
+
+  [params.cta]
+    eyebrow = "Kontakt"
+    title = "Sprechen wir über Ihr Bauteil."
+    text = "Von der ersten Idee bis zum fertigen Aluminiumgussteil."
+    primaryLabel = "Kontakt aufnehmen"
+    primaryURL = "/unternehmen/kontakt/"
+    secondaryLabel = "Leistungen"
+    secondaryURL = "/leistungen/"
+
+  [params.footer]
+    text = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck in Biedenkopf."
+    note = ""
+
+  [params.seo]
+    titleSeparator = "·"
+    organizationType = "Organization"
+
+  [params.analytics]
+    plausibleDomain = ""
+    googleAnalyticsID = ""
+
+  [params.contactForm]
+    action = ""
+    method = "POST"
+    netlify = false
