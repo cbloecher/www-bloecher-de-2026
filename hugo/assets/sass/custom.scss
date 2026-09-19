@@ -1,0 +1,219 @@
+/* Blöcher adaptation for Arcana */
+
+$brand: #ed9c10;
+$brand-dark: #c87f0d;
+$text: #444444;
+$heading: #222222;
+$muted: #919191;
+$line: #e1e1e1;
+$line-soft: #f2f2f2;
+$surface: #f8f8f8;
+
+body {
+  color: $text;
+  font-family: Arial, Helvetica, "Helvetica Neue", sans-serif;
+}
+
+#header {
+  padding: 2.4em 0 0 0;
+  background: #fff;
+}
+
+#logo-wrapper {
+  padding-bottom: 2em;
+
+  h1 {
+    margin: 0;
+  }
+
+  #logo {
+    border: 0;
+
+    img {
+      display: block;
+      width: 184px;
+      max-height: none;
+      margin: 0 auto;
+    }
+  }
+}
+
+#nav {
+  border-top: 1px solid $line-soft;
+  border-bottom: 1px solid $line;
+  background: #fff;
+
+  > ul > li {
+    margin: 0;
+
+    > a {
+      padding: 0.9em 1em;
+      color: #aaa;
+      font-weight: 600;
+      border-radius: 0;
+    }
+
+    &.current > a,
+    &:hover > a {
+      color: $brand;
+      background: transparent;
+    }
+  }
+}
+
+#banner {
+  min-height: 34em;
+  display: flex;
+  align-items: flex-end;
+  padding: 0;
+  background-position: center;
+  background-size: cover;
+  border: 0;
+
+  header {
+    width: 100%;
+    padding: 4em 6%;
+    background: linear-gradient(90deg, rgba(0,0,0,.74), rgba(0,0,0,.42) 58%, rgba(0,0,0,.08));
+    text-align: left;
+
+    h2 {
+      max-width: 900px;
+      margin: 0 auto;
+      color: #fff;
+      font-size: clamp(2.6rem, 6vw, 4.8rem);
+      line-height: 1.05;
+      letter-spacing: -.025em;
+
+      em {
+        color: inherit;
+      }
+    }
+
+    .button {
+      margin-top: 1.5em;
+      border-radius: 0;
+      background: $brand;
+      box-shadow: none;
+
+      &:hover {
+        background: $brand-dark;
+      }
+    }
+  }
+}
+
+.wrapper {
+  padding: 4.5em 0;
+}
+
+.wrapper.style1 {
+  background: $surface;
+}
+
+.wrapper.style2 {
+  background: #fff;
+}
+
+.icon.major {
+  background: transparent;
+  color: $brand;
+
+  &:after {
+    border-color: $line;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+a {
+  color: $brand-dark;
+
+  &:hover {
+    color: $brand;
+  }
+}
+
+.button,
+input[type="submit"] {
+  border-radius: 0;
+  background: $brand;
+
+  &:hover {
+    background: $brand-dark;
+  }
+}
+
+.box.post,
+.box.highlight {
+  box-shadow: none;
+}
+
+#main {
+  background: #fff;
+}
+
+#content {
+  max-width: 800px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    margin-top: 1.8em;
+    font-size: 2em;
+  }
+
+  h3 {
+    margin-top: 1.6em;
+  }
+}
+
+#footer {
+  background: #fff;
+  color: $muted;
+  border-top: 1px solid $line-soft;
+
+  a {
+    color: $muted;
+
+    &:hover {
+      color: $brand;
+    }
+  }
+}
+
+.copyright {
+  border-top-color: $line;
+}
+
+@media screen and (max-width: 736px) {
+  #header {
+    padding-top: 1.2em;
+  }
+
+  #logo-wrapper {
+    padding-bottom: 1.2em;
+
+    #logo img {
+      width: 145px;
+    }
+  }
+
+  #banner {
+    min-height: 28em;
+
+    header {
+      padding: 3em 1.5em;
+
+      h2 {
+        font-size: 2.6rem;
+      }
+    }
+  }
+}
