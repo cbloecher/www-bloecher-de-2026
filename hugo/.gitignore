@@ -8,3 +8,6 @@
 Thumbs.db
 hugo_stats.json
 hugo_stats.json
+
+# Experimental Arcana theme checkout
+/themes/hugo-arcana/
