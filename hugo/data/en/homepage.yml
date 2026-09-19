@@ -1,0 +1,23 @@
+banner:
+  enable: true
+  image: "images/bloecher-hero.jpg"
+  contents: "**We shape the future.** Piece by piece."
+  button:
+    contents: "Explore services"
+    url: "services/"
+items:
+  - type: highlights
+    items_per_row: 3
+    items:
+      - title: "2,500 kg"
+        icon: fa-cube
+        content: "Component weight up to approx."
+      - title: "6 m³"
+        icon: fa-expand
+        content: "Component volume up to approx."
+      - title: "3D"
+        icon: fa-layer-group
+        content: "Printed sand molds and cores"
+  - type: heading
+    heading: "From CAD data to casting"
+    contents: "Aluminium sand casting, in-house model making and 3D sand printing for single parts, prototypes and small batches."
