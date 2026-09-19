@@ -1,0 +1,8 @@
+name = "Bloecher Custom"
+license = "Proprietary"
+description = "Custom Hugo theme derived from the Giesserei Blöcher web style."
+homepage = "https://www.bloecher.de/"
+min_version = "0.166.0"
+
+[author]
+  name = "Giesserei Blöcher GmbH"

@@ -1,5 +1,6 @@
 baseURL = "https://hugo.bloecher.de/"
 title = "Giesserei Blöcher GmbH"
+theme = "bloecher-custom"
 defaultContentLanguage = "de"
 defaultContentLanguageInSubdir = false
 disableDefaultLanguageRedirect = true
