@@ -3,6 +3,9 @@ title: "3D-Sanddruck"
 description: "Direkte additive Fertigung von Sandformen und Sandkernen bis 1.800 × 900 × 900 mm – ohne Modell und Kernkasten."
 translationKey: "3d-print"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
+  alt: "3D-Sanddrucker für Sandformen und Sandkerne"
 migration:
   wordpress_id: 3652
   source_url: "https://www.bloecher.de/leistungen/3d-druck/"
