@@ -1,6 +1,6 @@
 ---
 title: "Giesserei Blöcher"
-description: "Aluminium sand casting, model making and 3D-printed molds and cores."
+description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg – with in-house model making and 3D sand printing."
 translationKey: "home"
 draft: false
 migration:
@@ -9,13 +9,6 @@ migration:
   source_slug: "foundry"
   modified: "2024-02-12T06:41:08+00:00"
 seo:
-  title: ""
-  description: "Aluminium sand casting, model making and 3D-printed molds and cores."
-migration_review:
-  - "image:3821"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_section"
+  title: "Aluminium Sand Casting up to 2.5 t | Giesserei Blöcher"
+  description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg – with in-house model making and 3D sand printing."
 ---
-
-We cast the future - piece by piece.
