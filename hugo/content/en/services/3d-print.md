@@ -3,6 +3,9 @@ title: "3D Sand Printing"
 description: "Direct additive production of sand molds and cores up to 1,800 × 900 × 900 mm without a physical pattern or core box."
 translationKey: "3d-print"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
+  alt: "3D sand printer for molds and cores"
 migration:
   wordpress_id: 4024
   source_url: "https://www.bloecher.de/en/services/3d-print/"
