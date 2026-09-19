@@ -3,6 +3,9 @@ title: "Aluminium Sand Casting"
 description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg and around 6 m³."
 translationKey: "aluminium-sand-casting"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
+  alt: "Aluminium sand casting at Giesserei Blöcher"
 migration:
   wordpress_id: 4022
   source_url: "https://www.bloecher.de/en/services/aluminium-sandcasting/"
