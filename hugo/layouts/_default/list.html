@@ -7,6 +7,8 @@
     {{ with .Description }}<p class="page-lead">{{ . }}</p>{{ end }}
   </header>
 
+  {{ partial "page-media.html" . }}
+
   {{ with .Content }}
     <div class="page-content page-content--section">{{ . }}</div>
   {{ end }}
