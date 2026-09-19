@@ -3,6 +3,9 @@ title: "3D-Scannen"
 description: "3D-Scannen für Qualitätskontrolle, Geometrieerfassung und Reverse Engineering mit Handscanner oder GOM ATOS."
 translationKey: "3d-scan"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
+  alt: "Handgeführter 3D-Scanner"
 migration:
   wordpress_id: 3835
   source_url: "https://www.bloecher.de/leistungen/3d-scannen/"
