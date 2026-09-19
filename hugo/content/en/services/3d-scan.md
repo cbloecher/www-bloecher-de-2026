@@ -3,6 +3,9 @@ title: "3D Scanning"
 description: "3D scanning for quality control, geometry capture and reverse engineering using a handheld scanner or GOM ATOS."
 translationKey: "3d-scan"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
+  alt: "Handheld 3D scanner"
 migration:
   wordpress_id: 4030
   source_url: "https://www.bloecher.de/en/services/3d-scan/"
