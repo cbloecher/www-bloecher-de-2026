@@ -1,6 +1,6 @@
 ---
 title: "Prototypen + Ersatzteile"
-description: ""
+description: "Einzelteile, Prototypen und Ersatzteile auf Basis vorhandener CAD-Daten, Zeichnungen oder digitalisierter Bauteile."
 translationKey: "prototypes-spares"
 draft: false
 migration:
@@ -8,56 +8,40 @@ migration:
   source_url: "https://www.bloecher.de/prototypen-ersatzteil/"
   source_slug: "prototypen-ersatzteil"
   modified: "2023-11-05T14:32:53+00:00"
-migration_review:
-  - "image:3327"
-  - "image:3329"
-  - "image:3330"
-  - "image:3331"
-  - "image:3823"
-  - "shortcode:av_gallery"
-  - "shortcode:av_hr"
-  - "shortcode:av_icon_box"
-  - "shortcode:av_image"
-  - "shortcode:av_one_fifth"
-  - "shortcode:av_one_full"
-  - "shortcode:av_one_third"
-  - "shortcode:av_section"
 ---
 
-# Prototypen + Ersatzteile nach Bedarf
+Für Einzelteile, Prototypen und Ersatzteile kombinieren wir digitale Datenerfassung, Modellbau, 3D-Sanddruck und Aluminium-Sandguss.
 
-## Wir fertigen nach...
+## Ausgangspunkt: Daten, Zeichnung oder vorhandenes Bauteil
 
-Importschnittstellen für alle gängigen Formate
+Je nach Ausgangssituation können unterschiedliche Datenquellen genutzt werden:
 
-Konstruktion nach Zeichnung für die weitere Verarbeitung
+- vorhandene CAD-Daten in gängigen Formaten
+- technische Zeichnungen
+- Digitalisierung eines vorhandenen Bauteils
+- Reverse Engineering
+- Re-Design bestehender Geometrien
 
-Digitalisierung,
-Reverse Engineering oder
-Re-Design
+Damit können auch Bauteile neu aufgebaut werden, wenn ursprüngliche Modelle oder Werkzeuge nicht mehr verfügbar sind.
 
-## Egal wie groß - egal aus welchem Material.
+## Werkzeuglose Fertigung für kleine Stückzahlen
 
-## Einbaufertig
+Additive Fertigungsverfahren sind besonders interessant, wenn nur ein Einzelteil oder eine kleine Stückzahl benötigt wird.
 
-### 3D-Scan
+Mit [3D-Sanddruck](/leistungen/3d-druck/) lassen sich Sandformen und Kerne direkt aus digitalen Daten herstellen. Ein physisches Modell oder ein Kernkasten ist dann nicht zwingend erforderlich.
 
-### 3D-Sanddruck
+## Vom Scan zum Gussteil
 
-### 3D-Druck
+Je nach Aufgabe kann die Prozesskette mehrere Schritte umfassen:
 
-### Aluminium Sandguss
+1. Geometrie erfassen oder vorhandene Daten übernehmen
+2. Daten aufbereiten oder konstruktiv anpassen
+3. Modell, Sandform oder Sandkern herstellen
+4. [Aluminium-Sandguss](/leistungen/aluminium-sandguss/)
+5. bei Bedarf 3D-Scan zur Kontrolle oder als Grundlage für weitere Bearbeitung
 
-### mechanische Bearbeitung
+## Varianten und Verbesserungen
 
-## Ihre Vorteile
+Die digitale Prozesskette erleichtert Varianten und individuelle Anpassungen.
 
-Der Einsatz additiver Fertigungstechnologien ermöglicht insbesondere die wirtschaftliche Herstellung von Einzelteilen oder vergleichsweise kleiner Stückzahlen.
-
-Zum Beispiel bei Verlust der originalen Modell- oder Werkzeugeinrichtung.
-
-Die werkzeugfreie Fertigung nach Daten eröffnet auch die Chance bekannte Schwachstellen zu beheben oder die ursprüngliche Funktion des Gussteils zu verbessern bzw. zu erweitern.
-
-Eigener 3D-Drucker für Sandformen sowie Modellbau im Haus geben uns volle Kontrolle über Planung und Ausführung. Varianten oder Individualisierungen sind verfahrensbedingt einfach umsetzbar. Eben schnell und flexibel.
-
-## Beispiele
+Bei einer Neuanfertigung können bekannte Schwachstellen eines vorhandenen Bauteils berücksichtigt oder Funktionen konstruktiv angepasst werden, sofern dies technisch sinnvoll und mit dem Kunden abgestimmt ist.
