@@ -1,0 +1,19 @@
+{{ $page := . }}
+{{ with .Params.hero }}
+  {{ with .image }}
+    {{ with resources.Get . }}
+      {{ $small := .Resize "480x webp q82" }}
+      {{ $large := .Process "webp q84" }}
+      <figure class="page-media">
+        <img
+          src="{{ $large.RelPermalink }}"
+          srcset="{{ $small.RelPermalink }} 480w, {{ $large.RelPermalink }} {{ .Width }}w"
+          sizes="(max-width: 52rem) 100vw, 800px"
+          width="{{ $large.Width }}"
+          height="{{ $large.Height }}"
+          alt="{{ $page.Params.hero.alt | default $page.Title }}"
+          loading="eager">
+      </figure>
+    {{ end }}
+  {{ end }}
+{{ end }}
