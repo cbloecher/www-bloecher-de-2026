@@ -1,0 +1,23 @@
+<footer class="bloecher-footer">
+  <div class="container bloecher-footer-grid">
+    <div>
+      <strong>Giesserei Blöcher GmbH</strong>
+      <p>Zur Wolfskaute 1<br>35216 Biedenkopf</p>
+      <p><a href="tel:+49646195510">+49 (0)6461 9551-0</a><br>
+      <a href="mailto:info@bloecher.de">info@bloecher.de</a></p>
+    </div>
+
+    <nav aria-label="Footer navigation">
+      {{ if eq .Site.Language.Lang "de" }}
+        <a href="{{ "unternehmen/kontakt/" | relLangURL }}">Kontakt</a>
+        <a href="{{ "impressum/" | relLangURL }}">Impressum</a>
+        <a href="{{ "datenschutzerklaerung/" | relLangURL }}">Datenschutz</a>
+      {{ else }}
+        <a href="{{ "about-us/contact-us/" | relLangURL }}">Contact</a>
+      {{ end }}
+    </nav>
+  </div>
+  <div class="container bloecher-copyright">
+    © {{ now.Year }} Giesserei Blöcher GmbH · Universal theme base by DevCows / Bootstrapious
+  </div>
+</footer>
