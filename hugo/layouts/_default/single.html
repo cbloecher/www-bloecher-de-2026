@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+<head>
+  {{ partial "headers.html" . }}
+  {{ partial "custom_headers.html" . }}
+</head>
+<body>
+<div id="all">
+  {{ partial "nav.html" . }}
+
+  <main class="container bloecher-page">
+    <header class="bloecher-page-header">
+      {{ with .Parent }}{{ if not .IsHome }}<p class="bloecher-kicker">{{ .Title }}</p>{{ end }}{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="bloecher-page-lead">{{ . }}</p>{{ end }}
+    </header>
+
+    {{ partial "page-media.html" . }}
+
+    <article class="bloecher-prose">
+      {{ .Content }}
+    </article>
+  </main>
+
+  {{ partial "footer.html" . }}
+</div>
+{{ partial "scripts.html" . }}
+</body>
+</html>
