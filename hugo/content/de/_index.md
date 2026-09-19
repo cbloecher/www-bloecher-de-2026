@@ -1,6 +1,6 @@
 ---
 title: "Giesserei Blöcher"
-description: "Aluminium-Sandguss, Modellbau und 3D-gedruckte Formen und Kerne."
+description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg – mit eigenem Modellbau und 3D-Sanddruck."
 translationKey: "home"
 draft: false
 migration:
@@ -9,13 +9,6 @@ migration:
   source_slug: "biedenkopf"
   modified: "2024-02-08T14:10:58+00:00"
 seo:
-  title: ""
-  description: "Aluminium-Sandguss, Modellbau und 3D-gedruckte Formen und Kerne."
-migration_review:
-  - "image:3821"
-  - "shortcode:av_image"
-  - "shortcode:av_one_full"
-  - "shortcode:av_section"
+  title: "Aluminium-Sandguss bis 2,5 t | Giesserei Blöcher"
+  description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg – mit eigenem Modellbau und 3D-Sanddruck."
 ---
-
-Wir formen Zukunft - Stück für Stück.
