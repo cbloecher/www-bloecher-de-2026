@@ -21,10 +21,10 @@ sections:
     imageAlt: "Giesserei Blöcher in Biedenkopf"
     primary:
       label: "Leistungen"
-      url: "/leistungen/"
+      url: "leistungen/"
     secondary:
       label: "Kontakt"
-      url: "/unternehmen/kontakt/"
+      url: "unternehmen/kontakt/"
     facts:
       - value: "2.500 kg"
         label: "Bauteilgewicht bis ca."
