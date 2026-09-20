@@ -107,6 +107,17 @@ jobs:
           set -euxo pipefail
           hugo             --source ./pico-corp/hugo             --destination "${GITHUB_WORKSPACE}/publish/pico-corp"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/pico-corp/"
 
+      - name: Verify preview output
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -s publish/index.html
+          test -s publish/bloecher-custom/index.html
+          test -s publish/universal/index.html
+          test -s publish/arcana/index.html
+          test -s publish/pico-corp/index.html
+          test -s publish/pico-corp/en/index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
