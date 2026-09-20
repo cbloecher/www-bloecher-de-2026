@@ -97,15 +97,8 @@ body {
   margin-inline: 0;
 }
 
-/* Page header, body and wide content share the same container and left edge. */
+/* Keep ordinary content pages in a stable, readable text column. */
 .prose {
-  max-width: none;
-}
-
-.prose > p,
-.prose > ul,
-.prose > ol,
-.prose > blockquote {
   max-width: 50rem;
 }
 
@@ -200,6 +193,12 @@ body {
   margin-block-start: clamp(3.5rem, 7vw, 5.5rem);
   padding-block-start: var(--pc-space-lg);
   border-block-start: 2px solid #ed9c10;
+}
+
+@media (min-width: 70.625rem) {
+  .service-nav {
+    width: calc(var(--pc-container) - 5rem);
+  }
 }
 
 .service-nav__title {

@@ -53,8 +53,8 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 - Keine Karten-Schatten.
 - Keine Rundungen bei Buttons und Flächen.
 - Ruhige helle Alternativflächen.
-- Seitenkopf, Fließtext, Bilder und Leistungsraster verwenden denselben Container und eine durchgängige linke Kante.
-- Absätze und Listen bleiben für gute Lesbarkeit auf `50rem` begrenzt; breite Inhaltsblöcke nutzen die verfügbare Containerbreite.
+- Seitenkopf und Inhaltsbereich verwenden eine durchgängige linke Kante.
+- Reguläre Inhaltsseiten bleiben vollständig in der lesefreundlichen `50rem`-Textspalte; nur der Block „Weitere Leistungen“ erweitert sich auf breiten Ansichten gezielt auf die Rasterbreite der Leistungsübersicht.
 - Responsive Anpassungen für Header, Logo und Hero-Bild.
 - Leistungskarten mit orangefarbener Führungslinie, sichtbarem Pfeil sowie klaren Hover- und Tastatur-Fokuszuständen als Navigation hervorgehoben.
 - Der Block „Weitere Leistungen“ übernimmt unverändert das responsive Upstream-Raster `grid-auto grid-auto--gap-lg`: drei Spalten auf breiten Ansichten und automatische Reduktion auf kleineren Ansichten.
