@@ -110,17 +110,17 @@ relativeURLs = false
     enabled = false
 
   [params.navCta]
-    label = "Kontakt"
-    url = "/unternehmen/kontakt/"
+    label = ""
+    url = ""
 
   [params.cta]
-    eyebrow = "Kontakt"
-    title = "Sprechen wir über Ihr Bauteil."
-    text = "Von der ersten Idee bis zum fertigen Aluminiumgussteil."
-    primaryLabel = "Kontakt aufnehmen"
-    primaryURL = "/unternehmen/kontakt/"
-    secondaryLabel = "Leistungen"
-    secondaryURL = "/leistungen/"
+    eyebrow = ""
+    title = ""
+    text = ""
+    primaryLabel = ""
+    primaryURL = ""
+    secondaryLabel = ""
+    secondaryURL = ""
 
   [params.footer]
     text = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck in Biedenkopf."
