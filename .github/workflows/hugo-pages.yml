@@ -6,6 +6,7 @@ on:
       - main
       - theme-universal
       - theme-arcana
+      - theme-pico-corp
     paths:
       - "hugo/**"
       - ".github/workflows/hugo-pages.yml"
@@ -46,11 +47,19 @@ jobs:
           ref: theme-arcana
           path: arcana
 
+      - name: Checkout Pico Corp experiment
+        uses: actions/checkout@v6
+        with:
+          ref: theme-pico-corp
+          path: pico-corp
+
       - name: Install Hugo
         shell: bash
         run: |
           set -euxo pipefail
-          curl -L             "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz"             -o /tmp/hugo.tar.gz
+          curl -L \
+            "https://github.com/gohugoio/hugo/releases/download/v\${HUGO_VERSION}/hugo_extended_\${HUGO_VERSION}_linux-amd64.tar.gz" \
+            -o /tmp/hugo.tar.gz
           tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
           sudo install -m 0755 /tmp/hugo /usr/local/bin/hugo
           hugo version
@@ -61,34 +70,60 @@ jobs:
 
       - name: Prepare Universal theme
         shell: bash
-        run: |
-          set -euxo pipefail
-          bash universal/hugo/tools/setup-universal-theme.sh
+        run: bash universal/hugo/tools/setup-universal-theme.sh
 
       - name: Prepare Arcana theme
         shell: bash
-        run: |
-          set -euxo pipefail
-          bash arcana/hugo/tools/setup-arcana-theme.sh
+        run: bash arcana/hugo/tools/setup-arcana-theme.sh
+
+      - name: Prepare Pico Corp theme
+        shell: bash
+        run: bash pico-corp/hugo/tools/setup-pico-corp-theme.sh
 
       - name: Build baseline
         shell: bash
         run: |
           set -euxo pipefail
           mkdir -p publish
-          hugo             --source ./baseline/hugo             --destination "${GITHUB_WORKSPACE}/publish"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo \
+            --source ./baseline/hugo \
+            --destination "\${GITHUB_WORKSPACE}/publish" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "\${{ steps.pages.outputs.base_url }}/"
 
       - name: Build Universal preview
         shell: bash
         run: |
           set -euxo pipefail
-          hugo             --source ./universal/hugo             --destination "${GITHUB_WORKSPACE}/publish/universal"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/universal/"
+          hugo \
+            --source ./universal/hugo \
+            --destination "\${GITHUB_WORKSPACE}/publish/universal" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "\${{ steps.pages.outputs.base_url }}/universal/"
 
       - name: Build Arcana preview
         shell: bash
         run: |
           set -euxo pipefail
-          hugo             --source ./arcana/hugo             --destination "${GITHUB_WORKSPACE}/publish/arcana"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/arcana/"
+          hugo \
+            --source ./arcana/hugo \
+            --destination "\${GITHUB_WORKSPACE}/publish/arcana" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "\${{ steps.pages.outputs.base_url }}/arcana/"
+
+      - name: Build Pico Corp preview
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo \
+            --source ./pico-corp/hugo \
+            --destination "\${GITHUB_WORKSPACE}/publish/pico-corp" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "\${{ steps.pages.outputs.base_url }}/pico-corp/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
@@ -98,7 +133,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: \${{ steps.deployment.outputs.page_url }}
 
     runs-on: ubuntu-latest
     needs: build

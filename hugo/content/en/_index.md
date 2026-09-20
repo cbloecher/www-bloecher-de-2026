@@ -32,6 +32,15 @@ sections:
         label: "Component volume up to approx."
       - value: "3D"
         label: "Printed sand molds and cores"
+  - type: services
+    section: "services"
+    eyebrow: "Process chain"
+    title: "From CAD data to the finished casting"
+    lead: "In-house model making, 3D sand printing and aluminium sand casting work together as one process chain."
+    limit: 6
+    link:
+      label: "All services"
+      url: "services/"
   - type: stats
     tone: muted
     items:

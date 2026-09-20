@@ -33,6 +33,13 @@ relativeURLs = false
     weight = 1
     title = "Giesserei Blöcher GmbH"
 
+    [languages.de.params]
+      description = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck."
+
+      [languages.de.params.footer]
+        text = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck in Biedenkopf."
+        note = ""
+
     [[languages.de.menu.main]]
       name = "Werkzeuge + Formen"
       pageRef = "/guss-fuer-werkzeuge-formen"
@@ -54,12 +61,65 @@ relativeURLs = false
       pageRef = "/unternehmen"
       weight = 50
 
+    [[languages.de.menu.footer]]
+      name = "Aluminium-Sandguss"
+      pageRef = "/leistungen/aluminium-sandguss"
+      weight = 10
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
+      name = "Modellbau"
+      pageRef = "/leistungen/modellbau"
+      weight = 20
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
+      name = "3D-Sanddruck"
+      pageRef = "/leistungen/3d-druck"
+      weight = 30
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
+      name = "Unternehmen"
+      pageRef = "/unternehmen"
+      weight = 40
+      [languages.de.menu.footer.params]
+        group = "Unternehmen"
+    [[languages.de.menu.footer]]
+      name = "Qualität"
+      pageRef = "/unternehmen/zertifizierung"
+      weight = 50
+      [languages.de.menu.footer.params]
+        group = "Unternehmen"
+    [[languages.de.menu.footer]]
+      name = "Anfahrt"
+      pageRef = "/unternehmen/anfahrt"
+      weight = 60
+      [languages.de.menu.footer.params]
+        group = "Unternehmen"
+
+    [[languages.de.menu.legal]]
+      name = "Impressum"
+      pageRef = "/impressum"
+      weight = 10
+    [[languages.de.menu.legal]]
+      name = "Datenschutz"
+      pageRef = "/datenschutzerklaerung"
+      weight = 20
+
   [languages.en]
     locale = "en-GB"
     label = "English"
     contentDir = "content/en"
     weight = 2
     title = "Giesserei Blöcher GmbH"
+
+    [languages.en.params]
+      description = "Aluminium sand casting, model making and 3D sand printing."
+
+      [languages.en.params.footer]
+        text = "Aluminium sand casting, model making and 3D sand printing in Biedenkopf."
+        note = ""
 
     [[languages.en.menu.main]]
       name = "Tools + Molds"
@@ -77,6 +137,43 @@ relativeURLs = false
       name = "About us"
       pageRef = "/about-us"
       weight = 40
+
+    [[languages.en.menu.footer]]
+      name = "Aluminium Sand Casting"
+      pageRef = "/services/aluminium-sand-casting"
+      weight = 10
+      [languages.en.menu.footer.params]
+        group = "Services"
+    [[languages.en.menu.footer]]
+      name = "Model Making"
+      pageRef = "/services/model-making"
+      weight = 20
+      [languages.en.menu.footer.params]
+        group = "Services"
+    [[languages.en.menu.footer]]
+      name = "3D Sand Printing"
+      pageRef = "/services/3d-print"
+      weight = 30
+      [languages.en.menu.footer.params]
+        group = "Services"
+    [[languages.en.menu.footer]]
+      name = "About us"
+      pageRef = "/about-us"
+      weight = 40
+      [languages.en.menu.footer.params]
+        group = "Company"
+    [[languages.en.menu.footer]]
+      name = "Quality"
+      pageRef = "/about-us/quality-management"
+      weight = 50
+      [languages.en.menu.footer.params]
+        group = "Company"
+    [[languages.en.menu.footer]]
+      name = "How to find us"
+      pageRef = "/about-us/how-to-find-us"
+      weight = 60
+      [languages.en.menu.footer.params]
+        group = "Company"
 
 [params]
   description = "Aluminium-Sandguss, Modellbau und 3D-Sanddruck."

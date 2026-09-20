@@ -32,6 +32,15 @@ sections:
         label: "Bauteilvolumen bis ca."
       - value: "3D"
         label: "Gedruckte Sandformen und Kerne"
+  - type: services
+    section: "leistungen"
+    eyebrow: "Leistungskette"
+    title: "Vom Datensatz bis zum fertigen Abguss"
+    lead: "Eigener Modellbau, 3D-Sanddruck und Aluminium-Sandguss greifen bei uns direkt ineinander."
+    limit: 6
+    link:
+      label: "Alle Leistungen"
+      url: "leistungen/"
   - type: stats
     tone: muted
     items:
