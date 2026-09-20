@@ -93,11 +93,19 @@ body {
 }
 
 .page-header {
-  max-width: 50rem;
-  margin-inline: auto;
+  max-width: none;
+  margin-inline: 0;
 }
 
+/* Page header, body and wide content share the same container and left edge. */
 .prose {
+  max-width: none;
+}
+
+.prose > p,
+.prose > ul,
+.prose > ol,
+.prose > blockquote {
   max-width: 50rem;
 }
 
