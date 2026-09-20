@@ -3,6 +3,9 @@ title: "Prototypes + Spare Parts"
 description: "Single parts, prototypes and spare parts based on existing CAD data, drawings or digitised components."
 translationKey: "prototypes-spares"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_motorblock_355x236.jpg"
+  alt: "Sand-cast aluminium engine block"
 migration:
   wordpress_id: 4033
   source_url: "https://www.bloecher.de/en/prototypes-and-spare-parts/"

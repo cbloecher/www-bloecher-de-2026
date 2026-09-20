@@ -3,6 +3,9 @@ title: "Prototypen + Ersatzteile"
 description: "Einzelteile, Prototypen und Ersatzteile auf Basis vorhandener CAD-Daten, Zeichnungen oder digitalisierter Bauteile."
 translationKey: "prototypes-spares"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_motorblock_355x236.jpg"
+  alt: "Aluminium-Motorblock als Sandgussteil"
 migration:
   wordpress_id: 3660
   source_url: "https://www.bloecher.de/prototypen-ersatzteil/"

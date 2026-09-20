@@ -22,9 +22,11 @@ body {
   min-height: 6rem;
 }
 
+.brand__logo,
 .brand img,
 .site-logo img {
-  max-height: 4.6rem;
+  height: 4.5rem;
+  max-height: none;
   width: auto;
 }
 
@@ -117,9 +119,10 @@ body {
     min-height: 4.75rem;
   }
 
+  .brand__logo,
   .brand img,
   .site-logo img {
-    max-height: 3.6rem;
+    height: 3.4rem;
   }
 
   .hero__title {
@@ -127,6 +130,27 @@ body {
   }
 
   .hero__media img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.page-header__media {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-header__media picture,
+.page-header__media img {
+  display: block;
+  width: 100%;
+}
+
+.page-header__media img {
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .page-header__media img {
     aspect-ratio: 16 / 10;
   }
 }

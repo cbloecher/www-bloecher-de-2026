@@ -3,6 +3,9 @@ title: "Qualität und Zertifizierung"
 description: "Qualitäts- und Umweltmanagement bei Giesserei Blöcher mit Zertifizierungen nach ISO 9001 und ISO 14001."
 translationKey: "quality"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_cubing_12x06.jpg"
+  alt: "Messtechnik zur Qualitätsprüfung von Gussteilen"
 migration:
   wordpress_id: 3728
   source_url: "https://www.bloecher.de/unternehmen/zertifizierung/"

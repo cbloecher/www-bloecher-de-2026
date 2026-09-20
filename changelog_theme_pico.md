@@ -1,28 +1,28 @@
 # Changelog – Theme Pico Corp
 
 Stand: 20.09.2026  
-Branch: \`theme-pico-corp\`  
+Branch: `theme-pico-corp`  
 Upstream: [PhantomPixelDev/hugo-theme-pico-corp](https://github.com/PhantomPixelDev/hugo-theme-pico-corp)
 
 ## Leitlinie
 
-Pico Corp bleibt ein extern eingebundenes Upstream-Theme. Anpassungen erfolgen bevorzugt über Hugo-Konfiguration, Content/Front Matter, i18n und \`assets/css/custom.css\`. Template-Overrides werden nur eingesetzt, wenn sich eine Anforderung auf diesen Ebenen nicht robust lösen lässt.
+Pico Corp bleibt ein extern eingebundenes Upstream-Theme. Anpassungen erfolgen bevorzugt über Hugo-Konfiguration, Content/Front Matter, i18n und `assets/css/custom.css`. Template-Overrides werden nur eingesetzt, wenn sich eine Anforderung auf diesen Ebenen nicht robust lösen lässt.
 
 ## Upstream-Basis
 
-- Theme-Commit festgesetzt auf \`7b43e743259f6b9e61a2a8195bf3aa723df6954e\`.
-- \`hugo/tools/setup-pico-corp-theme.sh\` lädt exakt diesen Commit.
+- Theme-Commit festgesetzt auf `7b43e743259f6b9e61a2a8195bf3aa723df6954e`.
+- `hugo/tools/setup-pico-corp-theme.sh` lädt exakt diesen Commit.
 - Damit sind lokale Builds und GitHub-Pages-Builds reproduzierbar.
-- Ein Upstream-Update erfolgt künftig bewusst durch Änderung von \`THEME_REF\` und anschließende Prüfung.
+- Ein Upstream-Update erfolgt künftig bewusst durch Änderung von `THEME_REF` und anschließende Prüfung.
 
 ## Hugo-Konfiguration
 
-- Blöcher-Orange \`#ed9c10\` als Primärfarbe.
+- Blöcher-Orange `#ed9c10` als Primärfarbe.
 - Heller Modus fest eingestellt; Theme-Umschalter deaktiviert.
-- Ecken über \`radius = "0rem"\` bewusst kantig.
+- Ecken über `radius = "0rem"` bewusst kantig.
 - Systemnahe Sans-Serif-Typografie.
 - Logo, Firma, Anschrift, Telefon und E-Mail eingetragen.
-- DE als Standardsprache unter \`/\`, EN unter \`/en/\`.
+- DE als Standardsprache unter `/`, EN unter `/en/`.
 - Sprachabhängige Footer-Texte ergänzt.
 - Footer-Navigation für Leistungen und Unternehmen in DE und EN ergänzt.
 - Rechtliche Footer-Navigation für Impressum und Datenschutz in DE ergänzt.
@@ -34,18 +34,18 @@ Pico Corp bleibt ein extern eingebundenes Upstream-Theme. Anpassungen erfolgen b
 - Kuratierte WordPress-Inhalte bleiben maßgeblich und wurden nicht erneut importiert.
 - Hero in DE und EN mit Blöcher-Bild, zurückhaltenden CTAs und technischen Kennzahlen.
 - Leistungsübersicht auf der Startseite ergänzt:
-  - DE liest aus \`/leistungen/\`.
-  - EN liest aus \`/services/\`.
-- Vorhandene Leistungsseiten werden über die vom Theme vorgesehene \`services\`-Section eingebunden; kein eigener Section-Template-Fork.
+  - DE liest aus `/leistungen/`.
+  - EN liest aus `/services/`.
+- Vorhandene Leistungsseiten werden über die vom Theme vorgesehene `services`-Section eingebunden; kein eigener Section-Template-Fork.
 
 ## Gestaltung
 
-Anpassungen liegen in \`hugo/assets/css/custom.css\`:
+Anpassungen liegen in `hugo/assets/css/custom.css`:
 
 - Containerbreite und Abschnittsabstände gemäß Blöcher-Styleguide.
 - Systemschrift statt Webfont.
 - Weißer, leichter Header mit feiner Trennlinie.
-- Größeres, klar präsentes Logo.
+- Logo-Höhe explizit gesetzt, damit das Logo den verfügbaren Headerraum nutzt und lesbar bleibt.
 - Orange für Eyebrows und Kennzahlen.
 - Keine Karten-Schatten.
 - Keine Rundungen bei Buttons und Flächen.
@@ -53,38 +53,51 @@ Anpassungen liegen in \`hugo/assets/css/custom.css\`:
 - Begrenzte Textbreite auf Inhaltsseiten.
 - Responsive Anpassungen für Header, Logo und Hero-Bild.
 
+## Bilder
+
+- Die fünf bereits referenzierten Originalbilder für Sandguss, Modellbau, 3D-Sanddruck, 3D-Scannen und Temperierung aus `migration-source` nach `hugo/assets/images/imported/2023/11/` übernommen.
+- Weitere vorhandene Originalbilder den zentralen Seiten für Werkzeuge + Formen, Prototypen + Ersatzteile, Leistungen, Unternehmen und Qualität in DE und EN zugeordnet.
+- Darstellung über die responsive Hugo-Bildpipeline von Pico Corp.
+- Seiten ohne fachlich passendes Motiv bleiben bewusst ohne dekoratives Ersatzbild.
+
 ## Übersetzungen
 
-- \`hugo/i18n/de.toml\` ergänzt.
+- `hugo/i18n/de.toml` ergänzt.
 - Theme-Chrome, Navigation, Footer, Formulare, 404-Seite und weitere UI-Texte sind damit auf Deutsch statt über englische Fallbacks verfügbar.
 
 ## GitHub Pages
 
-- Workflow um Checkout, Theme-Setup und Build von \`theme-pico-corp\` ergänzt.
-- Ausgabe erfolgt unter \`/pico-corp/\`.
-- Pushes auf \`theme-pico-corp\` lösen den Pages-Workflow aus.
-- Der zuvor statisch auf \`https://hugo.bloecher.de/sitemap.xml\` festgelegte \`robots.txt\` wurde entfernt. Hugo erzeugt ihn nun passend zur jeweiligen Build-\`baseURL\`.
+- Workflow um Checkout, Theme-Setup und Build von `theme-pico-corp` ergänzt.
+- Ausgabe erfolgt unter `/pico-corp/`.
+- Pushes auf `theme-pico-corp` lösen den Pages-Workflow aus.
+- Der zuvor statisch auf `https://hugo.bloecher.de/sitemap.xml` festgelegte `robots.txt` wurde entfernt. Hugo erzeugt ihn nun passend zur jeweiligen Build-`baseURL`.
 
 ## Gezielt begründeter Template-Override
 
-Datei: \`hugo/layouts/_markup/render-link.html\`
+Datei: `hugo/layouts/_markup/render-link.html`
 
 Zweck:
 
-- Kuratierte Inhalte enthalten root-relative Markdown-Links wie \`/leistungen/3d-druck/\`.
-- Solche Links würden in der GitHub-Pages-Vorschau den Unterpfad \`/pico-corp/\` verlieren.
-- Der Override ergänzt bei internen root-relativen Markdown-Links die jeweils aktive Hugo-\`baseURL\`.
+- Kuratierte Inhalte enthalten root-relative Markdown-Links wie `/leistungen/3d-druck/`.
+- Solche Links würden in der GitHub-Pages-Vorschau den Unterpfad `/pico-corp/` verlieren.
+- Der Override ergänzt bei internen root-relativen Markdown-Links die jeweils aktive Hugo-`baseURL`.
 - Externe Links und das übrige Upstream-Verhalten bleiben unverändert.
 
-Dies ist derzeit der einzige Pico-Corp-Template-Override.
+Zweiter gezielter Override: `hugo/layouts/_partials/page-header.html`.
+
+- Pico Corp rendert das bereits kuratierte Front-Matter-Feld `hero.image` auf normalen Inhalts- und Bereichsseiten nicht.
+- Der Override übernimmt den unveränderten Upstream-Seitenkopf und ergänzt darunter ein responsives Bild über die vorhandene Theme-Bildpipeline.
+- WebP, `srcset`, intrinsische Bildmaße und Alt-Texte bleiben damit Aufgabe des Themes.
+
+Damit bestehen derzeit genau zwei kleine Pico-Corp-Template-Overrides.
 
 ## Offene Punkte
 
 1. Sichtbare DE/EN-Sprachumschaltung; Pico Corp bringt dafür aktuell keine fertige Komponente mit.
 2. Englische Fassungen von Impressum und Datenschutz fehlen im Content.
-3. Reihenfolge, Zusammenfassungen und Bilder der Leistungskarten fachlich und visuell prüfen.
+3. Reihenfolge, Zusammenfassungen und Bildzuschnitte der Leistungskarten fachlich und visuell prüfen.
 4. Kontaktseiten und deaktivierten Formularzustand abschließend gestalten.
 5. OpenGraph-Standardbild, Favicons und Organization-Schema vervollständigen.
 6. Accessibility-Prüfung mit Tastatur, Kontrasttest und automatisiertem Audit.
 7. Responsive Sichtprüfung auf kleinen Mobilgeräten, Tablet und breitem Desktop.
-8. Bildinventar auf passende Motive, Alt-Texte, Zuschnitte und Dateigrößen prüfen.
+8. Verbleibendes Bildinventar und mobile Zuschnitte im visuellen Review prüfen.

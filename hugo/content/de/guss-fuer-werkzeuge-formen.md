@@ -3,6 +3,9 @@ title: "Werkzeuge + Formen"
 description: "Aluminium-Werkzeugguss für Formen und Werkzeuge, auf Wunsch mit eingegossener Temperierung."
 translationKey: "tools-molds"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_teppichwerkzeug_blau_12x08.jpg"
+  alt: "Aluminiumguss-Werkzeug für die Formgebung"
 migration:
   wordpress_id: 3664
   source_url: "https://www.bloecher.de/guss-fuer-werkzeuge-formen/"

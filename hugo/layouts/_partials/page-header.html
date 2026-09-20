@@ -1,0 +1,36 @@
+{{- /* Interior page header with optional curated hero image.
+
+  The upstream theme does not render page-level hero images. This targeted
+  override preserves the upstream header and adds the existing Blöcher image
+  metadata below title and lead. */ -}}
+{{- $page := . -}}
+{{- $plain := false -}}
+{{- if reflect.IsMap . -}}
+  {{- $page = .page -}}
+  {{- $plain = .plain | default false -}}
+{{- end -}}
+
+<header class="page-header{{ if $plain }} page-header--plain{{ end }}">
+  <div class="container">
+    <div class="page-header__breadcrumbs">{{ partial "breadcrumbs.html" $page }}</div>
+    {{ with $page.Params.eyebrow }}<span class="eyebrow">{{ . }}</span>{{ end }}
+    <h1 class="page-header__title">{{ $page.Title }}</h1>
+    {{ with or $page.Params.lead $page.Description }}
+      <p class="page-header__lead">{{ . | markdownify }}</p>
+    {{ end }}
+
+    {{- with $page.Params.hero -}}
+      {{- $hero := . -}}
+      {{- with .image -}}
+        <div class="page-header__media">
+          {{ partial "utils/image.html" (dict
+            "page" $page
+            "path" .
+            "alt" ($hero.alt | default $page.Title)
+            "sizes" "(min-width: 72rem) 70rem, calc(100vw - 2rem)"
+            "priority" true) }}
+        </div>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</header>

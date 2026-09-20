@@ -3,6 +3,9 @@ title: "Tools + Molds"
 description: "Aluminium castings for tools and molds, including integrated temperature-control tubing where required."
 translationKey: "tools-molds"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_teppichwerkzeug_blau_12x08.jpg"
+  alt: "Cast aluminium tool for forming applications"
 migration:
   wordpress_id: 4036
   source_url: "https://www.bloecher.de/en/tools-and-molds/"

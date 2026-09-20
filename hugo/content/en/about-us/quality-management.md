@@ -3,6 +3,9 @@ title: "Quality and Certification"
 description: "Quality and environmental management at Giesserei Blöcher with ISO 9001 and ISO 14001 certification."
 translationKey: "quality"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_cubing_12x06.jpg"
+  alt: "Measurement technology for casting quality inspection"
 migration:
   wordpress_id: 3985
   source_url: "https://www.bloecher.de/en/about-us/quality-management/"

@@ -3,6 +3,9 @@ title: "Leistungen"
 description: "Von CAD-Daten über Modellbau und 3D-gedruckte Sandformen bis zum Aluminium-Sandguss."
 translationKey: "services"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
+  alt: "Aluminium-Sandguss bei Giesserei Blöcher"
 migration:
   wordpress_id: 3501
   source_url: "https://www.bloecher.de/leistungen/"
