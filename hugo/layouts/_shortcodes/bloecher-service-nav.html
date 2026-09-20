@@ -1,4 +1,4 @@
-{{- /* Language-aware navigation between sibling service pages. */ -}}
+{{- /* Language-aware service cards built from sibling pages. */ -}}
 {{- $page := .Page -}}
 {{- $section := $page.Parent -}}
 {{- $isGerman := eq $page.Language.Lang "de" -}}
@@ -7,18 +7,13 @@
 {{- with $section -}}
 <nav class="service-nav" aria-labelledby="service-nav-title">
   <h2 class="service-nav__title" id="service-nav-title">{{ $title }}</h2>
-  <ul class="service-nav__list">
+  <div class="service-nav__grid">
     {{- range .RegularPages.ByWeight -}}
       {{- if ne .RelPermalink $page.RelPermalink -}}
-      <li>
-        <a href="{{ .RelPermalink }}">
-          <span>{{ .LinkTitle }}</span>
-          <span aria-hidden="true">→</span>
-        </a>
-      </li>
+        {{ partial "cards/service-card.html" (dict "page" . "headingLevel" "h3") }}
       {{- end -}}
     {{- end -}}
-  </ul>
+  </div>
   <a class="service-nav__overview" href="{{ .RelPermalink }}">{{ $overview }} →</a>
 </nav>
 {{- end -}}
