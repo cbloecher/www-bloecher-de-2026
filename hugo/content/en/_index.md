@@ -21,10 +21,10 @@ sections:
     imageAlt: "Giesserei Blöcher in Biedenkopf"
     primary:
       label: "Services"
-      url: "/en/services/"
+      url: "services/"
     secondary:
       label: "Contact"
-      url: "/en/about-us/contact-us/"
+      url: "about-us/contact-us/"
     facts:
       - value: "2,500 kg"
         label: "Component weight up to approx."
