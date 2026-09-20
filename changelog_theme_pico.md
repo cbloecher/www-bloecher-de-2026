@@ -38,7 +38,8 @@ Pico Corp bleibt ein extern eingebundenes Upstream-Theme. Anpassungen erfolgen b
   - EN liest aus `/services/`.
 - Die DE-/EN-Leistungsübersichten aktivieren über Front Matter `type: "services"` das vorhandene Upstream-Layout `services/section.html`; kein eigener Section-Template-Fork.
 - Leistungsseiten besitzen kuratierte `summary`- und `highlights`-Angaben für klar erkennbare, informative Navigationskarten.
-- Am Ende jeder Leistungsdetailseite erzeugt der additive Shortcode `bloecher-service-nav` automatisch sprachabhängige Pico-Corp-Servicekarten für die Geschwisterseiten und einen Link zurück zur Übersicht; die aktuelle Seite wird ausgelassen.
+- Am Ende jeder Leistungsdetailseite erzeugt der additive Shortcode `bloecher-service-nav` automatisch sprachabhängig denselben Pico-Corp-Leistungsblock wie die Übersicht.
+- Die aktuelle Leistung bleibt an ihrer Rasterposition sichtbar, ist ausgegraut und nicht verlinkt; `aria-current="page"` kennzeichnet sie semantisch.
 
 ## Gestaltung
 
@@ -55,7 +56,8 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 - Begrenzte Textbreite auf Inhaltsseiten.
 - Responsive Anpassungen für Header, Logo und Hero-Bild.
 - Leistungskarten mit orangefarbener Führungslinie, sichtbarem Pfeil sowie klaren Hover- und Tastatur-Fokuszuständen als Navigation hervorgehoben.
-- Der Block „Weitere Leistungen“ verwendet dieselben Servicekarten wie die Leistungsübersicht: zweispaltig auf Desktop und einspaltig auf kleinen Displays.
+- Der Block „Weitere Leistungen“ übernimmt unverändert das responsive Upstream-Raster `grid-auto grid-auto--gap-lg`: drei Spalten auf breiten Ansichten und automatische Reduktion auf kleineren Ansichten.
+- Die aktuelle Leistung wird als graue, nicht interaktive Karte mit sprachabhängigem Hinweis „Aktuelle Leistung“/„Current service“ dargestellt.
 
 ## Bilder
 
