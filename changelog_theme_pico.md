@@ -69,7 +69,7 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 
 - Workflow um Checkout, Theme-Setup und Build von `theme-pico-corp` ergänzt.
 - Ausgabe erfolgt unter `/pico-corp/`.
-- Pushes auf `theme-pico-corp` lösen den Pages-Workflow aus.
+- Pushes auf `theme-pico-corp` lösen Build und Validierung aus; veröffentlicht wird wegen der GitHub-Pages-Umgebung ausschließlich aus `main`.
 - Der zuvor statisch auf `https://hugo.bloecher.de/sitemap.xml` festgelegte `robots.txt` wurde entfernt. Hugo erzeugt ihn nun passend zur jeweiligen Build-`baseURL`.
 
 ## Gezielt begründeter Template-Override
