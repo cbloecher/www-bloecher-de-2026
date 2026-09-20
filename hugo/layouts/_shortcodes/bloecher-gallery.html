@@ -1,0 +1,24 @@
+{{- /* Accessible Blöcher gallery using structured page front matter:
+
+gallery:
+  - image: images/example.jpg
+    alt: Descriptive alternative text
+    caption: Optional visible caption
+*/ -}}
+{{- with .Page.Params.gallery -}}
+<ul class="gallery">
+  {{- range . -}}
+    <li class="gallery__item">
+      {{ partial "utils/image.html" (dict
+        "page" $.Page
+        "path" .image
+        "alt" (.alt | default $.Page.Title)
+        "sizes" "(min-width: 56rem) 33vw, 100vw"
+        "widths" (slice 480 768 1200)) }}
+      {{- with .caption -}}
+        <span class="gallery__caption">{{ . }}</span>
+      {{- end -}}
+    </li>
+  {{- end -}}
+</ul>
+{{- end -}}

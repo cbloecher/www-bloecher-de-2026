@@ -6,6 +6,31 @@ draft: false
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium sand casting at Giesserei Blöcher"
+gallery:
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Lehrenunterbau.jpg"
+    alt: "Fixture base made by aluminium sand casting"
+    caption: "Fixture base"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Zylinderkopf2.jpg"
+    alt: "Cylinder head made by aluminium sand casting"
+    caption: "Cylinder head"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-bodenwerkzeug.jpg"
+    alt: "Forming tool made by aluminium sand casting"
+    caption: "Forming tool"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-getriebeghaeuse.jpg"
+    alt: "Gearbox housing made by aluminium sand casting"
+    caption: "Gearbox housing"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-kniehebel.jpg"
+    alt: "Toggle lever made by aluminium sand casting"
+    caption: "Toggle lever"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
+    alt: "Four-cylinder engine block made by aluminium sand casting"
+    caption: "Four-cylinder engine block"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorgehaeuse.jpg"
+    alt: "Motor housing made by aluminium sand casting"
+    caption: "Motor housing"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-pumpengehaeuse.jpg"
+    alt: "Pump housing made by aluminium sand casting"
+    caption: "Pump housing"
 migration:
   wordpress_id: 4022
   source_url: "https://www.bloecher.de/en/services/aluminium-sandcasting/"
@@ -24,6 +49,10 @@ We manufacture aluminium sand castings as single parts, prototypes and in small 
 - conventional patterns or directly 3D-printed molds and cores
 
 Typical applications include molds, fixtures, gearbox housings and base or carrier plates.
+
+## Examples of aluminium sand castings
+
+{{< bloecher-gallery >}}
 
 With [3D sand printing](/en/services/3d-print/), sand casting is possible without a physical pattern or core box. This shortens the route to the first casting and can make single parts, [prototypes and spare parts](/en/prototypes-and-spare-parts/) economical.
 

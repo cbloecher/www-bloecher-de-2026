@@ -58,6 +58,8 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 - Die fünf bereits referenzierten Originalbilder für Sandguss, Modellbau, 3D-Sanddruck, 3D-Scannen und Temperierung aus `migration-source` nach `hugo/assets/images/imported/2023/11/` übernommen.
 - Weitere vorhandene Originalbilder den zentralen Seiten für Werkzeuge + Formen, Prototypen + Ersatzteile, Leistungen, Unternehmen und Qualität in DE und EN zugeordnet.
 - Darstellung über die responsive Hugo-Bildpipeline von Pico Corp.
+- Referenzgalerie für Aluminium-Sandguss in DE und EN mit acht Originalmotiven, individuellen Alt-Texten und sichtbaren Bildunterschriften ergänzt.
+- Neuer eigener Shortcode `bloecher-gallery`: nutzt das Pico-Corp-Galerieraster, ohne den unzugänglichen Upstream-Shortcode mit leerem `alt` zu überschreiben.
 - Seiten ohne fachlich passendes Motiv bleiben bewusst ohne dekoratives Ersatzbild.
 
 ## Übersetzungen
