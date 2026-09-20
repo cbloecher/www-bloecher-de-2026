@@ -1,4 +1,4 @@
-name: Build and deploy Hugo previews to Pages
+name: Build and deploy Hugo theme previews to Pages
 
 on:
   push:
@@ -6,8 +6,10 @@ on:
       - main
       - theme-universal
       - theme-arcana
+      - theme-pico-corp
     paths:
       - "hugo/**"
+      - "pages-preview/**"
       - ".github/workflows/hugo-pages.yml"
   workflow_dispatch:
 
@@ -46,7 +48,13 @@ jobs:
           ref: theme-arcana
           path: arcana
 
-      - name: Install Hugo
+      - name: Checkout Pico Corp experiment
+        uses: actions/checkout@v6
+        with:
+          ref: theme-pico-corp
+          path: pico-corp
+
+      - name: Install Hugo Extended
         shell: bash
         run: |
           set -euxo pipefail
@@ -59,24 +67,27 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
 
-      - name: Prepare Universal theme
+      - name: Prepare external themes
         shell: bash
         run: |
           set -euxo pipefail
           bash universal/hugo/tools/setup-universal-theme.sh
-
-      - name: Prepare Arcana theme
-        shell: bash
-        run: |
-          set -euxo pipefail
           bash arcana/hugo/tools/setup-arcana-theme.sh
+          bash pico-corp/hugo/tools/setup-pico-corp-theme.sh
 
-      - name: Build baseline
+      - name: Prepare landing page
         shell: bash
         run: |
           set -euxo pipefail
+          rm -rf publish
           mkdir -p publish
-          hugo             --source ./baseline/hugo             --destination "${GITHUB_WORKSPACE}/publish"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          cp -a baseline/pages-preview/. publish/
+
+      - name: Build Blöcher Custom preview
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo             --source ./baseline/hugo             --destination "${GITHUB_WORKSPACE}/publish/bloecher-custom"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/bloecher-custom/"
 
       - name: Build Universal preview
         shell: bash
@@ -89,6 +100,12 @@ jobs:
         run: |
           set -euxo pipefail
           hugo             --source ./arcana/hugo             --destination "${GITHUB_WORKSPACE}/publish/arcana"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/arcana/"
+
+      - name: Build Pico Corp preview
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo             --source ./pico-corp/hugo             --destination "${GITHUB_WORKSPACE}/publish/pico-corp"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/pico-corp/"
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
