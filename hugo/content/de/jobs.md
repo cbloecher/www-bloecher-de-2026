@@ -3,6 +3,9 @@ title: "Jobs"
 description: "Arbeiten bei Giesserei Blöcher in Biedenkopf – Tätigkeiten in Gießerei, Schweißerei und Gussnachbearbeitung."
 translationKey: "jobs"
 draft: false
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_gebaeude.jpg"
+  alt: "Gebäude der Giesserei Blöcher in Biedenkopf"
 migration:
   wordpress_id: 3461
   source_url: "https://www.bloecher.de/jobs/"

@@ -64,10 +64,17 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 
 - Die fünf bereits referenzierten Originalbilder für Sandguss, Modellbau, 3D-Sanddruck, 3D-Scannen und Temperierung aus `migration-source` nach `hugo/assets/images/imported/2023/11/` übernommen.
 - Weitere vorhandene Originalbilder den zentralen Seiten für Werkzeuge + Formen, Prototypen + Ersatzteile, Leistungen, Unternehmen und Qualität in DE und EN zugeordnet.
-- Darstellung über die responsive Hugo-Bildpipeline von Pico Corp.
+- Darstellung über die responsive Hugo-Bildpipeline von Pico Corp; Hugo erzeugt WebP, mehrere Breiten, `srcset`, intrinsische Maße und Lazy Loading beim Build.
 - Referenzgalerie für Aluminium-Sandguss in DE und EN mit acht Originalmotiven, individuellen Alt-Texten und sichtbaren Bildunterschriften ergänzt.
+- Historische Werkzeuge-/Formen-Galerie mit neun Originalmotiven in DE und EN wiederhergestellt; das ursprüngliche Bodenwerkzeug ist wieder Leitbild.
+- Prototypen-/Ersatzteile-Galerie mit fünf Prozessmotiven und neun Bauteilmotiven in DE und EN wiederhergestellt.
+- Die acht fachlich sinnvollen Motive der früheren Leistungsübersicht wurden in DE und EN übernommen; der frühere generische Platzhalter entfällt bewusst.
+- Fehlende Einzelbilder ergänzt: GOM-Ölwanne bei 3D-Scannen, ISO-Zertifikat bei Qualität, Gebäude bei Jobs und historische Anfahrtsskizze in DE/EN.
 - Neuer eigener Shortcode `bloecher-gallery`: nutzt das Pico-Corp-Galerieraster, ohne den unzugänglichen Upstream-Shortcode mit leerem `alt` zu überschreiben.
+- Alle Galerieelemente besitzen individuelle Alt-Texte und fachliche Bildunterschriften.
+- Das im WordPress-Inhalt referenzierte Schweißmotiv zur Temperierung ist im gesicherten Medienbestand nicht vorhanden; dort bleibt das vorhandene fachlich passende Temperierungsmotiv dokumentiert im Einsatz.
 - Seiten ohne fachlich passendes Motiv bleiben bewusst ohne dekoratives Ersatzbild.
+- Vollständige Zuordnung und bewusste Abweichungen sind in `Analyse/Bildmigrationsmatrix-2026-09-21.md` dokumentiert.
 
 ## Übersetzungen
 
@@ -109,4 +116,4 @@ Damit bestehen derzeit genau zwei kleine Pico-Corp-Template-Overrides.
 5. OpenGraph-Standardbild, Favicons und Organization-Schema vervollständigen.
 6. Accessibility-Prüfung mit Tastatur, Kontrasttest und automatisiertem Audit.
 7. Responsive Sichtprüfung auf kleinen Mobilgeräten, Tablet und breitem Desktop.
-8. Verbleibendes Bildinventar und mobile Zuschnitte im visuellen Review prüfen.
+8. Mobile Zuschnitte und Galeriedichte im abschließenden visuellen Review prüfen.

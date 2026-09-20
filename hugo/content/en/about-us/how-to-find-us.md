@@ -3,6 +3,10 @@ title: "How to find us"
 description: "Directions to Giesserei Blöcher GmbH, Zur Wolfskaute 1 in 35216 Biedenkopf, Germany."
 translationKey: "directions"
 draft: false
+gallery:
+  - image: "images/imported/2021/02/giesserei-bloecher_wegbeschreibung_biedenkopf.gif"
+    alt: "Directions map to Giesserei Blöcher in Biedenkopf"
+    caption: "Directions map"
 migration:
   wordpress_id: 4014
   source_url: "https://www.bloecher.de/en/about-us/how-to-find-us/"
@@ -34,3 +38,6 @@ Phone: [+49 (0)6461 9551-0](tel:+49646195510)
 3. Continue straight into the “Am roten Stein” industrial area.
 4. After about 200 m, turn right into “Zur Wolfskaute”.
 5. Giesserei Blöcher is the first building on the left.
+## Directions map
+
+{{< bloecher-gallery >}}

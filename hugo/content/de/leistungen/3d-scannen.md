@@ -12,6 +12,10 @@ highlights:
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
   alt: "Handgeführter 3D-Scanner"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_GOM_Oelwanne.jpg"
+    alt: "Optische Vermessung einer Ölwanne mit einem GOM-ATOS-System"
+    caption: "GOM-ATOS-Messung einer Ölwanne"
 migration:
   wordpress_id: 3835
   source_url: "https://www.bloecher.de/leistungen/3d-scannen/"
@@ -37,5 +41,9 @@ Bei der strukturierten Lichtprojektion wird ein definiertes Lichtmuster auf die 
 Eine oder mehrere Kameras erfassen die Verzerrung dieses Musters aus unterschiedlichen Blickwinkeln. Aus diesen Aufnahmen berechnet die Software die räumliche Lage vieler Oberflächenpunkte und erzeugt daraus ein digitales 3D-Modell.
 
 Das Verfahren eignet sich besonders für komplexe Geometrien und detaillierte Oberflächen.
+
+## Optische Bauteilvermessung
+
+{{< bloecher-gallery >}}
 
 {{< bloecher-service-nav >}}

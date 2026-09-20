@@ -7,6 +7,31 @@ type: "services"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium-Sandguss bei Giesserei Blöcher"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
+    alt: "EPS-Modellbau bei Giesserei Blöcher"
+    caption: "Modellbau"
+  - image: "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
+    alt: "3D-Drucker für Sandformen und Sandkerne"
+    caption: "3D-Sanddruck"
+  - image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
+    alt: "Eingegossene Edelstahlrohre zur Temperierung"
+    caption: "Temperierung"
+  - image: "images/imported/2023/11/giesserei-bloecher_giessen_kleiner-kasten.jpg"
+    alt: "Aluminium-Sandguss in einem kleinen Formkasten"
+    caption: "Aluminium-Sandguss"
+  - image: "images/imported/2020/06/bloecher_3d-scan.jpg"
+    alt: "3D-Scanner zur digitalen Geometrieerfassung"
+    caption: "3D-Scannen"
+  - image: "images/imported/2023/11/giesserei-bloecher_metallstapel_aluminium.jpg"
+    alt: "Aluminium als Werkstoff für Gussteile"
+    caption: "Aluminium"
+  - image: "images/imported/2023/11/giesserei-bloecher_formen_06x06.jpg"
+    alt: "Vorbereitete Sandformen in der Gießerei"
+    caption: "Sandformen"
+  - image: "images/imported/2023/11/giesserei-bloecher_form_geleert_06x06.jpg"
+    alt: "Geleerte Sandform nach dem Abguss"
+    caption: "Ausformen"
 migration:
   wordpress_id: 3501
   source_url: "https://www.bloecher.de/leistungen/"
@@ -31,3 +56,6 @@ Unsere Leistungen greifen direkt ineinander:
 ## Flexible Fertigung für besondere Anforderungen
 
 Für Sonderlösungen kombinieren wir die einzelnen Verfahren nach Bedarf. Dazu gehören beispielsweise Gussteile mit eingegossenen Edelstahlrohren zur Temperierung oder werkzeuglos hergestellte Sandformen für Prototypen und Einzelteile.
+## Einblicke in unsere Leistungen
+
+{{< bloecher-gallery >}}

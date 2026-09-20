@@ -6,6 +6,10 @@ draft: false
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_cubing_12x06.jpg"
   alt: "Messtechnik zur Qualitätsprüfung von Gussteilen"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_zertifikat_de_iso9001_iso14001.png"
+    alt: "Zertifikat der Giesserei Blöcher für ISO 9001 und ISO 14001"
+    caption: "Zertifizierung nach ISO 9001 und ISO 14001"
 migration:
   wordpress_id: 3728
   source_url: "https://www.bloecher.de/unternehmen/zertifizierung/"
@@ -40,3 +44,6 @@ Dazu gehören insbesondere:
 ## Managementsystem als Arbeitsgrundlage
 
 Die Zertifizierungen verstehen wir nicht als Selbstzweck, sondern als Rahmen für einen effizienten, nachvollziehbaren und kontinuierlich verbesserten Betrieb.
+## Zertifikat
+
+{{< bloecher-gallery >}}
