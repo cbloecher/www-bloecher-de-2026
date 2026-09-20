@@ -3,6 +3,12 @@ title: "3D-Sanddruck"
 description: "Direkte additive Fertigung von Sandformen und Sandkernen bis 1.800 × 900 × 900 mm – ohne Modell und Kernkasten."
 translationKey: "3d-print"
 draft: false
+weight: 30
+summary: "Sandformen und Sandkerne direkt aus CAD-Daten – ohne physisches Modell oder Kernkasten."
+highlights:
+  - "Direkt aus digitalen Daten"
+  - "Komplexe Geometrien und kurzfristige Änderungen"
+  - "Bauraum bis 1.800 × 900 × 900 mm"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
   alt: "3D-Sanddrucker für Sandformen und Sandkerne"
@@ -40,3 +46,5 @@ Unsere maximale Baugröße für 3D-gedruckte Sandformen und Kerne beträgt:
 **1.800 × 900 × 900 mm**
 
 Die gedruckten Formen und Kerne werden anschließend direkt für den [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) eingesetzt.
+
+{{< bloecher-service-nav >}}

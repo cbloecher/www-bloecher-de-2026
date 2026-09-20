@@ -3,6 +3,12 @@ title: "3D Sand Printing"
 description: "Direct additive production of sand molds and cores up to 1,800 × 900 × 900 mm without a physical pattern or core box."
 translationKey: "3d-print"
 draft: false
+weight: 30
+summary: "Sand molds and cores produced directly from CAD data without a physical pattern or core box."
+highlights:
+  - "Directly from digital data"
+  - "Complex geometries and rapid changes"
+  - "Build size up to 1,800 × 900 × 900 mm"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_sanddrucker.jpg"
   alt: "3D sand printer for molds and cores"
@@ -40,3 +46,5 @@ Our maximum build size for 3D-printed sand molds and cores is:
 **1,800 × 900 × 900 mm**
 
 The printed molds and cores are then used directly for [aluminium sand casting](/en/services/aluminium-sand-casting/).
+
+{{< bloecher-service-nav >}}

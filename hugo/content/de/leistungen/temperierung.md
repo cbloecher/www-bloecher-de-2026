@@ -3,6 +3,12 @@ title: "Temperierung"
 description: "Konturfolgende Temperierung durch eingegossene Edelstahlrohre für Werkzeug- und Formguss."
 translationKey: "temperature-control"
 draft: false
+weight: 40
+summary: "Konturfolgende Temperierung durch direkt in Aluminiumgussteile eingegossene Edelstahlrohre."
+highlights:
+  - "Kühlen und Beheizen von Werkzeugen"
+  - "Konturfolgende Rohrführung"
+  - "Verbundguss mit Funktionsteilen"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
   alt: "Eingegossene Edelstahlrohre zur Temperierung"
@@ -30,3 +36,5 @@ Das Eingießen von Rohren, Gewindeeinsätzen oder anderen Funktionsteilen ist ei
 Die Einlegeteile werden vor dem Gießen in der Form positioniert. Beim Gießen umschließt das flüssige Aluminium die Einlegeteile und verbindet sie nach dem Erstarren dauerhaft mit dem Gussteil.
 
 So können zusätzliche Funktionen bereits im Gießprozess in das Bauteil integriert werden.
+
+{{< bloecher-service-nav >}}

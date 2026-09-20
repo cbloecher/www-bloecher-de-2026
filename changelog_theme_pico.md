@@ -36,7 +36,9 @@ Pico Corp bleibt ein extern eingebundenes Upstream-Theme. Anpassungen erfolgen b
 - Leistungsübersicht auf der Startseite ergänzt:
   - DE liest aus `/leistungen/`.
   - EN liest aus `/services/`.
-- Vorhandene Leistungsseiten werden über die vom Theme vorgesehene `services`-Section eingebunden; kein eigener Section-Template-Fork.
+- Die DE-/EN-Leistungsübersichten aktivieren über Front Matter `type: "services"` das vorhandene Upstream-Layout `services/section.html`; kein eigener Section-Template-Fork.
+- Leistungsseiten besitzen kuratierte `summary`- und `highlights`-Angaben für klar erkennbare, informative Navigationskarten.
+- Am Ende jeder Leistungsdetailseite erzeugt der additive Shortcode `bloecher-service-nav` automatisch sprachabhängige Links zu den Geschwisterseiten und zurück zur Übersicht.
 
 ## Gestaltung
 
@@ -52,6 +54,8 @@ Anpassungen liegen in `hugo/assets/css/custom.css`:
 - Ruhige helle Alternativflächen.
 - Begrenzte Textbreite auf Inhaltsseiten.
 - Responsive Anpassungen für Header, Logo und Hero-Bild.
+- Leistungskarten mit orangefarbener Führungslinie, sichtbarem Pfeil sowie klaren Hover- und Tastatur-Fokuszuständen als Navigation hervorgehoben.
+- Responsive zweispaltige beziehungsweise mobile einspaltige Navigation zu weiteren Leistungen ergänzt.
 
 ## Bilder
 

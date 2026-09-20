@@ -3,6 +3,12 @@ title: "Aluminium-Sandguss"
 description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg Stückgewicht und rund 6 m³ Volumen."
 translationKey: "aluminium-sand-casting"
 draft: false
+weight: 10
+summary: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg."
+highlights:
+  - "Stückgewichte bis ca. 2.500 kg"
+  - "Bauteilgrößen bis rund 6 m³"
+  - "Einzelteile und kleine Serien"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium-Sandguss in der Giesserei Blöcher"
@@ -102,3 +108,5 @@ Auf der bestehenden Website werden unter anderem folgende Legierungen genannt:
 | Si7 (A357) | G-Al Si7 Mg | Aluminium-Silizium-Magnesium-Legierung |
 
 Weitere Legierungen stimmen wir nach Bauteil und Anwendung ab.
+
+{{< bloecher-service-nav >}}

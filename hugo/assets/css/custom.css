@@ -154,3 +154,100 @@ body {
     aspect-ratio: 16 / 10;
   }
 }
+
+/* Service overview: make the existing Pico Corp cards clearly navigational. */
+.service-card {
+  min-height: 100%;
+  position: relative;
+  border-inline-start: 3px solid #ed9c10;
+}
+
+.service-card:hover {
+  border-color: #ed9c10;
+  box-shadow: none;
+}
+
+.service-card:focus-within {
+  outline: 2px solid #ed9c10;
+  outline-offset: 3px;
+}
+
+.service-card__title a {
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.service-card::after {
+  content: "→";
+  margin-block-start: auto;
+  padding-block-start: var(--pc-space-xs);
+  color: #ed9c10;
+  font-size: 1.25rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Related service links at the end of every service detail page. */
+.service-nav {
+  margin-block-start: clamp(3.5rem, 7vw, 5.5rem);
+  padding-block-start: var(--pc-space-lg);
+  border-block-start: 2px solid #ed9c10;
+}
+
+.service-nav__title {
+  margin-block-end: var(--pc-space-md);
+}
+
+.service-nav__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  border-block-start: 1px solid #e1e1e1;
+  list-style: none;
+}
+
+.service-nav__list li {
+  margin: 0;
+  border-block-end: 1px solid #e1e1e1;
+}
+
+.service-nav__list li:nth-child(odd) {
+  border-inline-end: 1px solid #e1e1e1;
+}
+
+.service-nav__list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--pc-space-xs);
+  min-height: 3.75rem;
+  padding: var(--pc-space-xs) var(--pc-space-sm);
+  color: var(--pc-text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-nav__list a:hover,
+.service-nav__list a:focus-visible {
+  background: var(--pc-accent-quiet);
+  color: var(--pc-accent);
+}
+
+.service-nav__overview {
+  display: inline-block;
+  margin-block-start: var(--pc-space-md);
+  font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .service-nav__list {
+    grid-template-columns: 1fr;
+  }
+
+  .service-nav__list li:nth-child(odd) {
+    border-inline-end: 0;
+  }
+}
+

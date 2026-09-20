@@ -3,6 +3,12 @@ title: "3D-Scannen"
 description: "3D-Scannen für Qualitätskontrolle, Geometrieerfassung und Reverse Engineering mit Handscanner oder GOM ATOS."
 translationKey: "3d-scan"
 draft: false
+weight: 50
+summary: "Digitale Geometrieerfassung für Qualitätskontrolle, Rohteilvermessung und Reverse Engineering."
+highlights:
+  - "Handscanner und GOM ATOS"
+  - "Prüfung von Modellen und Gussteilen"
+  - "Reverse Engineering"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
   alt: "Handgeführter 3D-Scanner"
@@ -31,3 +37,5 @@ Bei der strukturierten Lichtprojektion wird ein definiertes Lichtmuster auf die 
 Eine oder mehrere Kameras erfassen die Verzerrung dieses Musters aus unterschiedlichen Blickwinkeln. Aus diesen Aufnahmen berechnet die Software die räumliche Lage vieler Oberflächenpunkte und erzeugt daraus ein digitales 3D-Modell.
 
 Das Verfahren eignet sich besonders für komplexe Geometrien und detaillierte Oberflächen.
+
+{{< bloecher-service-nav >}}

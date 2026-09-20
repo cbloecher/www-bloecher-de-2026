@@ -3,6 +3,12 @@ title: "Aluminium Sand Casting"
 description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg and around 6 m³."
 translationKey: "aluminium-sand-casting"
 draft: false
+weight: 10
+summary: "Aluminium sand casting for single parts, prototypes and small batches up to approximately 2,500 kg."
+highlights:
+  - "Part weights up to approximately 2,500 kg"
+  - "Part sizes up to around 6 m³"
+  - "Single parts and small batches"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium sand casting at Giesserei Blöcher"
@@ -102,3 +108,5 @@ The existing website lists, among others, the following alloys:
 | Si7 (A357) | G-Al Si7 Mg | aluminium-silicon-magnesium alloy |
 
 Additional alloys can be selected according to component and application.
+
+{{< bloecher-service-nav >}}

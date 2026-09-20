@@ -3,6 +3,12 @@ title: "Temperature Control"
 description: "Contour-following temperature control using cast-in stainless-steel tubes for tool and mold castings."
 translationKey: "temperature-control"
 draft: false
+weight: 40
+summary: "Contour-following temperature control using stainless-steel tubes cast directly into aluminium tools."
+highlights:
+  - "Heating and cooling of tools"
+  - "Contour-following tube routing"
+  - "Insert casting with functional components"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
   alt: "Cast-in stainless-steel tubes for temperature control"
@@ -30,3 +36,5 @@ Casting in tubes, threaded inserts or other functional components is a form of i
 The inserts are positioned inside the mold before pouring. During casting, liquid aluminium surrounds the inserts and permanently bonds them to the casting after solidification.
 
 This allows additional functions to be integrated into the component during the casting process.
+
+{{< bloecher-service-nav >}}

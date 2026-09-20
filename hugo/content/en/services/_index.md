@@ -3,6 +3,7 @@ title: "Services"
 description: "From CAD data through model making and 3D-printed sand molds to aluminium sand casting."
 translationKey: "services"
 draft: false
+type: "services"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium sand casting at Giesserei Blöcher"

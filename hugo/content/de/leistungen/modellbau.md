@@ -3,6 +3,12 @@ title: "Modellbau"
 description: "Eigener Gießereimodellbau für EPS-Modelle mit 5-Achs-Bearbeitung bis 8.000 × 4.000 × 2.000 mm."
 translationKey: "model-making"
 draft: false
+weight: 20
+summary: "Eigener EPS-Modellbau mit kurzen Wegen zwischen Konstruktion, Modellfertigung und Gießerei."
+highlights:
+  - "EPS-Modelle aus eigener Fertigung"
+  - "5-Achs-Bearbeitung"
+  - "Arbeitsbereich bis 8.000 × 4.000 × 2.000 mm"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
   alt: "Fräse im Gießereimodellbau"
@@ -39,3 +45,5 @@ Die Modelle werden aus EPS-Blöcken gefräst.
 Dafür steht eine 5-Achs-Fräsmaschine mit einem Arbeitsbereich von **8.000 × 4.000 × 2.000 mm** zur Verfügung.
 
 Wenn ein Modell wirtschaftlich oder geometrisch nicht sinnvoll ist, können Sandformen und Kerne alternativ direkt im [3D-Sanddruck](/leistungen/3d-druck/) hergestellt werden.
+
+{{< bloecher-service-nav >}}
