@@ -378,3 +378,18 @@ a.service-subnav__link:hover {
     padding-inline: var(--pc-page-gutter);
   }
 }
+
+/* Preserve technical illustrations and isolated product shots without cropping. */
+.page-header__media--contain img,
+.gallery__item--contain img {
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.page-header__media--contain img {
+  padding: clamp(.75rem, 2vw, 1.5rem);
+}
+
+.gallery__item--contain img {
+  padding: clamp(.75rem, 2vw, 1.25rem);
+}
