@@ -3,6 +3,7 @@ title: "About us"
 description: "Giesserei Blöcher in Biedenkopf combines three generations of foundry experience with modern manufacturing and measurement technologies."
 translationKey: "company"
 draft: false
+type: "services"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg"
   alt: "Giesserei Blöcher premises in Biedenkopf"
