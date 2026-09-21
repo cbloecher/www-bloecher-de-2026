@@ -189,6 +189,7 @@ relativeURLs = false
   headingFont = "sans"
   logo = "images/logo.png"
   logoDark = "images/logo.png"
+  favicon = "favicon.png"
   defaultScheme = "light"
   showSchemeToggle = false
   showBreadcrumbs = true
