@@ -33,4 +33,3 @@ Wir verbinden Technik, Erfahrung und fachliche Ausbildung mit enger Abstimmung i
 
 Ziel ist eine zuverlässige und flexible Bearbeitung von Kundenprojekten – besonders dort, wo individuelle Lösungen und kleine Stückzahlen gefragt sind.
 
-{{< bloecher-company-nav >}}
