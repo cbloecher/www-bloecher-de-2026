@@ -3,6 +3,7 @@ title: "3D Scanning"
 description: "3D scanning for quality control, geometry capture and reverse engineering using a handheld scanner or GOM ATOS."
 translationKey: "3d-scan"
 draft: false
+type: "page"
 weight: 50
 summary: "Digital geometry capture for quality control, raw-part measurement and reverse engineering."
 highlights:
