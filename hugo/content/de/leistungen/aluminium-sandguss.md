@@ -10,8 +10,8 @@ highlights:
   - "Bauteilgrößen bis rund 6 m³"
   - "Einzelteile und kleine Serien"
 hero:
-  image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
-  alt: "Vierzylinder-Motorblock aus Aluminium-Sandguss"
+  image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
+  alt: "Aluminium-Sandguss in der Giesserei Blöcher"
 gallery:
   - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Lehrenunterbau.jpg"
     alt: "Lehrenunterbau aus Aluminium-Sandguss"
