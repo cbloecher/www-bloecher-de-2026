@@ -3,7 +3,7 @@ title: "Modellbau"
 description: "Eigener Gießereimodellbau für EPS-Modelle mit 5-Achs-Bearbeitung bis 8.000 × 4.000 × 2.000 mm."
 translationKey: "model-making"
 draft: false
-weight: 20
+weight: 30
 summary: "Eigener EPS-Modellbau mit kurzen Wegen zwischen Konstruktion, Modellfertigung und Gießerei."
 highlights:
   - "EPS-Modelle aus eigener Fertigung"
