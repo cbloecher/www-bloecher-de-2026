@@ -12,6 +12,10 @@ highlights:
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
   alt: "Cast-in stainless-steel tubes for temperature control"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_temperierung-nah.jpg"
+    alt: "Welder fabricating contour-following temperature-control tubing in stainless steel"
+    caption: "Fabrication of the stainless-steel temperature-control tubing"
 migration:
   wordpress_id: 4028
   source_url: "https://www.bloecher.de/en/services/temperature-control/"
@@ -36,5 +40,9 @@ Casting in tubes, threaded inserts or other functional components is a form of i
 The inserts are positioned inside the mold before pouring. During casting, liquid aluminium surrounds the inserts and permanently bonds them to the casting after solidification.
 
 This allows additional functions to be integrated into the component during the casting process.
+
+## Fabrication of the temperature-control tubing
+
+{{< bloecher-gallery >}}
 
 {{< bloecher-service-nav >}}
