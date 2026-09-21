@@ -3,7 +3,8 @@ title: "Temperature Control"
 description: "Contour-following temperature control using cast-in stainless-steel tubes for tool and mold castings."
 translationKey: "temperature-control"
 draft: false
-weight: 40
+type: "page"
+weight: 20
 summary: "Contour-following temperature control using stainless-steel tubes cast directly into aluminium tools."
 highlights:
   - "Heating and cooling of tools"
