@@ -23,10 +23,17 @@ jobs:
           DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
         run: |
           set -eu
-          test -n "$DEPLOY_SFTP_HOST"
-          test -n "$DEPLOY_SFTP_USER"
-          test -n "$DEPLOY_SFTP_PATH"
-          test -n "$DEPLOY_SFTP_PASSWORD"
+          missing=0
+          for name in DEPLOY_SFTP_HOST DEPLOY_SFTP_USER DEPLOY_SFTP_PATH DEPLOY_SFTP_PASSWORD; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error title=Missing configuration::${name} is empty or unavailable"
+              missing=1
+            fi
+          done
+          if [ -z "${DEPLOY_SFTP_PORT:-}" ]; then
+            echo "::notice title=Default SFTP port::DEPLOY_SFTP_PORT is empty; port 22 will be used"
+          fi
+          test "$missing" -eq 0
 
       - name: Install SFTP client
         run: |
