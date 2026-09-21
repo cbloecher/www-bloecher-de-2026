@@ -7,6 +7,7 @@ gallery:
   - image: "images/imported/2021/02/giesserei-bloecher_wegbeschreibung_biedenkopf.gif"
     alt: "Anfahrtsskizze zur Giesserei Blöcher in Biedenkopf"
     caption: "Anfahrtsskizze"
+    fit: "contain"
 migration:
   wordpress_id: 3526
   source_url: "https://www.bloecher.de/unternehmen/anfahrt/"
