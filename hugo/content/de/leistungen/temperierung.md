@@ -12,6 +12,10 @@ highlights:
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_temperierung.jpg"
   alt: "Eingegossene Edelstahlrohre zur Temperierung"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_temperierung-nah.jpg"
+    alt: "Schweißer beim Fertigen einer konturfolgenden Temperierung aus Edelstahlrohren"
+    caption: "Fertigung der Edelstahlrohr-Temperierung"
 migration:
   wordpress_id: 3725
   source_url: "https://www.bloecher.de/leistungen/temperierung/"
@@ -36,5 +40,9 @@ Das Eingießen von Rohren, Gewindeeinsätzen oder anderen Funktionsteilen ist ei
 Die Einlegeteile werden vor dem Gießen in der Form positioniert. Beim Gießen umschließt das flüssige Aluminium die Einlegeteile und verbindet sie nach dem Erstarren dauerhaft mit dem Gussteil.
 
 So können zusätzliche Funktionen bereits im Gießprozess in das Bauteil integriert werden.
+
+## Fertigung der Temperierung
+
+{{< bloecher-gallery >}}
 
 {{< bloecher-service-nav >}}
