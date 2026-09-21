@@ -22,7 +22,7 @@
     {{- with $page.Params.hero -}}
       {{- $hero := . -}}
       {{- with .image -}}
-        <figure class="page-header__media">
+        <figure class="page-header__media{{ if eq ($hero.fit | default "cover") "contain" }} page-header__media--contain{{ end }}">
           {{ partial "utils/image.html" (dict
             "page" $page
             "path" .
