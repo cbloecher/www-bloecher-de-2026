@@ -250,3 +250,20 @@ body {
   margin-block-start: var(--pc-space-md);
   font-weight: 600;
 }
+
+
+/* Keep page imagery calm and secondary to the page title. */
+.page-media {
+  background: #f7f7f7;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+}
+
+.page-media img {
+  display: block;
+  height: clamp(13rem, 24vw, 17.5rem);
+  max-height: 17.5rem;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
