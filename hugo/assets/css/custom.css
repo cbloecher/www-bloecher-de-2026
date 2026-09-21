@@ -87,7 +87,7 @@ body {
 }
 
 .card,
-.service-card,
+.section-card,
 .work-card {
   box-shadow: none;
 }
@@ -157,28 +157,28 @@ body {
 }
 
 /* Service overview: make the existing Pico Corp cards clearly navigational. */
-.service-card {
+.section-card {
   min-height: 100%;
   position: relative;
   border-inline-start: 3px solid #ed9c10;
 }
 
-.service-card:hover {
+.section-card:hover {
   border-color: #ed9c10;
   box-shadow: none;
 }
 
-.service-card:focus-within {
+.section-card:focus-within {
   outline: 2px solid #ed9c10;
   outline-offset: 3px;
 }
 
-.service-card__title a {
+.section-card__title a {
   text-decoration-thickness: .08em;
   text-underline-offset: .18em;
 }
 
-.service-card::after {
+.section-card::after {
   content: "→";
   margin-block-start: auto;
   padding-block-start: var(--pc-space-xs);
@@ -210,7 +210,7 @@ body {
   min-width: 0;
 }
 
-.service-nav__current .service-card {
+.service-nav__current .section-card {
   height: 100%;
   color: #6f6f6f;
   background: #f2f2f2;
@@ -218,15 +218,15 @@ body {
   opacity: .72;
 }
 
-.service-nav__current .service-card:hover {
+.service-nav__current .section-card:hover {
   border-color: #a9a9a9;
 }
 
-.service-nav__current .service-card::after {
+.service-nav__current .section-card::after {
   content: none;
 }
 
-.service-nav__current .service-card__title a {
+.service-nav__current .section-card__title a {
   color: inherit;
   cursor: default;
   text-decoration: none;
