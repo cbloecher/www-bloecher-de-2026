@@ -64,7 +64,7 @@
         {{ range site.Menus.legal }}
           <li><a href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
-        {{ if and (eq site.Language.Lang "en") (eq (len site.Menus.legal) 0) }}
+        {{ if and (eq site.Language.Lang "en") (not site.Menus.legal) }}
           {{ range site.Sites }}
             {{ if eq .Language.Lang "de" }}
               {{ with .GetPage "/impressum" }}<li><a href="{{ .RelPermalink }}" hreflang="de">Imprint (German)</a></li>{{ end }}
