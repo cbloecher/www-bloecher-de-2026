@@ -6,7 +6,7 @@
       {{ with .Content }}<div class="prose prose--wide">{{ . }}</div>{{ end }}
       <div class="grid-auto grid-auto--gap-lg">
         {{ range .RegularPages.ByWeight }}
-          {{ partial "cards/service-card.html" (dict "page" . "headingLevel" "h2") }}
+          {{ partial "cards/section-card.html" (dict "page" . "headingLevel" "h2") }}
         {{ end }}
       </div>
     </div>
