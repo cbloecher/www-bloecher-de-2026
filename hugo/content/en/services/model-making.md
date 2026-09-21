@@ -3,7 +3,8 @@ title: "Model Making"
 description: "In-house foundry model making for EPS patterns with 5-axis machining up to 8,000 × 4,000 × 2,000 mm."
 translationKey: "model-making"
 draft: false
-weight: 20
+type: "page"
+weight: 30
 summary: "In-house EPS model making with short coordination paths between design, pattern production and foundry."
 highlights:
   - "In-house EPS pattern production"
