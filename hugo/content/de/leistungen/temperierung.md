@@ -3,7 +3,7 @@ title: "Temperierung"
 description: "Konturfolgende Temperierung durch eingegossene Edelstahlrohre für Werkzeug- und Formguss."
 translationKey: "temperature-control"
 draft: false
-weight: 40
+weight: 20
 summary: "Konturfolgende Temperierung durch direkt in Aluminiumgussteile eingegossene Edelstahlrohre."
 highlights:
   - "Kühlen und Beheizen von Werkzeugen"
