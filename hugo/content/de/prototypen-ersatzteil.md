@@ -4,8 +4,8 @@ description: "Einzelteile, Prototypen und Ersatzteile auf Basis vorhandener CAD-
 translationKey: "prototypes-spares"
 draft: false
 hero:
-  image: "images/imported/2023/11/giesserei-bloecher_motorblock_355x236.jpg"
-  alt: "Aluminium-Motorblock als Sandgussteil"
+  image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
+  alt: "Vierzylinder-Motorblock als Prototyp aus Aluminium-Sandguss"
 gallery:
   - image: "images/imported/2020/06/bloecher_3d-scan.jpg"
     alt: "3D-Scan eines vorhandenen Bauteils"
