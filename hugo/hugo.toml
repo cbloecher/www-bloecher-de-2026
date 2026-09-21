@@ -92,6 +92,12 @@ relativeURLs = false
       [languages.de.menu.footer.params]
         group = "Leistungen"
     [[languages.de.menu.footer]]
+      name = "Ersatzteile nach Bedarf"
+      pageRef = "/ersatzteile-nach-bedarf"
+      weight = 55
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
       name = "Unternehmen"
       pageRef = "/unternehmen"
       weight = 60
