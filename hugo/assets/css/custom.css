@@ -255,9 +255,11 @@ body {
 /* Keep page imagery calm and secondary to the page title. */
 .page-header__media {
   overflow: hidden;
-  background: #f7f7f7;
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
+  margin-inline: 0;
+  margin-bottom: 0;
+  background-color: var(--pc-bg-sunken);
+  border: var(--pc-border);
+  border-radius: var(--pc-radius);
 }
 
 .page-header__media img {
