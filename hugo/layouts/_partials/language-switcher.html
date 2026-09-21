@@ -1,0 +1,31 @@
+{{- if gt (len site.Languages) 1 -}}
+  {{- $page := . -}}
+  {{- $label := cond (eq site.Language.Lang "de") "Sprache" "Language" -}}
+  <nav class="language-switcher" aria-label="{{ $label }}">
+    <ul class="language-switcher__list">
+      {{- range site.Languages -}}
+        {{- $language := . -}}
+        <li>
+          {{- if eq $language.Lang site.Language.Lang -}}
+            <span class="language-switcher__link is-current" aria-current="page">{{ upper $language.Lang }}</span>
+          {{- else -}}
+            {{- $target := "" -}}
+            {{- range $page.AllTranslations -}}
+              {{- if eq .Language.Lang $language.Lang -}}
+                {{- $target = .RelPermalink -}}
+              {{- end -}}
+            {{- end -}}
+            {{- if not $target -}}
+              {{- range site.Sites -}}
+                {{- if eq .Language.Lang $language.Lang -}}
+                  {{- $target = .Home.RelPermalink -}}
+                {{- end -}}
+              {{- end -}}
+            {{- end -}}
+            <a class="language-switcher__link" href="{{ $target }}" hreflang="{{ $language.Lang }}" lang="{{ $language.Lang }}">{{ upper $language.Lang }}</a>
+          {{- end -}}
+        </li>
+      {{- end -}}
+    </ul>
+  </nav>
+{{- end -}}
