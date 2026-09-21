@@ -4,8 +4,8 @@ description: "Single parts, prototypes and spare parts based on existing CAD dat
 translationKey: "prototypes-spares"
 draft: false
 hero:
-  image: "images/imported/2023/11/giesserei-bloecher_motorblock_355x236.jpg"
-  alt: "Sand-cast aluminium engine block"
+  image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
+  alt: "Four-cylinder engine block prototype made by aluminium sand casting"
 gallery:
   - image: "images/imported/2020/06/bloecher_3d-scan.jpg"
     alt: "3D scan of an existing component"
