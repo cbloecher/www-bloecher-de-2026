@@ -1,0 +1,46 @@
+name: Test SFTP deployment connection
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test-sftp:
+    name: Test SFTP connection
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 5
+
+    steps:
+      - name: Validate deployment configuration
+        env:
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ vars.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
+        run: |
+          set -eu
+          test -n "$DEPLOY_HOST"
+          test -n "$DEPLOY_USER"
+          test -n "$DEPLOY_PATH"
+          test -n "$DEPLOY_SFTP_PASSWORD"
+
+      - name: Install SFTP client
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes lftp
+
+      - name: Test login and target directory
+        env:
+          DEPLOY_HOST: ${{ vars.DEPLOY_HOST }}
+          DEPLOY_PORT: ${{ vars.DEPLOY_PORT }}
+          DEPLOY_USER: ${{ vars.DEPLOY_USER }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
+        run: |
+          set -eu
+          port="${DEPLOY_PORT:-22}"
+          lftp             -u "$DEPLOY_USER","$DEPLOY_SFTP_PASSWORD"             -p "$port"             "sftp://$DEPLOY_HOST"             -e "set sftp:auto-confirm yes; cd \"$DEPLOY_PATH\"; pwd; cls -1; bye"
