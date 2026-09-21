@@ -6,7 +6,6 @@ draft: false
 hero:
   image: "images/imported/2020/06/giesserei-bloecher_aluguss-bodenwerkzeug.jpg"
   alt: "Cast aluminium floor tool for forming applications"
-  fit: "contain"
 gallery:
   - image: "images/imported/2023/11/giesserei-bloecher_verformWkzg_bearbeitet_06x06.jpg"
     alt: "Machined aluminium forming tool"
