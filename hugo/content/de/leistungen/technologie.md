@@ -2,7 +2,7 @@
 title: "weitere Leistungen & Technologien"
 description: ""
 translationKey: "technology"
-draft: false
+draft: true
 weight: 90
 summary: "Ergänzende Technologien entlang der Prozesskette vom CAD-Datensatz bis zum fertigen Gussteil."
 highlights:
