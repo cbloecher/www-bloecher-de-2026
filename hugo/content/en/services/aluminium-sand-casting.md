@@ -10,8 +10,8 @@ highlights:
   - "Part sizes up to around 6 m³"
   - "Single parts and small batches"
 hero:
-  image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
-  alt: "Aluminium sand casting at Giesserei Blöcher"
+  image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
+  alt: "Four-cylinder engine block made by aluminium sand casting"
 gallery:
   - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Lehrenunterbau.jpg"
     alt: "Fixture base made by aluminium sand casting"
