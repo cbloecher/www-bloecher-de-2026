@@ -10,7 +10,7 @@
   <h2 class="service-nav__title" id="company-nav-title">{{ $title }}</h2>
   <div class="grid-auto grid-auto--gap-lg service-nav__grid">
     {{- range .RegularPages.ByWeight -}}
-      {{- $card := partial "cards/service-card.html" (dict "page" . "headingLevel" "h3") -}}
+      {{- $card := partial "cards/section-card.html" (dict "page" . "headingLevel" "h3") -}}
       {{- if eq .RelPermalink $page.RelPermalink -}}
         <div class="service-nav__current" aria-current="page">
           {{- $card | replaceRE ` href="[^"]+"` "" | safeHTML -}}
