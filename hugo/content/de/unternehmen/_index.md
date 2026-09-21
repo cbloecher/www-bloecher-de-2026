@@ -3,6 +3,7 @@ title: "Unternehmen"
 description: "Giesserei Blöcher in Biedenkopf: drei Generationen Gießerhandwerk verbunden mit moderner Fertigungs- und Messtechnik."
 translationKey: "company"
 draft: false
+type: "services"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg"
   alt: "Betriebsgebäude der Giesserei Blöcher in Biedenkopf"
