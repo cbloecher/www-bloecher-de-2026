@@ -1,25 +1,48 @@
 {{- $isServices := or (eq .Section "leistungen") (eq .Section "services") -}}
-{{- if $isServices -}}
+{{- $isCompany := or (eq .Section "unternehmen") (eq .Section "about-us") -}}
+{{- if or $isServices $isCompany -}}
   {{- $items := slice -}}
-  {{- if eq site.Language.Lang "de" -}}
-    {{- $items = slice
-      (dict "label" "Aluminium-Sandguss" "path" "/leistungen/aluminium-sandguss")
-      (dict "label" "Temperierung" "path" "/leistungen/temperierung")
-      (dict "label" "Modellbau" "path" "/leistungen/modellbau")
-      (dict "label" "3D-Sanddruck" "path" "/leistungen/3d-druck")
-      (dict "label" "3D-Scannen" "path" "/leistungen/3d-scannen")
-    -}}
+  {{- $label := "" -}}
+
+  {{- if $isServices -}}
+    {{- $label = cond (eq site.Language.Lang "de") "Leistungsnavigation" "Services navigation" -}}
+    {{- if eq site.Language.Lang "de" -}}
+      {{- $items = slice
+        (dict "path" "/leistungen/aluminium-sandguss")
+        (dict "path" "/leistungen/temperierung")
+        (dict "path" "/leistungen/modellbau")
+        (dict "path" "/leistungen/3d-druck")
+        (dict "path" "/leistungen/3d-scannen")
+      -}}
+    {{- else -}}
+      {{- $items = slice
+        (dict "path" "/services/aluminium-sand-casting")
+        (dict "path" "/services/temperature-control")
+        (dict "path" "/services/model-making")
+        (dict "path" "/services/3d-print")
+        (dict "path" "/services/3d-scan")
+      -}}
+    {{- end -}}
   {{- else -}}
-    {{- $items = slice
-      (dict "label" "Aluminium Sand Casting" "path" "/services/aluminium-sand-casting")
-      (dict "label" "Temperature Control" "path" "/services/temperature-control")
-      (dict "label" "Model Making" "path" "/services/model-making")
-      (dict "label" "3D Sand Printing" "path" "/services/3d-print")
-      (dict "label" "3D Scanning" "path" "/services/3d-scan")
-    -}}
+    {{- $label = cond (eq site.Language.Lang "de") "Unternehmensnavigation" "Company navigation" -}}
+    {{- if eq site.Language.Lang "de" -}}
+      {{- $items = slice
+        (dict "path" "/unternehmen")
+        (dict "path" "/unternehmen/zertifizierung")
+        (dict "path" "/unternehmen/kontakt")
+        (dict "path" "/unternehmen/anfahrt")
+      -}}
+    {{- else -}}
+      {{- $items = slice
+        (dict "path" "/about-us")
+        (dict "path" "/about-us/quality-management")
+        (dict "path" "/about-us/contact-us")
+        (dict "path" "/about-us/how-to-find-us")
+      -}}
+    {{- end -}}
   {{- end -}}
 
-  <nav class="service-subnav" aria-label="{{ if eq site.Language.Lang "de" }}Leistungsnavigation{{ else }}Services navigation{{ end }}">
+  <nav class="service-subnav" aria-label="{{ $label }}">
     <div class="container service-subnav__scroll">
       <ul class="service-subnav__list">
         {{- range $items -}}
