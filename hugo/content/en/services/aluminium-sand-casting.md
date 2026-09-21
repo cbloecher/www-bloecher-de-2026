@@ -3,6 +3,7 @@ title: "Aluminium Sand Casting"
 description: "Aluminium sand casting for single parts, prototypes and small batches up to approx. 2,500 kg and around 6 m³."
 translationKey: "aluminium-sand-casting"
 draft: false
+type: "page"
 weight: 10
 summary: "Aluminium sand casting for single parts, prototypes and small batches up to approximately 2,500 kg."
 highlights:
