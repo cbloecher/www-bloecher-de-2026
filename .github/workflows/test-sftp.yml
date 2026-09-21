@@ -12,21 +12,21 @@ jobs:
     runs-on: ubuntu-latest
     environment: production
     timeout-minutes: 5
+    env:
+      DEPLOY_SFTP_HOST: ${{ vars.DEPLOY_SFTP_HOST || vars.DEPLOY_HOST }}
+      DEPLOY_SFTP_PORT: ${{ vars.DEPLOY_SFTP_PORT || vars.DEPLOY_PORT }}
+      DEPLOY_SFTP_USER: ${{ vars.DEPLOY_SFTP_USER || vars.DEPLOY_USER }}
+      DEPLOY_SFTP_PATH: ${{ vars.DEPLOY_SFTP_PATH || vars.DEPLOY_PATH }}
+      DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD || secrets.DEPLOY_PASSWORD }}
 
     steps:
       - name: Validate deployment configuration
-        env:
-          DEPLOY_SFTP_HOST: ${{ vars.DEPLOY_SFTP_HOST }}
-          DEPLOY_SFTP_PORT: ${{ vars.DEPLOY_SFTP_PORT }}
-          DEPLOY_SFTP_USER: ${{ vars.DEPLOY_SFTP_USER }}
-          DEPLOY_SFTP_PATH: ${{ vars.DEPLOY_SFTP_PATH }}
-          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
         run: |
           set -eu
-          test -n "$DEPLOY_SFTP_HOST"
-          test -n "$DEPLOY_SFTP_USER"
-          test -n "$DEPLOY_SFTP_PATH"
-          test -n "$DEPLOY_SFTP_PASSWORD"
+          : "${DEPLOY_SFTP_HOST:?Missing DEPLOY_SFTP_HOST or DEPLOY_HOST variable}"
+          : "${DEPLOY_SFTP_USER:?Missing DEPLOY_SFTP_USER or DEPLOY_USER variable}"
+          : "${DEPLOY_SFTP_PATH:?Missing DEPLOY_SFTP_PATH or DEPLOY_PATH variable}"
+          : "${DEPLOY_SFTP_PASSWORD:?Missing DEPLOY_SFTP_PASSWORD or DEPLOY_PASSWORD secret}"
 
       - name: Install SFTP client
         run: |
@@ -34,12 +34,6 @@ jobs:
           sudo apt-get install --yes lftp
 
       - name: Test login and target directory
-        env:
-          DEPLOY_SFTP_HOST: ${{ vars.DEPLOY_SFTP_HOST }}
-          DEPLOY_SFTP_PORT: ${{ vars.DEPLOY_SFTP_PORT }}
-          DEPLOY_SFTP_USER: ${{ vars.DEPLOY_SFTP_USER }}
-          DEPLOY_SFTP_PATH: ${{ vars.DEPLOY_SFTP_PATH }}
-          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
         run: |
           set -eu
           port="${DEPLOY_SFTP_PORT:-22}"
