@@ -15,5 +15,13 @@
 
 - [x] Sprachumschaltung Deutsch/Englisch fertiggestellt
   - Vorhandene Übersetzung wird direkt geöffnet.
-  - Ohne Übersetzung erfolgt der Rückfall auf die Startseite der Zielsprache.
+  - Ohne Übersetzung wird die Zielsprache deaktiviert dargestellt.
   - Aktive Sprache ist eindeutig gekennzeichnet und nicht erneut verlinkt.
+
+## Inhalte
+
+- [x] Landingpage „Ersatzteile nach Bedarf“ aus alter WordPress-Seite und bestehender Spezialdomain konsolidiert
+  - Im deutschen Footer unter Leistungen verlinkt.
+  - Von „Prototypen + Ersatzteile“ kontextuell erreichbar.
+  - Alter WordPress-Pfad als Alias übernommen.
+- [ ] `ersatzteilenachbedarf.de` beim Produktivstart per 301 auf `/ersatzteile-nach-bedarf/` umstellen.
