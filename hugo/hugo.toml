@@ -68,33 +68,45 @@ relativeURLs = false
       [languages.de.menu.footer.params]
         group = "Leistungen"
     [[languages.de.menu.footer]]
+      name = "Temperierung"
+      pageRef = "/leistungen/temperierung"
+      weight = 20
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
       name = "Modellbau"
       pageRef = "/leistungen/modellbau"
-      weight = 20
+      weight = 30
       [languages.de.menu.footer.params]
         group = "Leistungen"
     [[languages.de.menu.footer]]
       name = "3D-Sanddruck"
       pageRef = "/leistungen/3d-druck"
-      weight = 30
+      weight = 40
+      [languages.de.menu.footer.params]
+        group = "Leistungen"
+    [[languages.de.menu.footer]]
+      name = "3D-Scannen"
+      pageRef = "/leistungen/3d-scannen"
+      weight = 50
       [languages.de.menu.footer.params]
         group = "Leistungen"
     [[languages.de.menu.footer]]
       name = "Unternehmen"
       pageRef = "/unternehmen"
-      weight = 40
+      weight = 60
       [languages.de.menu.footer.params]
         group = "Unternehmen"
     [[languages.de.menu.footer]]
       name = "Qualität"
       pageRef = "/unternehmen/zertifizierung"
-      weight = 50
+      weight = 70
       [languages.de.menu.footer.params]
         group = "Unternehmen"
     [[languages.de.menu.footer]]
       name = "Anfahrt"
       pageRef = "/unternehmen/anfahrt"
-      weight = 60
+      weight = 80
       [languages.de.menu.footer.params]
         group = "Unternehmen"
 
@@ -116,6 +128,7 @@ relativeURLs = false
 
     [languages.en.params]
       description = "Aluminium sand casting, model making and 3D sand printing."
+      tagline = "Aluminium Sand Casting from Biedenkopf"
 
       [languages.en.params.footer]
         text = "Aluminium sand casting, model making and 3D sand printing in Biedenkopf."
@@ -145,33 +158,45 @@ relativeURLs = false
       [languages.en.menu.footer.params]
         group = "Services"
     [[languages.en.menu.footer]]
+      name = "Temperature Control"
+      pageRef = "/services/temperature-control"
+      weight = 20
+      [languages.en.menu.footer.params]
+        group = "Services"
+    [[languages.en.menu.footer]]
       name = "Model Making"
       pageRef = "/services/model-making"
-      weight = 20
+      weight = 30
       [languages.en.menu.footer.params]
         group = "Services"
     [[languages.en.menu.footer]]
       name = "3D Sand Printing"
       pageRef = "/services/3d-print"
-      weight = 30
+      weight = 40
+      [languages.en.menu.footer.params]
+        group = "Services"
+    [[languages.en.menu.footer]]
+      name = "3D Scanning"
+      pageRef = "/services/3d-scan"
+      weight = 50
       [languages.en.menu.footer.params]
         group = "Services"
     [[languages.en.menu.footer]]
       name = "About us"
       pageRef = "/about-us"
-      weight = 40
+      weight = 60
       [languages.en.menu.footer.params]
         group = "Company"
     [[languages.en.menu.footer]]
       name = "Quality"
       pageRef = "/about-us/quality-management"
-      weight = 50
+      weight = 70
       [languages.en.menu.footer.params]
         group = "Company"
     [[languages.en.menu.footer]]
       name = "How to find us"
       pageRef = "/about-us/how-to-find-us"
-      weight = 60
+      weight = 80
       [languages.en.menu.footer.params]
         group = "Company"
 
