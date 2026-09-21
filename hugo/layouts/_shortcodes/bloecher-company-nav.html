@@ -1,0 +1,28 @@
+{{- /* Language-aware navigation cards for company pages. */ -}}
+{{- $page := .Page -}}
+{{- $section := $page.CurrentSection -}}
+{{- $isGerman := eq $page.Language.Lang "de" -}}
+{{- $title := cond $isGerman "Unternehmen entdecken" "Explore our company" -}}
+{{- $overview := cond $isGerman "Unternehmen im Überblick" "Company overview" -}}
+{{- $current := cond $isGerman "Aktuelle Seite" "Current page" -}}
+{{- with $section -}}
+<nav class="service-nav" aria-labelledby="company-nav-title">
+  <h2 class="service-nav__title" id="company-nav-title">{{ $title }}</h2>
+  <div class="grid-auto grid-auto--gap-lg service-nav__grid">
+    {{- range .RegularPages.ByTitle -}}
+      {{- $card := partial "cards/service-card.html" (dict "page" . "headingLevel" "h3") -}}
+      {{- if eq .RelPermalink $page.RelPermalink -}}
+        <div class="service-nav__current" aria-current="page">
+          {{- $card | replaceRE ` href="[^"]+"` "" | safeHTML -}}
+          <span class="service-nav__current-label">{{ $current }}</span>
+        </div>
+      {{- else -}}
+        {{ $card }}
+      {{- end -}}
+    {{- end -}}
+  </div>
+  {{- if ne .RelPermalink $page.RelPermalink -}}
+    <a class="service-nav__overview" href="{{ .RelPermalink }}">{{ $overview }} →</a>
+  {{- end -}}
+</nav>
+{{- end -}}
