@@ -4,7 +4,7 @@ description: "Directions to Giesserei Blöcher GmbH, Zur Wolfskaute 1 in 35216 B
 translationKey: "directions"
 draft: false
 gallery:
-  - image: "images/imported/2021/02/giesserei-bloecher_wegbeschreibung_biedenkopf.gif"
+  - image: "images/custom/giesserei-bloecher_anfahrt.svg"
     alt: "Directions map to Giesserei Blöcher in Biedenkopf"
     caption: "Directions map"
     fit: "contain"
