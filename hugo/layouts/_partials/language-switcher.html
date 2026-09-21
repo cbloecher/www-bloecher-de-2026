@@ -15,14 +15,12 @@
                 {{- $target = .RelPermalink -}}
               {{- end -}}
             {{- end -}}
-            {{- if not $target -}}
-              {{- range site.Sites -}}
-                {{- if eq .Language.Lang $language.Lang -}}
-                  {{- $target = .Home.RelPermalink -}}
-                {{- end -}}
-              {{- end -}}
+            {{- if $target -}}
+              <a class="language-switcher__link" href="{{ $target }}" hreflang="{{ $language.Lang }}" lang="{{ $language.Lang }}">{{ upper $language.Lang }}</a>
+            {{- else -}}
+              {{- $unavailable := cond (eq site.Language.Lang "de") "Übersetzung nicht verfügbar" "Translation not available" -}}
+              <span class="language-switcher__link is-unavailable" aria-disabled="true" title="{{ $unavailable }}">{{ upper $language.Lang }}</span>
             {{- end -}}
-            <a class="language-switcher__link" href="{{ $target }}" hreflang="{{ $language.Lang }}" lang="{{ $language.Lang }}">{{ upper $language.Lang }}</a>
           {{- end -}}
         </li>
       {{- end -}}
