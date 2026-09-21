@@ -4,11 +4,12 @@ gallery:
   - image: images/example.jpg
     alt: Descriptive alternative text
     caption: Optional visible caption
+    fit: contain
 */ -}}
 {{- with .Page.Params.gallery -}}
 <ul class="gallery">
   {{- range . -}}
-    <li class="gallery__item">
+    <li class="gallery__item{{ if eq (.fit | default "cover") "contain" }} gallery__item--contain{{ end }}">
       {{ partial "utils/image.html" (dict
         "page" $.Page
         "path" .image
