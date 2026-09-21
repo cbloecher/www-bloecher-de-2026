@@ -3,6 +3,7 @@ title: "Contact"
 description: "Contact Giesserei Blöcher GmbH in Biedenkopf by phone or email."
 translationKey: "contact"
 draft: false
+weight: 20
 migration:
   wordpress_id: 3989
   source_url: "https://www.bloecher.de/en/about-us/contact-us/"
