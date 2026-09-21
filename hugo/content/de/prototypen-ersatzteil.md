@@ -91,6 +91,10 @@ Je nach Aufgabe kann die Prozesskette mehrere Schritte umfassen:
 Die digitale Prozesskette erleichtert Varianten und individuelle Anpassungen.
 
 Bei einer Neuanfertigung können bekannte Schwachstellen eines vorhandenen Bauteils berücksichtigt oder Funktionen konstruktiv angepasst werden, sofern dies technisch sinnvoll und mit dem Kunden abgestimmt ist.
+## Ersatzteil nicht mehr verfügbar?
+
+Für die gezielte Nachfertigung eines nicht mehr lieferbaren Bauteils haben wir die Informationen unter [Ersatzteile nach Bedarf](/ersatzteile-nach-bedarf/) gebündelt.
+
 ## Einblicke in Prozess und Bauteile
 
 {{< bloecher-gallery >}}
