@@ -7,6 +7,7 @@ gallery:
   - image: "images/imported/2021/02/giesserei-bloecher_wegbeschreibung_biedenkopf.gif"
     alt: "Directions map to Giesserei Blöcher in Biedenkopf"
     caption: "Directions map"
+    fit: "contain"
 migration:
   wordpress_id: 4014
   source_url: "https://www.bloecher.de/en/about-us/how-to-find-us/"
@@ -41,3 +42,5 @@ Phone: [+49 (0)6461 9551-0](tel:+49646195510)
 ## Directions map
 
 {{< bloecher-gallery >}}
+
+{{< bloecher-company-nav >}}
