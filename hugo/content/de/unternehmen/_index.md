@@ -32,3 +32,5 @@ Eigener Modellbau, Gießerei und ergänzende digitale Verfahren ermöglichen dir
 Wir verbinden Technik, Erfahrung und fachliche Ausbildung mit enger Abstimmung im Team.
 
 Ziel ist eine zuverlässige und flexible Bearbeitung von Kundenprojekten – besonders dort, wo individuelle Lösungen und kleine Stückzahlen gefragt sind.
+
+{{< bloecher-company-nav >}}
