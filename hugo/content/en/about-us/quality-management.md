@@ -47,3 +47,5 @@ We do not regard certification as an end in itself, but as a framework for effic
 ## Certificate
 
 {{< bloecher-gallery >}}
+
+{{< bloecher-company-nav >}}
