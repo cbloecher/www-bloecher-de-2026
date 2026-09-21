@@ -1,0 +1,109 @@
+name: Build and deploy Pico Corp via SFTP
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Deployment mode
+        required: true
+        default: dry-run
+        type: choice
+        options:
+          - dry-run
+          - deploy
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-sftp
+  cancel-in-progress: false
+
+env:
+  HUGO_VERSION: "0.166.0"
+
+jobs:
+  build-and-deploy:
+    name: Build and deploy production site
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout Pico Corp
+        uses: actions/checkout@v6
+        with:
+          ref: theme-pico-corp
+
+      - name: Install Hugo Extended and SFTP client
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -L \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" \
+            -o /tmp/hugo.tar.gz
+          tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
+          sudo install -m 0755 /tmp/hugo /usr/local/bin/hugo
+          sudo apt-get update
+          sudo apt-get install --yes lftp
+
+      - name: Prepare Pico Corp theme
+        shell: bash
+        run: bash hugo/tools/setup-pico-corp-theme.sh
+
+      - name: Build production site
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo \
+            --source ./hugo \
+            --destination "${GITHUB_WORKSPACE}/public" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "https://hugo.bloecher.de/"
+
+      - name: Verify production output
+        shell: bash
+        run: |
+          set -euxo pipefail
+          test -s public/index.html
+          test -s public/en/index.html
+          test -s public/prototypen-ersatzteil/index.html
+
+      - name: Validate SFTP configuration
+        shell: bash
+        env:
+          DEPLOY_SFTP_HOST: ${{ vars.DEPLOY_SFTP_HOST }}
+          DEPLOY_SFTP_PORT: ${{ vars.DEPLOY_SFTP_PORT }}
+          DEPLOY_SFTP_USER: ${{ vars.DEPLOY_SFTP_USER }}
+          DEPLOY_SFTP_PATH: ${{ vars.DEPLOY_SFTP_PATH }}
+          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
+        run: |
+          set -eu
+          for name in DEPLOY_SFTP_HOST DEPLOY_SFTP_USER DEPLOY_SFTP_PATH DEPLOY_SFTP_PASSWORD; do
+            if [ -z "${!name:-}" ]; then
+              echo "::error title=Missing configuration::${name} is empty or unavailable"
+              exit 1
+            fi
+          done
+
+      - name: Preview or deploy via SFTP
+        shell: bash
+        env:
+          DEPLOY_MODE: ${{ inputs.mode }}
+          DEPLOY_SFTP_HOST: ${{ vars.DEPLOY_SFTP_HOST }}
+          DEPLOY_SFTP_PORT: ${{ vars.DEPLOY_SFTP_PORT }}
+          DEPLOY_SFTP_USER: ${{ vars.DEPLOY_SFTP_USER }}
+          DEPLOY_SFTP_PATH: ${{ vars.DEPLOY_SFTP_PATH }}
+          DEPLOY_SFTP_PASSWORD: ${{ secrets.DEPLOY_SFTP_PASSWORD }}
+        run: |
+          set -eu
+          port="${DEPLOY_SFTP_PORT:-22}"
+          mirror_options="--reverse --verbose --only-newer"
+          if [ "$DEPLOY_MODE" = "dry-run" ]; then
+            mirror_options="$mirror_options --dry-run"
+          fi
+          lftp -u "$DEPLOY_SFTP_USER","$DEPLOY_SFTP_PASSWORD" \
+            -p "$port" \
+            "sftp://$DEPLOY_SFTP_HOST" \
+            -e "set sftp:auto-confirm yes; mirror $mirror_options \"public\" \"$DEPLOY_SFTP_PATH\"; bye"
