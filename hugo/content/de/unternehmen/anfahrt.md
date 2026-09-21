@@ -3,6 +3,7 @@ title: "Anfahrt"
 description: "Anfahrt zur Giesserei Blöcher GmbH, Zur Wolfskaute 1 in 35216 Biedenkopf."
 translationKey: "directions"
 draft: false
+weight: 30
 gallery:
   - image: "images/custom/giesserei-bloecher_anfahrt.svg"
     alt: "Anfahrtsskizze zur Giesserei Blöcher in Biedenkopf"
