@@ -3,6 +3,7 @@ title: "Quality and Certification"
 description: "Quality and environmental management at Giesserei Blöcher with ISO 9001 and ISO 14001 certification."
 translationKey: "quality"
 draft: false
+weight: 10
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_cubing_12x06.jpg"
   alt: "Measurement technology for casting quality inspection"
