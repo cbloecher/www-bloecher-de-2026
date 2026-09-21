@@ -3,7 +3,8 @@ title: "3D Sand Printing"
 description: "Direct additive production of sand molds and cores up to 1,800 × 900 × 900 mm without a physical pattern or core box."
 translationKey: "3d-print"
 draft: false
-weight: 30
+type: "page"
+weight: 40
 summary: "Sand molds and cores produced directly from CAD data without a physical pattern or core box."
 highlights:
   - "Directly from digital data"
