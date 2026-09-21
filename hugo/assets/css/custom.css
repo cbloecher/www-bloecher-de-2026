@@ -269,3 +269,50 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+
+/* Compact language switcher: visible on desktop and beside the mobile menu. */
+.language-switcher {
+  flex-shrink: 0;
+}
+
+.language-switcher__list {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: var(--pc-border);
+  border-radius: var(--pc-radius-sm);
+  list-style: none;
+}
+
+.language-switcher__list li {
+  margin: 0;
+}
+
+.language-switcher__list li + li {
+  border-inline-start: var(--pc-border);
+}
+
+.language-switcher__link {
+  display: block;
+  min-width: 2.1rem;
+  padding: .38rem .42rem;
+  color: var(--pc-text-muted);
+  font-size: .72rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.language-switcher__link:hover {
+  color: var(--pc-text);
+  background-color: var(--pc-bg-muted);
+}
+
+.language-switcher__link.is-current {
+  color: var(--pc-text);
+  background-color: var(--pc-bg-muted);
+}
