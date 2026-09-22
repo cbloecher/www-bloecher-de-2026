@@ -1,8 +1,8 @@
 {
   "pico-corp": {
-    "branch": "theme-pico-corp",
-    "commit": "e05b9cadffd17bd14cda32a8c4fc9ba623036bcf",
-    "updated": "2026-09-21"
+    "branch": "main",
+    "commit": "aab871e694e764e93c3aad64f526c7269376735b",
+    "updated": "2026-09-22"
   },
   "bloecher-custom": {
     "branch": "theme-bloecher-custom",
