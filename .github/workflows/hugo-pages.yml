@@ -72,7 +72,7 @@ jobs:
           set -euxo pipefail
           rm -rf publish
           mkdir -p publish
-          cp -a baseline/pages-preview/. publish/
+          cp -a orchestration/pages-preview/. publish/
 
       - name: Build Blöcher Custom preview
         shell: bash
