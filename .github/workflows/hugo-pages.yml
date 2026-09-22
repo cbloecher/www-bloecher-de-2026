@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-      - theme-universal
-      - theme-arcana
+      - theme-bloecher-custom
       - theme-pico-corp
     paths:
       - "hugo/**"
@@ -30,25 +29,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout baseline
+      - name: Checkout orchestration
         uses: actions/checkout@v6
         with:
           ref: main
-          path: baseline
+          path: orchestration
 
-      - name: Checkout Universal experiment
+      - name: Checkout Blöcher Custom development
         uses: actions/checkout@v6
         with:
-          ref: theme-universal
-          path: universal
+          ref: theme-bloecher-custom
+          path: bloecher-custom
 
-      - name: Checkout Arcana experiment
-        uses: actions/checkout@v6
-        with:
-          ref: theme-arcana
-          path: arcana
-
-      - name: Checkout Pico Corp experiment
+      - name: Checkout Pico Corp site
         uses: actions/checkout@v6
         with:
           ref: theme-pico-corp
@@ -71,8 +64,6 @@ jobs:
         shell: bash
         run: |
           set -euxo pipefail
-          bash universal/hugo/tools/setup-universal-theme.sh
-          bash arcana/hugo/tools/setup-arcana-theme.sh
           bash pico-corp/hugo/tools/setup-pico-corp-theme.sh
 
       - name: Prepare landing page
@@ -87,19 +78,7 @@ jobs:
         shell: bash
         run: |
           set -euxo pipefail
-          hugo             --source ./baseline/hugo             --destination "${GITHUB_WORKSPACE}/publish/bloecher-custom"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/bloecher-custom/"
-
-      - name: Build Universal preview
-        shell: bash
-        run: |
-          set -euxo pipefail
-          hugo             --source ./universal/hugo             --destination "${GITHUB_WORKSPACE}/publish/universal"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/universal/"
-
-      - name: Build Arcana preview
-        shell: bash
-        run: |
-          set -euxo pipefail
-          hugo             --source ./arcana/hugo             --destination "${GITHUB_WORKSPACE}/publish/arcana"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/arcana/"
+          hugo             --source ./bloecher-custom/hugo             --destination "${GITHUB_WORKSPACE}/publish/bloecher-custom"             --cleanDestinationDir             --minify             --baseURL "${{ steps.pages.outputs.base_url }}/bloecher-custom/"
 
       - name: Build Pico Corp preview
         shell: bash
@@ -113,8 +92,6 @@ jobs:
           set -euxo pipefail
           test -s publish/index.html
           test -s publish/bloecher-custom/index.html
-          test -s publish/universal/index.html
-          test -s publish/arcana/index.html
           test -s publish/pico-corp/index.html
           test -s publish/pico-corp/en/index.html
 
