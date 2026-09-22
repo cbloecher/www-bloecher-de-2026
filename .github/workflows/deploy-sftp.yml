@@ -1,4 +1,4 @@
-name: Build and deploy Pico Corp via SFTP
+name: Build and deploy production site via SFTP
 
 on:
   workflow_dispatch:
@@ -24,16 +24,15 @@ env:
 
 jobs:
   build-and-deploy:
+    if: github.ref == 'refs/heads/main'
     name: Build and deploy production site
     runs-on: ubuntu-latest
     environment: production
     timeout-minutes: 15
 
     steps:
-      - name: Checkout Pico Corp
+      - name: Checkout main
         uses: actions/checkout@v6
-        with:
-          ref: theme-pico-corp
 
       - name: Install Hugo Extended and SFTP client
         shell: bash
