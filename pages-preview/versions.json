@@ -3,5 +3,10 @@
     "branch": "theme-pico-corp",
     "commit": "e05b9cadffd17bd14cda32a8c4fc9ba623036bcf",
     "updated": "2026-09-21"
+  },
+  "bloecher-custom": {
+    "branch": "theme-bloecher-custom",
+    "commit": "d7bd721fb8aa18d3b41651af5a5e9773f3a7a9b9",
+    "updated": "2026-09-22"
   }
 }
