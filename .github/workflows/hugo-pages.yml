@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-      - theme-bloecher-custom
-      - theme-pico-corp
+      - "theme-*"
     paths:
       - "hugo/**"
       - "pages-preview/**"
@@ -41,10 +40,10 @@ jobs:
           ref: theme-bloecher-custom
           path: bloecher-custom
 
-      - name: Checkout Pico Corp site
+      - name: Checkout production site
         uses: actions/checkout@v6
         with:
-          ref: theme-pico-corp
+          ref: main
           path: pico-corp
 
       - name: Install Hugo Extended
