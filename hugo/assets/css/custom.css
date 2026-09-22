@@ -1,0 +1,402 @@
+:root {
+  --pc-container: 70.625rem;
+  --pc-section-padding: clamp(4rem, 8vw, 7rem);
+  --pc-font-display: Arial, Helvetica, "Helvetica Neue", sans-serif;
+  --pc-radius: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #444444;
+}
+
+.site-header {
+  background: rgba(255,255,255,.98);
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.site-header__inner {
+  min-height: 6rem;
+}
+
+.brand__logo,
+.brand img,
+.site-logo img {
+  height: 4.5rem;
+  max-height: none;
+  width: auto;
+}
+
+.site-nav a {
+  font-weight: 600;
+}
+
+.hero {
+  border-bottom: 1px solid #f2f2f2;
+}
+
+.hero__inner {
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.hero__title,
+.section-head__title,
+.page-header h1 {
+  letter-spacing: -.025em;
+}
+
+.hero__title {
+  max-width: 11ch;
+}
+
+.hero__lead {
+  max-width: 42rem;
+}
+
+.hero__media img {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.eyebrow,
+.stat__value {
+  color: #ed9c10;
+}
+
+.stats {
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.stat {
+  min-height: 8.5rem;
+}
+
+.button,
+.button--primary,
+.button--secondary {
+  border-radius: 0;
+}
+
+.section[data-tone="muted"],
+.section--muted {
+  background: #f8f8f8;
+}
+
+.card,
+.service-card,
+.work-card {
+  box-shadow: none;
+}
+
+.page-header {
+  max-width: none;
+  margin-inline: 0;
+}
+
+/* Keep ordinary content pages in a stable, readable text column. */
+.prose {
+  max-width: 50rem;
+}
+
+.prose h2 {
+  margin-top: 3.5rem;
+}
+
+.site-footer {
+  border-top: 1px solid #f2f2f2;
+  background: #fff;
+}
+
+.site-footer__bottom {
+  border-top-color: #e1e1e1;
+}
+
+@media (max-width: 768px) {
+  .site-header__inner {
+    min-height: 4.75rem;
+  }
+
+  .brand__logo,
+  .brand img,
+  .site-logo img {
+    height: 3.4rem;
+  }
+
+  .hero__title {
+    max-width: none;
+  }
+
+  .hero__media img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+.page-header__media {
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+}
+
+.page-header__media picture,
+.page-header__media img {
+  display: block;
+  width: 100%;
+}
+
+.page-header__media img {
+  aspect-ratio: 16 / 7;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .page-header__media img {
+    aspect-ratio: 16 / 10;
+  }
+}
+
+/* Service overview: make the existing Pico Corp cards clearly navigational. */
+.service-card {
+  min-height: 100%;
+  position: relative;
+  border-inline-start: 3px solid #ed9c10;
+}
+
+.service-card:hover {
+  border-color: #ed9c10;
+  box-shadow: none;
+}
+
+.service-card:focus-within {
+  outline: 2px solid #ed9c10;
+  outline-offset: 3px;
+}
+
+.service-card__title a {
+  text-decoration-thickness: .08em;
+  text-underline-offset: .18em;
+}
+
+.service-card::after {
+  content: "→";
+  margin-block-start: auto;
+  padding-block-start: var(--pc-space-xs);
+  color: #ed9c10;
+  font-size: 1.25rem;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* Related services use the exact same responsive grid and cards as the overview. */
+.service-nav {
+  margin-block-start: clamp(3.5rem, 7vw, 5.5rem);
+  padding-block-start: var(--pc-space-lg);
+  border-block-start: 2px solid #ed9c10;
+}
+
+@media (min-width: 70.625rem) {
+  .service-nav {
+    width: calc(var(--pc-container) - 5rem);
+  }
+}
+
+.service-nav__title {
+  margin-block-end: var(--pc-space-md);
+}
+
+.service-nav__current {
+  position: relative;
+  min-width: 0;
+}
+
+.service-nav__current .service-card {
+  height: 100%;
+  color: #6f6f6f;
+  background: #f2f2f2;
+  border-color: #a9a9a9;
+  opacity: .72;
+}
+
+.service-nav__current .service-card:hover {
+  border-color: #a9a9a9;
+}
+
+.service-nav__current .service-card::after {
+  content: none;
+}
+
+.service-nav__current .service-card__title a {
+  color: inherit;
+  cursor: default;
+  text-decoration: none;
+}
+
+.service-nav__current-label {
+  position: absolute;
+  inset-block-start: var(--pc-space-sm);
+  inset-inline-end: var(--pc-space-sm);
+  padding: .2rem .45rem;
+  color: #555555;
+  background: #ffffff;
+  border: 1px solid #bcbcbc;
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.service-nav__overview {
+  display: inline-block;
+  margin-block-start: var(--pc-space-md);
+  font-weight: 600;
+}
+
+
+/* Keep page imagery calm and secondary to the page title. */
+.page-header__media {
+  overflow: hidden;
+  margin-inline: 0;
+  margin-bottom: 0;
+  background-color: var(--pc-bg-sunken);
+  border: var(--pc-border);
+  border-radius: var(--pc-radius);
+}
+
+.page-header__media img {
+  height: clamp(13rem, 24vw, 17.5rem);
+  max-height: 17.5rem;
+  aspect-ratio: auto;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Compact language switcher: visible on desktop and beside the mobile menu. */
+.language-switcher {
+  flex-shrink: 0;
+}
+
+.language-switcher__list {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: var(--pc-border);
+  border-radius: var(--pc-radius-sm);
+  list-style: none;
+}
+
+.language-switcher__list li {
+  margin: 0;
+}
+
+.language-switcher__list li + li {
+  border-inline-start: var(--pc-border);
+}
+
+.language-switcher__link {
+  display: block;
+  min-width: 2.1rem;
+  padding: .38rem .42rem;
+  color: var(--pc-text-muted);
+  font-size: .72rem;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+a.language-switcher__link:hover {
+  color: var(--pc-text);
+  background-color: var(--pc-bg-muted);
+}
+
+.language-switcher__link.is-current {
+  color: var(--pc-text);
+  background-color: var(--pc-bg-muted);
+}
+
+.language-switcher__link.is-unavailable {
+  color: #aaaaaa;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: .65;
+}
+
+
+/* Context navigation for the services section. */
+.service-subnav {
+  border-block-start: 1px solid #eeeeee;
+  border-block-end: 1px solid #e1e1e1;
+  background-color: #fafafa;
+}
+
+.service-subnav__scroll {
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.service-subnav__list {
+  display: flex;
+  justify-content: center;
+  min-width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-subnav__item {
+  margin: 0;
+}
+
+.service-subnav__item + .service-subnav__item {
+  border-inline-start: 1px solid #e8e8e8;
+}
+
+.service-subnav__link {
+  display: block;
+  padding: .78rem 1rem .68rem;
+  color: var(--pc-text-muted);
+  font-size: var(--pc-text-sm);
+  line-height: 1.2;
+  text-decoration: none;
+  white-space: nowrap;
+  border-block-end: 2px solid transparent;
+}
+
+a.service-subnav__link:hover {
+  color: var(--pc-text);
+  background-color: var(--pc-bg-muted);
+}
+
+.service-subnav__link.is-current {
+  color: #777777;
+  background-color: #f2f2f2;
+  border-block-end-color: var(--pc-accent);
+}
+
+@media (max-width: 55.999rem) {
+  .service-subnav__list {
+    justify-content: flex-start;
+  }
+
+  .service-subnav__scroll {
+    padding-inline: var(--pc-page-gutter);
+  }
+}
+
+/* Preserve technical illustrations and isolated product shots without cropping. */
+.page-header__media--contain img,
+.gallery__item--contain img {
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.page-header__media--contain img {
+  padding: clamp(.75rem, 2vw, 1.5rem);
+}
+
+.gallery__item--contain img {
+  padding: clamp(.75rem, 2vw, 1.25rem);
+}

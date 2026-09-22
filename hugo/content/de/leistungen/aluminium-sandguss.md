@@ -3,9 +3,40 @@ title: "Aluminium-Sandguss"
 description: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg Stückgewicht und rund 6 m³ Volumen."
 translationKey: "aluminium-sand-casting"
 draft: false
+weight: 10
+summary: "Aluminium-Sandguss für Einzelteile, Prototypen und Kleinserien bis ca. 2.500 kg."
+highlights:
+  - "Stückgewichte bis ca. 2.500 kg"
+  - "Bauteilgrößen bis rund 6 m³"
+  - "Einzelteile und kleine Serien"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium-Sandguss in der Giesserei Blöcher"
+gallery:
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Lehrenunterbau.jpg"
+    alt: "Lehrenunterbau aus Aluminium-Sandguss"
+    caption: "Lehrenunterbau"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-Zylinderkopf2.jpg"
+    alt: "Zylinderkopf aus Aluminium-Sandguss"
+    caption: "Zylinderkopf"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-bodenwerkzeug.jpg"
+    alt: "Bodenwerkzeug aus Aluminium-Sandguss"
+    caption: "Bodenwerkzeug"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-getriebeghaeuse.jpg"
+    alt: "Getriebegehäuse aus Aluminium-Sandguss"
+    caption: "Getriebegehäuse"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-kniehebel.jpg"
+    alt: "Kniehebel aus Aluminium-Sandguss"
+    caption: "Kniehebel"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorblock-4z.jpg"
+    alt: "Vierzylinder-Motorblock aus Aluminium-Sandguss"
+    caption: "Vierzylinder-Motorblock"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-motorgehaeuse.jpg"
+    alt: "Motorgehäuse aus Aluminium-Sandguss"
+    caption: "Motorgehäuse"
+  - image: "images/imported/2020/06/giesserei-bloecher_aluguss-pumpengehaeuse.jpg"
+    alt: "Pumpengehäuse aus Aluminium-Sandguss"
+    caption: "Pumpengehäuse"
 migration:
   wordpress_id: 3616
   source_url: "https://www.bloecher.de/leistungen/aluminium-sandguss/"
@@ -24,6 +55,10 @@ Wir fertigen Aluminium-Sandgussteile als Einzelstücke, Prototypen und in kleine
 - klassische Modelltechnik oder direkt 3D-gedruckte Formen und Kerne
 
 Typische Anwendungen sind Formwerkzeuge, Lehren und Lehrengestelle, Getriebegehäuse sowie Grund- und Trägerplatten.
+
+## Beispiele aus dem Aluminium-Sandguss
+
+{{< bloecher-gallery >}}
 
 Durch [3D-Sanddruck](/leistungen/3d-druck/) ist Sandguss auch ohne Modell und Kernkasten möglich. Das verkürzt den Weg zum ersten Abguss und kann Einzelteile, [Prototypen und Ersatzteile](/prototypen-ersatzteil/) wirtschaftlich machen.
 
@@ -73,3 +108,5 @@ Auf der bestehenden Website werden unter anderem folgende Legierungen genannt:
 | Si7 (A357) | G-Al Si7 Mg | Aluminium-Silizium-Magnesium-Legierung |
 
 Weitere Legierungen stimmen wir nach Bauteil und Anwendung ab.
+
+{{< bloecher-service-nav >}}

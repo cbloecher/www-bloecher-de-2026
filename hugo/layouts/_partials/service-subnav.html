@@ -1,0 +1,63 @@
+{{- $isServices := or (eq .Section "leistungen") (eq .Section "services") -}}
+{{- $isCompany := or (eq .Section "unternehmen") (eq .Section "about-us") -}}
+{{- if or $isServices $isCompany -}}
+  {{- $items := slice -}}
+  {{- $label := "" -}}
+
+  {{- if $isServices -}}
+    {{- $label = cond (eq site.Language.Lang "de") "Leistungsnavigation" "Services navigation" -}}
+    {{- if eq site.Language.Lang "de" -}}
+      {{- $items = slice
+        (dict "path" "/leistungen/aluminium-sandguss")
+        (dict "path" "/leistungen/temperierung")
+        (dict "path" "/leistungen/modellbau")
+        (dict "path" "/leistungen/3d-druck")
+        (dict "path" "/leistungen/3d-scannen")
+      -}}
+    {{- else -}}
+      {{- $items = slice
+        (dict "path" "/services/aluminium-sand-casting")
+        (dict "path" "/services/temperature-control")
+        (dict "path" "/services/model-making")
+        (dict "path" "/services/3d-print")
+        (dict "path" "/services/3d-scan")
+      -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $label = cond (eq site.Language.Lang "de") "Unternehmensnavigation" "Company navigation" -}}
+    {{- if eq site.Language.Lang "de" -}}
+      {{- $items = slice
+        (dict "path" "/unternehmen")
+        (dict "path" "/unternehmen/zertifizierung")
+        (dict "path" "/unternehmen/kontakt")
+        (dict "path" "/unternehmen/anfahrt")
+      -}}
+    {{- else -}}
+      {{- $items = slice
+        (dict "path" "/about-us")
+        (dict "path" "/about-us/quality-management")
+        (dict "path" "/about-us/contact-us")
+        (dict "path" "/about-us/how-to-find-us")
+      -}}
+    {{- end -}}
+  {{- end -}}
+
+  <nav class="service-subnav" aria-label="{{ $label }}">
+    <div class="container service-subnav__scroll">
+      <ul class="service-subnav__list">
+        {{- range $items -}}
+          {{- with site.GetPage .path -}}
+            {{- $current := eq .RelPermalink $.RelPermalink -}}
+            <li class="service-subnav__item">
+              {{- if $current -}}
+                <span class="service-subnav__link is-current" aria-current="page">{{ index .Params "navTitle" | default .Title }}</span>
+              {{- else -}}
+                <a class="service-subnav__link" href="{{ .RelPermalink }}">{{ index .Params "navTitle" | default .Title }}</a>
+              {{- end -}}
+            </li>
+          {{- end -}}
+        {{- end -}}
+      </ul>
+    </div>
+  </nav>
+{{- end -}}

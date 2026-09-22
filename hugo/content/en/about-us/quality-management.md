@@ -3,6 +3,14 @@ title: "Quality and Certification"
 description: "Quality and environmental management at Giesserei Blöcher with ISO 9001 and ISO 14001 certification."
 translationKey: "quality"
 draft: false
+weight: 10
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_cubing_12x06.jpg"
+  alt: "Measurement technology for casting quality inspection"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_zertifikat_de_iso9001_iso14001.png"
+    alt: "Giesserei Blöcher certificate for ISO 9001 and ISO 14001"
+    caption: "Certification according to ISO 9001 and ISO 14001"
 migration:
   wordpress_id: 3985
   source_url: "https://www.bloecher.de/en/about-us/quality-management/"
@@ -37,3 +45,8 @@ This includes in particular:
 ## Management system as a working framework
 
 We do not regard certification as an end in itself, but as a framework for efficient, transparent and continuously improved operations.
+## Certificate
+
+{{< bloecher-gallery >}}
+
+{{< bloecher-company-nav >}}

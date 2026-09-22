@@ -3,6 +3,13 @@ title: "Model Making"
 description: "In-house foundry model making for EPS patterns with 5-axis machining up to 8,000 × 4,000 × 2,000 mm."
 translationKey: "model-making"
 draft: false
+type: "page"
+weight: 30
+summary: "In-house EPS model making with short coordination paths between design, pattern production and foundry."
+highlights:
+  - "In-house EPS pattern production"
+  - "5-axis machining"
+  - "Working area up to 8,000 × 4,000 × 2,000 mm"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_modellbau.jpg"
   alt: "Milling machine in the foundry model shop"
@@ -39,3 +46,5 @@ The patterns are milled from EPS blocks.
 For this purpose, we use a 5-axis milling machine with a working area of **8,000 × 4,000 × 2,000 mm**.
 
 Where a physical pattern is not economical or suitable, sand molds and cores can alternatively be produced directly by [3D sand printing](/en/services/3d-print/).
+
+{{< bloecher-service-nav >}}

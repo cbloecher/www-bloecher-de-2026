@@ -3,6 +3,7 @@ title: "Kontakt"
 description: "Kontakt zur Giesserei Blöcher GmbH in Biedenkopf – Telefon, E-Mail und Anschrift."
 translationKey: "contact"
 draft: false
+weight: 20
 migration:
   wordpress_id: 3604
   source_url: "https://www.bloecher.de/unternehmen/kontakt/"
@@ -22,3 +23,5 @@ Deutschland
 ## Ihr Weg zu uns
 
 Eine Wegbeschreibung finden Sie auf der Seite [Anfahrt](/unternehmen/anfahrt/).
+
+{{< bloecher-company-nav >}}

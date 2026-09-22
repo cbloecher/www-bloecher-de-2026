@@ -1,0 +1,7 @@
+{{- $external := or (hasPrefix .Destination "http://") (hasPrefix .Destination "https://") -}}
+{{- $internal := and $external (hasPrefix .Destination site.BaseURL) -}}
+{{- $destination := .Destination -}}
+{{- if and (not $external) (hasPrefix $destination "/") -}}
+  {{- $destination = strings.TrimPrefix "/" $destination | relURL -}}
+{{- end -}}
+<a href="{{ $destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if and $external (not $internal) }} rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>

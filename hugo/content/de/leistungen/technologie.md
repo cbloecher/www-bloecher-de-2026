@@ -2,7 +2,13 @@
 title: "weitere Leistungen & Technologien"
 description: ""
 translationKey: "technology"
-draft: false
+draft: true
+weight: 90
+summary: "Ergänzende Technologien entlang der Prozesskette vom CAD-Datensatz bis zum fertigen Gussteil."
+highlights:
+  - "CAD-Datenbearbeitung"
+  - "Form- und Kernherstellung"
+  - "Fertigungsnahe Qualitätskontrolle"
 migration:
   wordpress_id: 3465
   source_url: "https://www.bloecher.de/leistungen/technologie/"
@@ -23,3 +29,5 @@ Aluminium Sandguss
  	EPS Modellbau
  	Additive Herstellugn von 3D-gedruckten Sandformen und Kernen
  	3D-Scannen zur Qualitätskontrolle, Erfasssung der Rohling Geometrie oder Reverse Engineering
+
+{{< bloecher-service-nav >}}

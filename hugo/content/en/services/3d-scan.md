@@ -3,9 +3,20 @@ title: "3D Scanning"
 description: "3D scanning for quality control, geometry capture and reverse engineering using a handheld scanner or GOM ATOS."
 translationKey: "3d-scan"
 draft: false
+type: "page"
+weight: 50
+summary: "Digital geometry capture for quality control, raw-part measurement and reverse engineering."
+highlights:
+  - "Handheld scanner and GOM ATOS"
+  - "Inspection of patterns and castings"
+  - "Reverse engineering"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_handscanner.jpg"
   alt: "Handheld 3D scanner"
+gallery:
+  - image: "images/imported/2023/11/giesserei-bloecher_GOM_Oelwanne.jpg"
+    alt: "Optical measurement of an oil pan using a GOM ATOS system"
+    caption: "GOM ATOS measurement of an oil pan"
 migration:
   wordpress_id: 4030
   source_url: "https://www.bloecher.de/en/services/3d-scan/"
@@ -31,3 +42,9 @@ With structured light projection, a defined light pattern is projected onto the 
 One or more cameras capture the distortion of the pattern from different angles. The software calculates the spatial position of many surface points from these images and creates a digital 3D model.
 
 The method is particularly suitable for complex geometries and detailed surfaces.
+
+## Optical component measurement
+
+{{< bloecher-gallery >}}
+
+{{< bloecher-service-nav >}}

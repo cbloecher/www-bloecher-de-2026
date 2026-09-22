@@ -1,32 +1,26 @@
 {{ define "main" }}
 {{ $de := eq .Site.Language.Lang "de" }}
 {{ $hero := resources.Get "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg" }}
-<section class="hero hero--split">
+<section class="hero{{ if $hero }} hero--image{{ end }}"{{ with $hero }} style="--hero-image:url('{{ .RelPermalink }}')"{{ end }}>
+  <div class="hero__overlay"></div>
   <div class="hero__inner">
-    <div class="hero__copy">
-      <p class="eyebrow">{{ if $de }}Aluminium-Sandguss{{ else }}Aluminium sand casting{{ end }}</p>
-      <h1>{{ if $de }}Wir formen Zukunft.<br>Stück für Stück.{{ else }}We shape the future.<br>Piece by piece.{{ end }}</h1>
-      <p class="hero__lead">
-        {{ if $de }}
-          Anspruchsvolle Gussteile, Prototypen und Kleinserien – vom Modell bis zum fertigen Bauteil.
-        {{ else }}
-          Complex castings, prototypes and small series – from model to finished component.
-        {{ end }}
-      </p>
-      <div class="hero__actions">
-        <a class="button button--primary" href="{{ if $de }}{{ "leistungen/" | relLangURL }}{{ else }}{{ "services/" | relLangURL }}{{ end }}">
-          {{ if $de }}Leistungen ansehen{{ else }}Explore services{{ end }}
-        </a>
-        <a class="button button--secondary" href="{{ if $de }}{{ "unternehmen/kontakt/" | relLangURL }}{{ else }}{{ "about-us/contact-us/" | relLangURL }}{{ end }}">
-          {{ if $de }}Kontakt{{ else }}Contact{{ end }}
-        </a>
-      </div>
+    <p class="eyebrow">{{ if $de }}Aluminium-Sandguss{{ else }}Aluminium sand casting{{ end }}</p>
+    <h1>{{ if $de }}Wir formen Zukunft.<br>Stück für Stück.{{ else }}We shape the future.<br>Piece by piece.{{ end }}</h1>
+    <p class="hero__lead">
+      {{ if $de }}
+        Anspruchsvolle Gussteile, Prototypen und Kleinserien – vom Modell bis zum fertigen Bauteil.
+      {{ else }}
+        Complex castings, prototypes and small series – from model to finished component.
+      {{ end }}
+    </p>
+    <div class="hero__actions">
+      <a class="button button--primary" href="{{ if $de }}{{ "leistungen/" | relLangURL }}{{ else }}{{ "services/" | relLangURL }}{{ end }}">
+        {{ if $de }}Leistungen ansehen{{ else }}Explore services{{ end }}
+      </a>
+      <a class="button button--ghost" href="{{ if $de }}{{ "unternehmen/kontakt/" | relLangURL }}{{ else }}{{ "about-us/contact-us/" | relLangURL }}{{ end }}">
+        {{ if $de }}Kontakt{{ else }}Contact{{ end }}
+      </a>
     </div>
-    {{ with $hero }}
-    <figure class="hero__media">
-      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ if $de }}Giesserei Blöcher in Biedenkopf{{ else }}Giesserei Blöcher in Biedenkopf{{ end }}">
-    </figure>
-    {{ end }}
   </div>
 </section>
 

@@ -3,6 +3,10 @@ title: "Unternehmen"
 description: "Giesserei Blöcher in Biedenkopf: drei Generationen Gießerhandwerk verbunden mit moderner Fertigungs- und Messtechnik."
 translationKey: "company"
 draft: false
+type: "services"
+hero:
+  image: "images/imported/2023/11/giesserei-bloecher_gebaeude_breit.jpg"
+  alt: "Betriebsgebäude der Giesserei Blöcher in Biedenkopf"
 migration:
   wordpress_id: 3476
   source_url: "https://www.bloecher.de/unternehmen/"
@@ -29,3 +33,4 @@ Eigener Modellbau, Gießerei und ergänzende digitale Verfahren ermöglichen dir
 Wir verbinden Technik, Erfahrung und fachliche Ausbildung mit enger Abstimmung im Team.
 
 Ziel ist eine zuverlässige und flexible Bearbeitung von Kundenprojekten – besonders dort, wo individuelle Lösungen und kleine Stückzahlen gefragt sind.
+
