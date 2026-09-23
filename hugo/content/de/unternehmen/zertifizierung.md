@@ -29,7 +29,7 @@ Im Mittelpunkt stehen:
 - nachvollziehbare und beherrschte Prozesse
 - kontinuierliche Verbesserung
 - verlässliche Qualität
-- Orientierung an den Anforderungen unserer Kunden
+- Orientierung an den Anforderungen unserer Kunden und kontinuierliche Verbesserung der Kundenzufriedenheit
 
 ## ISO 14001
 
@@ -41,10 +41,12 @@ Dazu gehören insbesondere:
 - effizienter Einsatz von Ressourcen
 - Einhaltung relevanter Umweltanforderungen
 - systematischer Umgang mit Umweltaspekten und Risiken
+- Auswirkungen unseres Betriebs auf die Umgebung systematisch betrachten und kontinuierlich reduzieren
 
 ## Managementsystem als Arbeitsgrundlage
 
-Die Zertifizierungen verstehen wir nicht als Selbstzweck, sondern als Rahmen für einen effizienten, nachvollziehbaren und kontinuierlich verbesserten Betrieb.
+Die Zertifizierungen verstehen wir nicht als Selbstzweck, sondern als Rahmen für einen effizienten, nachvollziehbaren und kontinuierlich verbesserten Betrieb. Das Managementsystem unterstützt uns dabei, Risiken und Verbesserungspotenziale frühzeitig zu erkennen und systematisch zu bearbeiten.
+
 ## Zertifikat
 
 {{< bloecher-gallery >}}
