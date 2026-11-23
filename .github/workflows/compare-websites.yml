@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 env:
   HUGO_VERSION: "0.166.0"
@@ -81,3 +82,11 @@ jobs:
           git commit -m "Analyse: Website-Vergleich aktualisieren"
           git pull --rebase origin main
           git push
+
+      - name: Publish updated diff report to Pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euxo pipefail
+          gh workflow run hugo-pages.yml --ref main
