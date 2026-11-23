@@ -73,6 +73,10 @@ jobs:
           rm -rf publish
           mkdir -p publish
           cp -a orchestration/pages-preview/. publish/
+          if [ -f orchestration/Analyse/site-vergleich/index.html ]; then
+            mkdir -p publish/site-vergleich
+            cp orchestration/Analyse/site-vergleich/index.html publish/site-vergleich/index.html
+          fi
 
       - name: Build Blöcher Custom preview
         shell: bash
