@@ -35,11 +35,11 @@ Verschiedene Rohrdurchmesser und Anschlüsse sind standardmäßig verfügbar.
 
 ## Verbundguss mit Einlegeteilen
 
-Das Eingießen von Rohren, Gewindeeinsätzen oder anderen Funktionsteilen ist eine Form des Verbundgusses.
+Werden Gewindeeinsätze, Rohre oder ähnliche Bauteile bereits während des Gießprozesses in das Gussteil integriert, spricht man von **Verbundguss** oder **Verbundgießen**.
 
 Die Einlegeteile werden vor dem Gießen in der Form positioniert. Beim Gießen umschließt das flüssige Aluminium die Einlegeteile und verbindet sie nach dem Erstarren dauerhaft mit dem Gussteil.
 
-So können zusätzliche Funktionen bereits im Gießprozess in das Bauteil integriert werden.
+Je nach Auslegung lassen sich damit zusätzliche Funktionselemente integrieren oder mechanische Eigenschaften des Bauteils gezielt verbessern. So können Funktionen bereits im Gießprozess entstehen, die andernfalls zusätzliche Fertigungs- oder Montageschritte erfordern würden.
 
 ## Fertigung der Temperierung
 
