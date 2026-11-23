@@ -59,7 +59,7 @@ PATH_MAP = {
 }
 
 SKIP_TAGS = {"script", "style", "svg", "nav", "header", "footer", "form", "noscript"}
-TEXT_TAGS = {"title", "h1", "h2", "h3", "p", "li", "address"}
+TEXT_TAGS = {"title", "h1", "h2", "h3", "p", "li", "address", "th", "td"}
 COOKIE_MARKERS = (
     "cookie and privacy", "how we use cookies", "essential website cookies",
     "google webfont settings", "google recaptcha settings", "vimeo and youtube",
@@ -195,84 +195,159 @@ def meaningful_blocks(page: Page, other: Page) -> list[str]:
 
 
 
+def normalized_tokens(text: str) -> set[str]:
+    """Content-oriented tokens for editorial coverage checks."""
+    stopwords = {
+        "aber", "alle", "allen", "aller", "alles", "als", "auch", "auf", "aus", "bei",
+        "beim", "bis", "das", "dass", "dem", "den", "der", "des", "die", "durch", "ein",
+        "eine", "einem", "einen", "einer", "eines", "für", "hat", "im", "in", "ist",
+        "mit", "nach", "oder", "sich", "sind", "so", "und", "vom", "von", "vor", "werden",
+        "wird", "wir", "zu", "zum", "zur", "the", "and", "for", "from", "with", "that",
+        "this", "are", "our", "your", "can", "into", "using",
+    }
+    raw = re.findall(r"[a-zäöüß0-9]+", clean_text(text).casefold())
+    tokens = set()
+    for token in raw:
+        if len(token) < 3 or token in stopwords:
+            continue
+        stem = token
+        for suffix in ("ungen", "ung", "ern", "en", "er", "es", "em", "e", "n", "s"):
+            if len(stem) >= 7 and stem.endswith(suffix):
+                stem = stem[:-len(suffix)]
+                break
+        tokens.add(stem)
+    return tokens
+
+
 def block_similarity(left: str, right: str) -> float:
-    """Similarity for aligning editorial text blocks."""
+    """Similarity emphasizing how much of the old statement is covered in the new text."""
     a = clean_text(left).casefold()
     b = clean_text(right).casefold()
     if not a or not b:
         return 0.0
     if a == b:
         return 1.0
+
     char_ratio = difflib.SequenceMatcher(None, a, b).ratio()
-    words = lambda text: set(re.findall(r"[a-zäöüß0-9]{3,}", text))
-    wa, wb = words(a), words(b)
-    vocabulary_ratio = len(wa & wb) / min(len(wa), len(wb)) if wa and wb else 0.0
-    return max(char_ratio, vocabulary_ratio)
+    wa, wb = normalized_tokens(a), normalized_tokens(b)
+    if not wa or not wb:
+        return char_ratio
+
+    overlap = len(wa & wb)
+    old_recall = overlap / len(wa)
+    precision = overlap / len(wb)
+    lexical = 0.82 * old_recall + 0.18 * precision
+
+    old_numbers = set(re.findall(r"\d+(?:[.,]\d+)?", a))
+    new_numbers = set(re.findall(r"\d+(?:[.,]\d+)?", b))
+    if old_numbers:
+        number_recall = len(old_numbers & new_numbers) / len(old_numbers)
+        lexical = 0.88 * lexical + 0.12 * number_recall
+
+    return max(char_ratio, lexical)
+
+
+def is_noise_block(text: str) -> bool:
+    """Suppress legacy boilerplate/placeholders that are not editorial content."""
+    normalized = clean_text(text).casefold()
+    if not normalized:
+        return True
+    if normalized == "ihr spezialist für anspruchsvollen aluminium sandguss":
+        return True
+    if normalized in {
+        "click to add your own text here",
+        "gib hier den inhalt des meilensteines",
+    }:
+        return True
+    if re.fullmatch(r"giesserei[-_ ]bloecher[-_ ].*", normalized):
+        return True
+    if re.fullmatch(r"[a-z]{2,5}\d{4,}.*", normalized):
+        return True
+    return False
+
+
+def best_group_match(old_text: str, new_blocks: list[str]) -> tuple[float, list[int], str]:
+    """Match one old block against one or several related new blocks, even if wording was split."""
+    candidates = [(i, text) for i, text in enumerate(new_blocks) if not is_noise_block(text)]
+    if not candidates:
+        return 0.0, [], ""
+
+    old_tokens = normalized_tokens(old_text)
+    scored = []
+    for i, text in candidates:
+        tokens = normalized_tokens(text)
+        overlap = len(old_tokens & tokens) if old_tokens else 0
+        single = block_similarity(old_text, text)
+        scored.append((single, overlap, i, text))
+
+    best_single = max(scored, key=lambda item: item[0])
+    best_score = best_single[0]
+    best_indices = [best_single[2]]
+    best_text = best_single[3]
+
+    related = [item for item in scored if item[1] > 0 or item[0] >= 0.30]
+    related.sort(key=lambda item: (item[1], item[0]), reverse=True)
+    for size in range(2, min(4, len(related)) + 1):
+        selected = sorted(related[:size], key=lambda item: item[2])
+        combined = " · ".join(item[3] for item in selected)
+        score = block_similarity(old_text, combined) - 0.015 * (size - 1)
+        if score > best_score:
+            best_score = score
+            best_indices = [item[2] for item in selected]
+            best_text = combined
+
+    return max(0.0, min(1.0, best_score)), best_indices, best_text
 
 
 def align_blocks(old_blocks: list[str], new_blocks: list[str]) -> list[dict]:
-    """Order-preserving block alignment for the visual diff."""
-    old_blocks = old_blocks or []
-    new_blocks = new_blocks or []
-    n, m = len(old_blocks), len(new_blocks)
-    gap = -0.35
-    threshold = 0.45
+    """Old-centered review: retained, changed/distributed, probably missing, then genuinely new."""
+    old_blocks = [text for text in (old_blocks or []) if not is_noise_block(text)]
+    new_blocks = [text for text in (new_blocks or []) if not is_noise_block(text)]
+    rows: list[dict] = []
+    used_new: set[int] = set()
 
-    dp = [[0.0] * (m + 1) for _ in range(n + 1)]
-    back = [[""] * (m + 1) for _ in range(n + 1)]
-    for i in range(1, n + 1):
-        dp[i][0] = i * gap
-        back[i][0] = "old"
-    for j in range(1, m + 1):
-        dp[0][j] = j * gap
-        back[0][j] = "new"
+    for old_text in old_blocks:
+        score, indices, matched_new = best_group_match(old_text, new_blocks)
+        used_new.update(indices)
 
-    similarities = [[block_similarity(old_blocks[i], new_blocks[j]) for j in range(m)] for i in range(n)]
-
-    for i in range(1, n + 1):
-        for j in range(1, m + 1):
-            similarity = similarities[i - 1][j - 1]
-            match_score = similarity * 1.4 if similarity >= threshold else -0.8
-            choices = (
-                (dp[i - 1][j - 1] + match_score, "match"),
-                (dp[i - 1][j] + gap, "old"),
-                (dp[i][j - 1] + gap, "new"),
-            )
-            dp[i][j], back[i][j] = max(choices, key=lambda item: item[0])
-
-    aligned: list[dict] = []
-    i, j = n, m
-    while i or j:
-        step = back[i][j]
-        if step == "match":
-            similarity = similarities[i - 1][j - 1]
-            kind = "unchanged" if similarity >= 0.88 else "changed"
-            aligned.append({
-                "kind": kind,
-                "old": old_blocks[i - 1],
-                "new": new_blocks[j - 1],
-                "similarity": round(similarity, 3),
-            })
-            i -= 1
-            j -= 1
-        elif step == "old":
-            aligned.append({"kind": "missing", "old": old_blocks[i - 1], "new": "", "similarity": 0})
-            i -= 1
+        if clean_text(old_text).casefold() == clean_text(matched_new).casefold():
+            kind = "unchanged"
+        elif score >= 0.44:
+            kind = "changed"
         else:
-            aligned.append({"kind": "new", "old": "", "new": new_blocks[j - 1], "similarity": 0})
-            j -= 1
+            kind = "missing"
+            indices = []
+            matched_new = ""
 
-    aligned.reverse()
-    return aligned
+        rows.append({
+            "kind": kind,
+            "old": old_text,
+            "new": matched_new,
+            "new_indices": indices,
+            "similarity": round(score, 3),
+        })
+
+    for index, text in enumerate(new_blocks):
+        if index not in used_new:
+            rows.append({
+                "kind": "new",
+                "old": "",
+                "new": text,
+                "new_indices": [index],
+                "similarity": 0,
+            })
+
+    return rows
 
 
 def render_diff_html(result: dict) -> str:
     comparisons = result["comparisons"]
     page_sections = []
     toc_entries = []
+    review_records = {}
     totals = {"missing": 0, "new": 0, "changed": 0, "unchanged": 0}
 
-    for index, item in enumerate(comparisons, start=1):
+    for page_index, item in enumerate(comparisons, start=1):
         old = item.get("old")
         new = item.get("new")
         old_path = old["path"] if old else "–"
@@ -282,7 +357,7 @@ def render_diff_html(result: dict) -> str:
         for key in totals:
             totals[key] += counts[key]
 
-        anchor = f"seite-{index}"
+        anchor = f"seite-{page_index}"
         label = old_path if old else new_path
         toc_entries.append(
             f'<li><a href="#{anchor}"><span>{html.escape(label)}</span>'
@@ -299,20 +374,41 @@ def render_diff_html(result: dict) -> str:
         )
 
         row_html = []
+        review_row = 0
         for row in rows:
             kind = row["kind"]
             old_text = html.escape(row["old"])
             new_text = html.escape(row["new"])
+
             if kind == "missing":
-                label_html = '<span class="diff-label">fehlt in Neu</span>'
+                label_html = '<span class="diff-label">wahrscheinlich fehlt</span>'
             elif kind == "new":
                 label_html = '<span class="diff-label">neu</span>'
             elif kind == "changed":
-                label_html = f'<span class="diff-label">umformuliert · {row["similarity"]:.0%}</span>'
+                qualifier = "teilweise / umformuliert" if row["similarity"] < 0.64 else "umformuliert / verteilt"
+                label_html = f'<span class="diff-label">{qualifier} · {row["similarity"]:.0%}</span>'
             else:
                 label_html = '<span class="diff-label">inhaltlich gleich</span>'
+
+            review_control = ""
+            if row["old"] and kind in {"missing", "changed"}:
+                review_row += 1
+                review_id = f"p{page_index}-r{review_row}"
+                review_records[review_id] = {
+                    "page_old": old_path,
+                    "page_new": new_path,
+                    "status": kind,
+                    "coverage": row["similarity"],
+                    "old_text": row["old"],
+                    "matched_new_text": row["new"],
+                }
+                review_control = (
+                    f'<label class="review-check"><input type="checkbox" class="retain-check" '
+                    f'data-review-id="{review_id}"> erhaltenswert / besprechen</label>'
+                )
+
             row_html.append(
-                f'<tr class="{kind}"><td>{label_html}<div>{old_text or "—"}</div></td>'
+                f'<tr class="{kind}"><td>{label_html}{review_control}<div>{old_text or "—"}</div></td>'
                 f'<td>{label_html}<div>{new_text or "—"}</div></td></tr>'
             )
 
@@ -320,7 +416,7 @@ def render_diff_html(result: dict) -> str:
 <section class="page-diff" id="{anchor}">
   <div class="page-heading">
     <div>
-      <p class="eyebrow">Seitenvergleich {index}</p>
+      <p class="eyebrow">Seitenvergleich {page_index}</p>
       <h2>{html.escape(old_path)} <span>→</span> {html.escape(new_path)}</h2>
     </div>
     <div class="page-meta">
@@ -332,7 +428,7 @@ def render_diff_html(result: dict) -> str:
   <div class="mini-stats">
     <span class="missing">{counts["missing"]} fehlt</span>
     <span class="new">{counts["new"]} neu</span>
-    <span class="changed">{counts["changed"]} umformuliert</span>
+    <span class="changed">{counts["changed"]} umformuliert / verteilt</span>
     <span class="unchanged">{counts["unchanged"]} gleich</span>
   </div>
   <div class="table-wrap">
@@ -343,6 +439,8 @@ def render_diff_html(result: dict) -> str:
   </div>
 </section>
 """)
+
+    review_json = html.escape(json.dumps(review_records, ensure_ascii=False), quote=False)
 
     return f"""<!doctype html>
 <html lang="de">
@@ -360,6 +458,7 @@ def render_diff_html(result: dict) -> str:
 html {{ scroll-behavior:smooth; }}
 body {{ margin:0; font:15px/1.5 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; background:var(--bg); color:var(--text); }}
 a {{ color:#155eef; }}
+button {{ font:inherit; cursor:pointer; }}
 .layout {{ display:grid; grid-template-columns:minmax(250px,320px) minmax(0,1fr); min-height:100vh; }}
 aside {{ position:sticky; top:0; align-self:start; height:100vh; overflow:auto; padding:24px 20px; background:#111827; color:white; }}
 aside h1 {{ margin:0 0 6px; font-size:20px; }}
@@ -379,7 +478,10 @@ main {{ padding:32px clamp(18px,3vw,48px) 80px; max-width:1500px; width:100%; }}
 .legend .new,.mini-stats .new {{ border-color:var(--green-border); background:var(--green); }}
 .legend .changed,.mini-stats .changed {{ border-color:var(--blue-border); background:var(--blue); }}
 .legend .unchanged,.mini-stats .unchanged {{ border-color:#98a2b3; }}
-.controls {{ margin-top:18px; }}
+.controls {{ display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top:18px; }}
+.controls button {{ border:1px solid #b8c0cc; background:#fff; border-radius:6px; padding:7px 10px; }}
+.controls button.primary {{ border-color:#155eef; background:#155eef; color:white; }}
+.selection-count {{ color:var(--muted); font-size:13px; }}
 .page-diff {{ padding:24px; margin:0 0 28px; scroll-margin-top:20px; }}
 .page-heading {{ display:flex; gap:20px; justify-content:space-between; align-items:flex-start; }}
 .page-heading h2 {{ margin:0; font-size:21px; overflow-wrap:anywhere; }}
@@ -399,8 +501,12 @@ main {{ padding:32px clamp(18px,3vw,48px) 80px; max-width:1500px; width:100%; }}
 .diff-table tr.new td:last-child {{ background:var(--green); border-left:3px solid var(--green-border); }}
 .diff-table tr.new td:first-child {{ background:#fbfffc; color:#98a2b3; }}
 .diff-table tr.unchanged td {{ color:#667085; background:#fafafa; }}
-.diff-label {{ display:inline-block; margin-bottom:5px; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:#475467; }}
+.diff-label {{ display:inline-block; margin:0 10px 5px 0; font-size:10px; font-weight:700; text-transform:uppercase; letter-spacing:.04em; color:#475467; }}
+.review-check {{ display:inline-flex; gap:5px; align-items:center; margin:0 0 7px; padding:3px 7px; border:1px solid #fdb022; border-radius:999px; background:#fffaeb; color:#93370d; font-size:11px; font-weight:600; }}
+.review-check input {{ margin:0; }}
 body.hide-unchanged tr.unchanged {{ display:none; }}
+body.hide-new tr.new {{ display:none; }}
+.copy-feedback {{ color:#067647; font-weight:600; }}
 @media (max-width:900px) {{
   .layout {{ display:block; }}
   aside {{ position:relative; height:auto; }}
@@ -426,22 +532,86 @@ body.hide-unchanged tr.unchanged {{ display:none; }}
 <main>
   <section class="intro">
     <h1>Inhaltsvergleich bisherige Website ↔ Hugo</h1>
-    <p>Die Zuordnung erfolgt blockweise und reihenfolgetreu. Farben dienen der redaktionellen Prüfung und sind keine Qualitätsbewertung.</p>
+    <p>Jede alte Aussage wird gegen den passendsten neuen Absatz oder eine Gruppe neuer Absätze geprüft. Rot bedeutet daher „wahrscheinlich echter Entfall“, Blau bedeutet „inhaltlich zugeordnet, aber umformuliert oder auf mehrere Blöcke verteilt“.</p>
     <div class="legend">
-      <span class="missing"><strong>Rot:</strong> Altinhalt fehlt in Neu</span>
+      <span class="missing"><strong>Rot:</strong> wahrscheinlich fehlt die alte Aussage</span>
       <span class="new"><strong>Grün:</strong> neuer Inhalt in Hugo</span>
-      <span class="changed"><strong>Blau:</strong> zugeordnete Passage wurde umformuliert</span>
+      <span class="changed"><strong>Blau:</strong> umformuliert / verteilt / teilweise abgedeckt</span>
       <span class="unchanged"><strong>Grau:</strong> weitgehend unverändert</span>
     </div>
-    <div class="controls"><label><input type="checkbox" id="toggle-unchanged"> Unveränderte Passagen ausblenden</label></div>
-    <p><strong>Gesamt:</strong> {totals["missing"]} fehlt · {totals["new"]} neu · {totals["changed"]} umformuliert · {totals["unchanged"]} weitgehend gleich.</p>
+    <div class="controls">
+      <label><input type="checkbox" id="toggle-unchanged"> Unveränderte Passagen ausblenden</label>
+      <label><input type="checkbox" id="toggle-new"> Neue Passagen ausblenden</label>
+      <button type="button" class="primary" id="copy-selection">Markierte als JSON kopieren</button>
+      <button type="button" id="clear-selection">Auswahl löschen</button>
+      <span class="selection-count" id="selection-count">0 markiert</span>
+      <span class="copy-feedback" id="copy-feedback" aria-live="polite"></span>
+    </div>
+    <p><strong>Gesamt:</strong> {totals["missing"]} wahrscheinlich fehlt · {totals["new"]} neu · {totals["changed"]} umformuliert / verteilt · {totals["unchanged"]} weitgehend gleich.</p>
   </section>
   {''.join(page_sections)}
 </main>
 </div>
+<script id="review-data" type="application/json">{review_json}</script>
 <script>
+const reviewData = JSON.parse(document.getElementById("review-data").textContent);
+const storageKey = "bloecher-site-review-selection-v1";
+const checks = Array.from(document.querySelectorAll(".retain-check"));
+const countEl = document.getElementById("selection-count");
+const feedbackEl = document.getElementById("copy-feedback");
+
+function selectedIds() {{
+  return checks.filter(function (box) {{ return box.checked; }}).map(function (box) {{ return box.dataset.reviewId; }});
+}}
+
+function saveSelection() {{
+  localStorage.setItem(storageKey, JSON.stringify(selectedIds()));
+  countEl.textContent = selectedIds().length + " markiert";
+}}
+
+function restoreSelection() {{
+  let selected = [];
+  try {{ selected = JSON.parse(localStorage.getItem(storageKey) || "[]"); }} catch (_) {{}}
+  const set = new Set(selected);
+  checks.forEach(function (box) {{ box.checked = set.has(box.dataset.reviewId); }});
+  saveSelection();
+}}
+
+checks.forEach(function (box) {{ box.addEventListener("change", saveSelection); }});
+restoreSelection();
+
 document.getElementById("toggle-unchanged").addEventListener("change", function () {{
   document.body.classList.toggle("hide-unchanged", this.checked);
+}});
+document.getElementById("toggle-new").addEventListener("change", function () {{
+  document.body.classList.toggle("hide-new", this.checked);
+}});
+
+document.getElementById("clear-selection").addEventListener("click", function () {{
+  checks.forEach(function (box) {{ box.checked = false; }});
+  saveSelection();
+  feedbackEl.textContent = "";
+}});
+
+document.getElementById("copy-selection").addEventListener("click", async function () {{
+  const selected = selectedIds().map(function (id) {{ return reviewData[id]; }});
+  const payload = {{
+    task: "Bitte diese markierten Alt-Aussagen prüfen und entscheiden, wie sie in der Hugo-Seite erhalten bzw. sprachlich verbessert werden sollen.",
+    generated: {json.dumps(result["generated"])},
+    selected: selected
+  }};
+  const value = JSON.stringify(payload, null, 2);
+  try {{
+    await navigator.clipboard.writeText(value);
+  }} catch (_) {{
+    const textarea = document.createElement("textarea");
+    textarea.value = value;
+    document.body.appendChild(textarea);
+    textarea.select();
+    document.execCommand("copy");
+    textarea.remove();
+  }}
+  feedbackEl.textContent = selected.length + " Einträge als JSON kopiert";
 }});
 </script>
 </body>
