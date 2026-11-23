@@ -23,7 +23,9 @@ Mit 3D-Sanddruck stellen wir Formen und Kerne direkt aus digitalen Daten her. Ei
 
 ## Sandformen direkt aus CAD-Daten
 
-Beim klassischen Sandguss entsteht die Form durch Abformen eines [Gießereimodells](/leistungen/modellbau/). Der 3D-Sanddruck überspringt diesen Schritt: Die Formgeometrie wird direkt aus dem CAD-Datensatz aufgebaut.
+Beim klassischen [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) wird mit verlorenen Formen aus gebundenem Sand gearbeitet. Für deren Herstellung werden üblicherweise [Gießereimodelle](/leistungen/modellbau/) als positive Abbildungen des späteren Gussteils benötigt.
+
+Der 3D-Sanddruck überspringt diesen Schritt: Die Form- oder Kerngeometrie wird direkt aus dem CAD-Datensatz aufgebaut. Schicht für Schicht entstehen so ohne physisches Modell die benötigten Sandformen und -kerne.
 
 Das ist besonders interessant für:
 
@@ -31,13 +33,17 @@ Das ist besonders interessant für:
 - Einzelteile und Prototypen
 - kleine Serien
 - kurzfristige Änderungen
-- Bauteile, bei denen klassische Modelltechnik unwirtschaftlich wäre
+- Bauteile, bei denen klassische Modell- oder Kernkastentechnik unwirtschaftlich oder geometrisch aufwendig wäre
+
+So lassen sich komplexe Geometrien und Kleinserien wirtschaftlich herstellen und die Grenzen klassischer Modell- und Kernkastentechnik erweitern.
 
 ## So funktioniert der 3D-Sanddruck
 
-Der Formsand wird schichtweise aufgetragen. Ein Bindersystem wird selektiv dort eingebracht, wo der Sand aushärten soll.
+Unsere Anlage arbeitet robotergestützt. Der Formsand wird schichtweise aufgetragen und anschließend entsprechend den digitalen Geometriedaten selektiv verfestigt.
 
-Schicht für Schicht entstehen so vollständige Sandformen oder Sandkerne. Dadurch lassen sich Geometrien herstellen, die mit klassischer Modell- und Kernkastentechnik nur mit hohem Aufwand oder gar nicht realisierbar wären.
+Bei dem eingesetzten Verfahren wird mit Furanbinder vorgemischter Quarzsand verwendet. An den Stellen, die Bestandteil der Form oder des Kerns werden sollen, wird gezielt Härter appliziert. Nur dort verfestigt sich der Sand. Diese Beschreibung präzisiert die frühere vereinfachte Darstellung, nach der das Bindersystem selbst selektiv aufgedruckt werde.
+
+Nach Abschluss des Bauprozesses werden die fertigen Sandformen und -kerne aus dem nicht verfestigten Sand entnommen und können direkt für den Guss eingesetzt werden.
 
 ## Maximale Abmessungen
 
@@ -45,6 +51,6 @@ Unsere maximale Baugröße für 3D-gedruckte Sandformen und Kerne beträgt:
 
 **1.800 × 900 × 900 mm**
 
-Die gedruckten Formen und Kerne werden anschließend direkt für den [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) eingesetzt.
+Innerhalb dieses Bauraums können sowohl einzelne große Formen und Kerne als auch mehrere kleinere Bauteile in einem Bauvorgang hergestellt werden.
 
 {{< bloecher-service-nav >}}
