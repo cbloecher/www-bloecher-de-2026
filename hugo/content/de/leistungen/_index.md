@@ -4,6 +4,8 @@ description: "Von CAD-Daten über Modellbau und 3D-gedruckte Sandformen bis zum 
 translationKey: "services"
 draft: false
 type: "services"
+aliases:
+  - "/leistungen/technologie/"
 hero:
   image: "images/imported/2023/11/giesserei-bloecher_giessen_grosser_kasten.jpg"
   alt: "Aluminium-Sandguss bei Giesserei Blöcher"
