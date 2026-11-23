@@ -1,6 +1,6 @@
 # Seiten- und Inhaltsvergleich bloecher.de ↔ Hugo
 
-Erzeugt: `2026-11-23T06:41:12+00:00`
+Erzeugt: `2026-11-23T06:43:00+00:00`
 
 Dieser Bericht wird mit `python tools/compare_websites.py` reproduzierbar erzeugt. Der Ähnlichkeitswert ist ein Hinweis für die redaktionelle Prüfung, keine semantische Bewertung.
 
