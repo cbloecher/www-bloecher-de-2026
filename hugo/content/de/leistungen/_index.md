@@ -38,24 +38,39 @@ migration:
   source_slug: "leistungen"
   modified: "2023-11-05T14:54:26+00:00"
 ---
-
 Wir verbinden langjährige Gießereierfahrung mit eigenem Modellbau, 3D-Sanddruck und digitaler Messtechnik. So können wir Bauteile und Werkzeuge flexibel vom Datensatz bis zum fertigen Abguss begleiten.
+
+## Leistungsplus entlang der Prozesskette
+
+Unsere Leistungen greifen direkt ineinander. Auf Wunsch unterstützen wir bereits bei Entwicklung und CAD-Konstruktion und begleiten Projekte über die Form- und Kernherstellung bis zum fertigen Gussteil.
+
+Dazu gehören:
+
+- professionelle Unterstützung auf Basis langjähriger Erfahrung in Entwicklung und CAD-Konstruktion
+- 3D-CAD-Datenbearbeitung und elektronische Datenübernahme, bei Bedarf auch über **SFTP**
+- Know-how bei Sonderlösungen, beispielsweise Gussteilen mit integrierten Edelstahlrohren zur [Temperierung](/leistungen/temperierung/)
+- eigener Styropor-[Modellbau](/leistungen/modellbau/) mit 5-Achs-Bearbeitung bis **8.000 × 4.000 × 2.000 mm**
+- Herstellung von Sandformen und Sandkernen
+- direkte Herstellung von Formen und Kernen aus CAD-Daten im [3D-Sanddruck](/leistungen/3d-druck/)
+- [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) für Einzelteile, Prototypen und kleine Serien
+- [3D-Scannen](/leistungen/3d-scannen/) für Qualitätskontrolle, Rohteilvermessung und Reverse Engineering
 
 ## Von CAD-Daten zum fertigen Abguss
 
-Unsere Leistungen greifen direkt ineinander:
+Je nach Bauteil und wirtschaftlich sinnvoller Prozesskette kombinieren wir die einzelnen Schritte:
 
-- Unterstützung bei Entwicklung und CAD-Konstruktion
-- 3D-CAD-Datenbearbeitung und Datenübernahme
-- eigener Styropor-Modellbau für kurze Abstimmungswege
-- Herstellung von Sandformen und Sandkernen
-- direkte Herstellung von Formen und Kernen im 3D-Sanddruck
-- Aluminium-Sandguss für Einzelteile und kleine Losgrößen
-- 3D-Scannen für Qualitätskontrolle und Reverse Engineering
+1. **CAD-Daten übernehmen und bearbeiten** – elektronische Datenübertragung und Aufbereitung der 3D-Daten.
+2. **EPS-Modell herstellen** – im eigenen Modellbau fertigen wir Styropormodelle für die Abformung.
+3. **Formen oder Kerne direkt drucken** – wenn es wirtschaftlich oder geometrisch sinnvoll ist, entstehen Formen und Kerne ohne Modell direkt im 3D-Sanddruck.
+4. **Sandform und Kerne herstellen** – klassisch über ein Modell oder additiv aus digitalen Daten.
+5. **Aluminium abgießen** – Fertigung des Gussteils in geeigneter Aluminiumlegierung.
+6. **Gussteil putzen und verschleifen** – Entfernen von Formstoffresten und gießtechnisch notwendigen Ansätzen sowie weitere Nacharbeit nach Anforderung.
+7. **Optional 3D-scannen** – beispielsweise zur Qualitätskontrolle oder als Datengrundlage für die weitere Bearbeitung.
 
 ## Flexible Fertigung für besondere Anforderungen
 
-Für Sonderlösungen kombinieren wir die einzelnen Verfahren nach Bedarf. Dazu gehören beispielsweise Gussteile mit eingegossenen Edelstahlrohren zur Temperierung oder werkzeuglos hergestellte Sandformen für Prototypen und Einzelteile.
+Für Sonderlösungen kombinieren wir die Verfahren nach Bedarf. Dazu gehören beispielsweise konturfolgend [eingegossene Edelstahlrohre](/leistungen/temperierung/), werkzeuglos hergestellte Sandformen für Prototypen und Einzelteile oder die Rekonstruktion bestehender Bauteile über Scan und CAD.
+
 ## Einblicke in unsere Leistungen
 
 {{< bloecher-gallery >}}
