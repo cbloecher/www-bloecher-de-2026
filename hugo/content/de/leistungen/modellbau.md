@@ -23,18 +23,23 @@ Für den Aluminium-Sandguss werden in vielen Fällen Modelle benötigt, mit dene
 
 ## Modelle für den Sandguss
 
-Ein Gießereimodell ist die positive Abbildung des späteren Gussteils. Beim Abformen entsteht daraus die Negativgeometrie der Sandform.
+Ein Gießereimodell ist die positive Abbildung des späteren Gussteils. Beim Abformen im Gießereisand entsteht daraus die Negativgeometrie der Sandform.
 
-Grundsätzlich wird zwischen wiederverwendbaren Dauermodellen und verlorenen Modellen unterschieden. Für Einzelteile und kleine Stückzahlen sind Modelle aus expandiertem Polystyrol (EPS) häufig eine wirtschaftliche Lösung.
+Grundsätzlich wird zwischen **Dauermodellen** und **verlorenen Modellen** unterschieden. Entscheidend ist dabei die Wiederverwendbarkeit nach dem Abformen: Dauermodelle, beispielsweise aus Holz oder anderen geeigneten Werkstoffen, können mehrfach eingesetzt werden. Verlorene Modelle sind dagegen in der Regel nur einmal verwendbar.
+
+Für Einzelteile und kleine Stückzahlen sind verlorene Modelle aus **expandiertem Polystyrol (EPS)** – umgangssprachlich Styropor – häufig die wirtschaftlichste Lösung.
+
+Eine Alternative zur Modelltechnik ist die direkte Herstellung von Formen und Kernen im [3D-Sanddruck](/leistungen/3d-druck/). Dabei wird kein physisches Modell benötigt.
 
 ## Eigener EPS-Modellbau
 
-Wir fertigen EPS-Modelle im eigenen Haus. Dadurch können Änderungen und gießtechnische Anforderungen direkt zwischen Modellbau und Gießerei abgestimmt werden.
+Wir fertigen EPS-Modelle im eigenen Haus. Dadurch können wir Anforderungen und Änderungen schnell umsetzen und gießtechnische Details direkt zwischen Modellbau und Gießerei abstimmen.
 
 Vorteile sind:
 
 - kurze Abstimmungswege
 - flexible Umsetzung von Änderungen
+- direkte Abstimmung zwischen Modellbau und Gießerei
 - keine externen Transportzeiten
 - geringeres Risiko von Transportschäden
 
@@ -42,7 +47,7 @@ Vorteile sind:
 
 Die Modelle werden aus EPS-Blöcken gefräst.
 
-Dafür steht eine 5-Achs-Fräsmaschine mit einem Arbeitsbereich von **8.000 × 4.000 × 2.000 mm** zur Verfügung.
+Dafür steht eine 5-Achs-Fräsmaschine mit einem Arbeitsbereich von **8.000 × 4.000 × 2.000 mm** zur Verfügung. Damit können auch großformatige Modelle im eigenen Haus gefertigt werden.
 
 Wenn ein Modell wirtschaftlich oder geometrisch nicht sinnvoll ist, können Sandformen und Kerne alternativ direkt im [3D-Sanddruck](/leistungen/3d-druck/) hergestellt werden.
 
