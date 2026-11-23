@@ -59,7 +59,7 @@ PATH_MAP = {
 }
 
 SKIP_TAGS = {"script", "style", "svg", "nav", "header", "footer", "form", "noscript"}
-TEXT_TAGS = {"title", "h1", "h2", "h3", "p", "li", "address", "th", "td"}
+TEXT_TAGS = {"title", "h1", "h2", "h3", "p", "li", "address", "tr"}
 COOKIE_MARKERS = (
     "cookie and privacy", "how we use cookies", "essential website cookies",
     "google webfont settings", "google recaptcha settings", "vimeo and youtube",
@@ -110,13 +110,18 @@ class ContentParser(HTMLParser):
         tag = tag.lower()
         if tag in SKIP_TAGS:
             self.skip_depth += 1
-        if not self.skip_depth and tag in TEXT_TAGS:
+        if not self.skip_depth and tag == "tr":
+            self.active = "tr"
+            self.buffer = []
+        elif not self.skip_depth and tag in TEXT_TAGS and self.active != "tr":
             self.active = tag
             self.buffer = []
 
     def handle_endtag(self, tag: str) -> None:
         tag = tag.lower()
-        if self.active == tag:
+        if self.active == "tr" and tag != "tr":
+            pass
+        elif self.active == tag:
             text = clean_text(" ".join(self.buffer))
             if any(marker in text.lower() for marker in COOKIE_MARKERS):
                 self.cookie_started = True
@@ -255,6 +260,13 @@ def is_noise_block(text: str) -> bool:
     if normalized == "ihr spezialist für anspruchsvollen aluminium sandguss":
         return True
     if normalized in {
+        "giesserei blöcher gmbh",
+        "giesserei bloecher gmbh",
+    }:
+        return True
+    if normalized.startswith("zur wolfsk") or normalized.startswith("fon +49"):
+        return True
+    if normalized in {
         "click to add your own text here",
         "gib hier den inhalt des meilensteines",
     }:
@@ -312,7 +324,7 @@ def align_blocks(old_blocks: list[str], new_blocks: list[str]) -> list[dict]:
 
         if clean_text(old_text).casefold() == clean_text(matched_new).casefold():
             kind = "unchanged"
-        elif score >= 0.44:
+        elif score >= 0.36:
             kind = "changed"
         else:
             kind = "missing"
