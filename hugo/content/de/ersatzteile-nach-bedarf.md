@@ -37,19 +37,21 @@ migration:
   source_url: "https://ersatzteilenachbedarf.de/"
   wordpress_source_url: "https://www.bloecher.de/ersatzteile-nach-bedarf-de/"
 ---
-
-Wenn ein Bauteil nicht mehr lieferbar ist und Modelle oder Werkzeuge fehlen, entwickeln wir eine passende Prozesskette für die Nachfertigung – vom vorhandenen Muster oder Datensatz bis zum einbaufertigen Ersatzteil.
+Wenn ein Bauteil nicht mehr lieferbar ist und Modelle oder Werkzeuge fehlen, entwickeln wir eine passende Prozesskette für die Nachfertigung – vom vorhandenen Muster oder Datensatz bis zum **einbaufertigen Ersatzteil**.
 
 ## Ausgangspunkt: CAD-Daten, Zeichnung oder Muster
 
 Für die Nachfertigung können unterschiedliche Grundlagen dienen:
 
-- vorhandene CAD-Daten in gängigen Formaten
+- vorhandene CAD-Daten mit Importschnittstellen für alle gängigen Formate
 - technische Zeichnungen
 - ein vorhandenes, auch beschädigtes Bauteil als Muster
 - ergänzende Maß- und Funktionsangaben
+- Digitalisierung, Reverse Engineering oder Re-Design
 
-Fehlen digitale Daten, erfassen wir die Geometrie per [3D-Scan](/leistungen/3d-scannen/), bereiten sie konstruktiv auf und stimmen kritische Merkmale mit Ihnen ab.
+Fehlen digitale Daten, erfassen wir die Geometrie per [3D-Scan](/leistungen/3d-scannen/), bereiten sie konstruktiv auf und stimmen kritische Merkmale ab.
+
+Größe und Material des vorhandenen Musters sind grundsätzlich kein Ausschlusskriterium. Entscheidend ist die geeignete Prozesskette für Geometrie, Zielwerkstoff, Stückzahl und Einsatzbedingungen.
 
 ## Vom Muster zum Ersatzteil
 
@@ -58,24 +60,44 @@ Je nach Bauteil und Stückzahl kombinieren wir die geeigneten Verfahren:
 1. vorhandene Daten prüfen oder Geometrie digitalisieren
 2. CAD-Modell aufbereiten, rekonstruieren oder gezielt anpassen
 3. Modell, Sandform oder Sandkern herstellen
-4. Bauteil im [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) fertigen
+4. Bauteil im [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) oder mit einem anderen geeigneten Verfahren fertigen
 5. bei Bedarf mechanisch bearbeiten und geometrisch prüfen
 
-Mit [3D-Sanddruck](/leistungen/3d-druck/) können Sandformen und Kerne direkt aus digitalen Daten entstehen. So lassen sich Einzelteile und kleine Stückzahlen häufig ohne neue dauerhafte Modelleinrichtung realisieren. Abhängig von Werkstoff und Aufgabe beziehen wir weitere Fertigungsverfahren wie Metall-3D-Druck ein.
+### 3D-Scan
+
+Für die Geometrieerfassung setzen wir je nach Aufgabe ein hochpräzises GOM-ATOS-System oder einen flexibel einsetzbaren handgeführten Scanner ein.
+
+### 3D-Sanddruck
+
+Mit [3D-Sanddruck](/leistungen/3d-druck/) können Sandformen und Kerne direkt aus digitalen Daten entstehen. Die maximale Baugröße beträgt **1.800 × 900 × 900 mm am Stück**.
+
+So lassen sich Einzelteile und kleine Stückzahlen häufig ohne neue dauerhafte Modelleinrichtung realisieren.
+
+### Metall-3D-Druck
+
+Abhängig von Werkstoff und Aufgabe beziehen wir additive Metallfertigung ein – zur direkten Herstellung von Bauteilen oder von Funktionsteilen, die beispielsweise im Verbundguss integriert werden können.
+
+### Mechanische Bearbeitung
+
+Für die mechanische Bearbeitung können Bauteile auf 5 Achsen bis **2.100 × 2.100 × 1.250 mm** gefräst werden.
 
 ## Warum Nachfertigung nach digitalen Daten?
 
-### Ohne neues Werkzeug starten
+### Ohne Werkzeug, ohne Invest
 
-Die werkzeuglose oder werkzeugreduzierte Fertigung vermeidet hohe Anfangsinvestitionen und eignet sich besonders für Einzelteile und kleine Serien.
+Der Einsatz additiver Fertigungstechnologien ermöglicht insbesondere die wirtschaftliche Herstellung von Einzelteilen oder vergleichsweise kleinen Stückzahlen. Das ist beispielsweise dann interessant, wenn die originale Modell- oder Werkzeugeinrichtung verloren gegangen oder nicht mehr verfügbar ist.
 
-### Bewährtes gezielt verbessern
+Werkzeuglose oder werkzeugreduzierte Fertigung vermeidet dabei hohe Anfangsinvestitionen in eine neue dauerhafte Werkzeugeinrichtung.
 
-Bei der Rekonstruktion können bekannte Schwachstellen berücksichtigt und Details angepasst werden – sofern Funktion, Einbauraum und technische Anforderungen dies erlauben.
+### Besser als das Original
 
-### Schnell und flexibel reagieren
+Die Fertigung nach digitalen Daten eröffnet die Möglichkeit, bekannte Schwachstellen zu beheben oder die ursprüngliche Funktion eines Bauteils zu verbessern beziehungsweise zu erweitern.
 
-3D-Scan, Modellbau, 3D-Sanddruck und Guss greifen in einer abgestimmten Prozesskette ineinander. Varianten und individuelle Anpassungen lassen sich dadurch vergleichsweise flexibel umsetzen.
+Änderungen stimmen wir auf Funktion, Einbauraum und technische Anforderungen ab.
+
+### Schnell und flexibel
+
+Eigener 3D-Sanddruck und Modellbau im Haus geben uns direkte Kontrolle über Planung und Ausführung. Varianten und Individualisierungen lassen sich dadurch flexibel umsetzen.
 
 ## Was wir für eine erste Einschätzung benötigen
 
