@@ -33,7 +33,7 @@ Die Verarbeitung erfolgt, soweit erforderlich, zur sicheren und störungsfreien 
 
 Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung Ihrer Anfrage.
 
-Soweit die Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, erfolgt die Verarbeitung zur Durchführung vorvertraglicher Maßnahmen bzw. zur Vertragserfüllung. In anderen Fällen kann die Verarbeitung auf unserem berechtigten Interesse an der Bearbeitung Deiner Anfrage beruhen.
+Soweit die Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, erfolgt die Verarbeitung zur Durchführung vorvertraglicher Maßnahmen bzw. zur Vertragserfüllung. In anderen Fällen kann die Verarbeitung auf unserem berechtigten Interesse an der Bearbeitung Ihrer Anfrage beruhen.
 
 ## Cookies, Analyse und externe Inhalte
 
