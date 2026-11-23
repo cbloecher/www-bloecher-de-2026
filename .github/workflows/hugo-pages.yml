@@ -9,6 +9,7 @@ on:
       - "hugo/**"
       - "pages-preview/**"
       - ".github/workflows/hugo-pages.yml"
+      - "Analyse/site-vergleich/index.html"
   workflow_dispatch:
 
 permissions:
