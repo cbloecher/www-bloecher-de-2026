@@ -28,7 +28,7 @@ PATH_MAP = {
     "/ersatzteile-nach-bedarf-de/": "/ersatzteile-nach-bedarf/",
     "/jobs/": "/jobs/",
     "/leistungen/": "/leistungen/",
-    "/leistungen/technologie/": None,
+    "/leistungen/technologie/": "/leistungen/",
     "/leistungen/aluminium-sandguss/": "/leistungen/aluminium-sandguss/",
     "/leistungen/3d-druck/": "/leistungen/3d-druck/",
     "/leistungen/modellbau/": "/leistungen/modellbau/",
