@@ -435,6 +435,13 @@ Beispiel:
 
 Die bestehende Marke kommuniziert eher technisch als werblich.
 
+### Ansprache
+
+- Auf der deutschsprachigen Website werden Besucherinnen und Besucher **durchgängig gesiezt**.
+- Direkte Ansprache verwendet **Sie / Ihnen / Ihr / Ihre**.
+- Die Du-Form wird auch auf Jobs-, Kontakt-, Formular- und Hinweisseiten nicht verwendet.
+- Sachliche Formulierungen ohne direkte Ansprache sind weiterhin möglich und oft zu bevorzugen.
+
 ### Bevorzugt
 
 - konkrete technische Aussagen
