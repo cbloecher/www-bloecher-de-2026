@@ -23,24 +23,26 @@ migration:
   modified: "2024-02-20T17:22:26+00:00"
 ---
 
-Ergänzend zur Fertigung bieten wir 3D-Scannen für Qualitätskontrolle, Geometrieerfassung und Reverse Engineering an.
+Ergänzend zur Fertigung bieten wir 3D-Scannen als Dienstleistung für Qualitätskontrolle, Geometrieerfassung und Reverse Engineering an.
 
-Je nach Aufgabe setzen wir einen handgeführten Scanner oder ein GOM-ATOS-System ein.
+Je nach Aufgabe setzen wir einen handgeführten Scanner oder ein GOM-ATOS-System ein. So können wir sowohl flexibel am Bauteil arbeiten als auch hochpräzise optische Messungen durchführen.
 
 ## Typische Anwendungen
 
 - Prüfung der Maßhaltigkeit von Modellen
 - Prüfung der Maßhaltigkeit von Gussteilen
-- Erfassung eines Rohgusses als Grundlage für die anschließende mechanische Bearbeitung
+- Erfassung eines Rohgusses als Grundlage für die anschließende spanende Bearbeitung
 - Reverse Engineering, wenn Modelle, Zeichnungen oder Fertigungsdaten nicht mehr verfügbar sind
 
 ## Strukturierte Lichtprojektion
 
-Bei der strukturierten Lichtprojektion wird ein definiertes Lichtmuster auf die Oberfläche des Bauteils projiziert.
+Beim GOM-ATOS-System wird ein definiertes Licht- beziehungsweise Streifenmuster auf die Oberfläche des Bauteils projiziert.
 
-Eine oder mehrere Kameras erfassen die Verzerrung dieses Musters aus unterschiedlichen Blickwinkeln. Aus diesen Aufnahmen berechnet die Software die räumliche Lage vieler Oberflächenpunkte und erzeugt daraus ein digitales 3D-Modell.
+Kameras erfassen die Verformung dieses Musters aus unterschiedlichen Blickwinkeln. Aus den Aufnahmen berechnet die Software mittels Triangulation die räumliche Lage vieler Oberflächenpunkte und erzeugt daraus ein digitales 3D-Modell.
 
-Das Verfahren eignet sich besonders für komplexe Geometrien und detaillierte Oberflächen.
+Das Verfahren eignet sich besonders für kleine bis mittelgroße Objekte mit komplexen Formen und feinen Details. Größere Geometrien können abhängig von Messaufgabe und System durch mehrere Einzelaufnahmen erfasst und zusammengesetzt werden.
+
+Strukturierte Lichtprojektion wird vor allem in der industriellen Messtechnik eingesetzt, darüber hinaus aber beispielsweise auch in Museen sowie bei der Dokumentation von Kunst- und Kulturgütern.
 
 ## Optische Bauteilvermessung
 
