@@ -55,42 +55,73 @@ migration:
   source_slug: "prototypen-ersatzteil"
   modified: "2023-11-05T14:32:53+00:00"
 ---
-
-Für Einzelteile, Prototypen und Ersatzteile kombinieren wir digitale Datenerfassung, Modellbau, 3D-Sanddruck und Aluminium-Sandguss.
+Für Einzelteile, Prototypen und Ersatzteile kombinieren wir digitale Datenerfassung, Konstruktion, Modellbau, 3D-Sanddruck, Aluminium-Sandguss, additive Metallfertigung und mechanische Bearbeitung. Ziel ist bei Bedarf ein **einbaufertiges Bauteil**.
 
 ## Ausgangspunkt: Daten, Zeichnung oder vorhandenes Bauteil
 
-Je nach Ausgangssituation können unterschiedliche Datenquellen genutzt werden:
+Wir können von unterschiedlichen Grundlagen starten:
 
-- vorhandene CAD-Daten in gängigen Formaten
-- technische Zeichnungen
+- vorhandene CAD-Daten mit Importschnittstellen für alle gängigen Formate
+- technische Zeichnungen und Konstruktion nach Zeichnung für die weitere Verarbeitung
 - Digitalisierung eines vorhandenen Bauteils
 - Reverse Engineering
 - Re-Design bestehender Geometrien
 
-Damit können auch Bauteile neu aufgebaut werden, wenn ursprüngliche Modelle oder Werkzeuge nicht mehr verfügbar sind.
+Damit können auch Bauteile neu aufgebaut werden, wenn ursprüngliche Modelle, Werkzeuge oder Fertigungsdaten nicht mehr verfügbar sind.
+
+Größe und Material des vorhandenen Musters sind dabei grundsätzlich kein Ausschlusskriterium. Entscheidend ist, welche Prozesskette für die gewünschte Geometrie, das Zielmaterial und die benötigte Stückzahl geeignet ist.
+
+## Verfahren bis zum einbaufertigen Bauteil
+
+Je nach Aufgabe kombinieren wir unterschiedliche Verfahren:
+
+### 3D-Scan
+
+Für die Digitalisierung setzen wir je nach Anforderung ein hochpräzises GOM-ATOS-System oder einen flexibel einsetzbaren handgeführten Scanner ein.
+
+### 3D-Sanddruck
+
+Sandformen und Sandkerne können direkt aus digitalen Daten hergestellt werden. Die maximale Baugröße beträgt **1.800 × 900 × 900 mm am Stück**.
+
+### Metall-3D-Druck
+
+Metallbauteile können additiv direkt hergestellt werden. Ebenso lassen sich additiv gefertigte Funktionsteile als Einlegeteile für den Verbundguss nutzen.
+
+### Aluminium-Sandguss
+
+Der Abguss kann über ein festes Modell, ein verlorenes EPS-Modell oder direkt über 3D-gedruckte Formen erfolgen. Wir verarbeiten die für den Sandguss üblichen Aluminiumlegierungen.
+
+### Mechanische Bearbeitung
+
+Für die mechanische Bearbeitung können Bauteile auf 5 Achsen bis **2.100 × 2.100 × 1.250 mm** gefräst werden.
 
 ## Werkzeuglose Fertigung für kleine Stückzahlen
 
-Additive Fertigungsverfahren sind besonders interessant, wenn nur ein Einzelteil oder eine kleine Stückzahl benötigt wird.
+Additive Fertigungsverfahren ermöglichen insbesondere die wirtschaftliche Herstellung von Einzelteilen und vergleichsweise kleinen Stückzahlen – beispielsweise dann, wenn die ursprüngliche Modell- oder Werkzeugeinrichtung verloren gegangen oder nicht mehr verfügbar ist.
 
-Mit [3D-Sanddruck](/leistungen/3d-druck/) lassen sich Sandformen und Kerne direkt aus digitalen Daten herstellen. Ein physisches Modell oder ein Kernkasten ist dann nicht zwingend erforderlich.
+Mit [3D-Sanddruck](/leistungen/3d-druck/) lassen sich Formen und Kerne direkt aus digitalen Daten herstellen. Ein physisches Modell oder ein Kernkasten ist dann nicht zwingend erforderlich.
 
 ## Vom Scan zum Gussteil
 
 Je nach Aufgabe kann die Prozesskette mehrere Schritte umfassen:
 
 1. Geometrie erfassen oder vorhandene Daten übernehmen
-2. Daten aufbereiten oder konstruktiv anpassen
+2. Daten aufbereiten, rekonstruieren oder konstruktiv anpassen
 3. Modell, Sandform oder Sandkern herstellen
-4. [Aluminium-Sandguss](/leistungen/aluminium-sandguss/)
-5. bei Bedarf 3D-Scan zur Kontrolle oder als Grundlage für weitere Bearbeitung
+4. [Aluminium-Sandguss](/leistungen/aluminium-sandguss/) oder ein anderes geeignetes Fertigungsverfahren einsetzen
+5. mechanisch bearbeiten
+6. bei Bedarf per 3D-Scan kontrollieren
 
-## Varianten und Verbesserungen
+## Besser als das Original
 
-Die digitale Prozesskette erleichtert Varianten und individuelle Anpassungen.
+Die werkzeugfreie Fertigung nach digitalen Daten eröffnet die Möglichkeit, bekannte Schwachstellen eines vorhandenen Bauteils zu beheben oder seine ursprüngliche Funktion gezielt zu verbessern beziehungsweise zu erweitern.
 
-Bei einer Neuanfertigung können bekannte Schwachstellen eines vorhandenen Bauteils berücksichtigt oder Funktionen konstruktiv angepasst werden, sofern dies technisch sinnvoll und mit dem Kunden abgestimmt ist.
+Solche Änderungen erfolgen abgestimmt auf Funktion, Einbauraum und technische Anforderungen.
+
+## Schnell und flexibel
+
+Eigener 3D-Sanddruck und Modellbau im Haus geben uns direkte Kontrolle über Planung und Ausführung. Varianten und Individualisierungen lassen sich dadurch ohne die Zwänge einer vorhandenen dauerhaften Werkzeugeinrichtung umsetzen.
+
 ## Ersatzteil nicht mehr verfügbar?
 
 Für die gezielte Nachfertigung eines nicht mehr lieferbaren Bauteils haben wir die Informationen unter [Ersatzteile nach Bedarf](/ersatzteile-nach-bedarf/) gebündelt.
