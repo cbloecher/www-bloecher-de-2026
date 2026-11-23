@@ -1,6 +1,6 @@
 # Seiten- und Inhaltsvergleich bloecher.de ↔ Hugo
 
-Erzeugt: `2026-11-23T06:27:09+00:00`
+Erzeugt: `2026-11-23T06:41:12+00:00`
 
 Dieser Bericht wird mit `python tools/compare_websites.py` reproduzierbar erzeugt. Der Ähnlichkeitswert ist ein Hinweis für die redaktionelle Prüfung, keine semantische Bewertung.
 
@@ -15,38 +15,38 @@ Dieser Bericht wird mit `python tools/compare_websites.py` reproduzierbar erzeug
 
 | Status | Alt | Hugo | Wörter alt/neu | Ähnlichkeit |
 |---|---|---|---:|---:|
-| vergleichbar | [/](https://www.bloecher.de/) | [/](http://127.0.0.1:8000/) | 13/183 | 71% |
-| abweichend | [/datenschutzerklaerung/](https://www.bloecher.de/datenschutzerklaerung/) | [/datenschutzerklaerung/](http://127.0.0.1:8000/datenschutzerklaerung/) | 7/236 | 20% |
-| abweichend | [/en/about-us/](https://www.bloecher.de/en/about-us//about-us) | [/en/about-us/](http://127.0.0.1:8000/en/about-us/) | 103/172 | 37% |
-| vergleichbar | [/en/about-us/contact-us/](https://www.bloecher.de/en/about-us/contact-us//contact-us) | [/en/about-us/contact-us/](http://127.0.0.1:8000/en/about-us/contact-us/) | 28/31 | 59% |
-| vergleichbar | [/en/about-us/how-to-find-us/](https://www.bloecher.de/en/about-us/how-to-find-us//how-to-find-us) | [/en/about-us/how-to-find-us/](http://127.0.0.1:8000/en/about-us/how-to-find-us/) | 115/110 | 82% |
-| abweichend | [/en/about-us/quality-management/](https://www.bloecher.de/en/about-us/quality-management//quality-management) | [/en/about-us/quality-management/](http://127.0.0.1:8000/en/about-us/quality-management/) | 190/128 | 43% |
+| vergleichbar | [/](https://www.bloecher.de/) | [/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/) | 13/183 | 71% |
+| abweichend | [/datenschutzerklaerung/](https://www.bloecher.de/datenschutzerklaerung/) | [/datenschutzerklaerung/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/datenschutzerklaerung/) | 7/236 | 20% |
+| abweichend | [/en/about-us/](https://www.bloecher.de/en/about-us//about-us) | [/en/about-us/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/) | 103/172 | 37% |
+| vergleichbar | [/en/about-us/contact-us/](https://www.bloecher.de/en/about-us/contact-us//contact-us) | [/en/about-us/contact-us/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/contact-us/) | 28/31 | 59% |
+| vergleichbar | [/en/about-us/how-to-find-us/](https://www.bloecher.de/en/about-us/how-to-find-us//how-to-find-us) | [/en/about-us/how-to-find-us/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/how-to-find-us/) | 115/110 | 82% |
+| abweichend | [/en/about-us/quality-management/](https://www.bloecher.de/en/about-us/quality-management//quality-management) | [/en/about-us/quality-management/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/quality-management/) | 190/128 | 43% |
 | nur_alt | [/en/ersatzteile-nach-bedarf-english/](https://www.bloecher.de/en/ersatzteile-nach-bedarf-english//ersatzteile-nach-bedarf-english) | – | 7/0 | 0% |
-| vergleichbar | [/en/foundry/](https://www.bloecher.de/en/foundry//foundry) | [/en/](http://127.0.0.1:8000/en/) | 15/239 | 56% |
-| abweichend | [/en/prototypes-and-spare-parts/](https://www.bloecher.de/en/prototypes-and-spare-parts//prototypes-and-spare-parts) | [/en/prototypes-and-spare-parts/](http://127.0.0.1:8000/en/prototypes-and-spare-parts/) | 205/246 | 40% |
-| abweichend | [/en/services/](https://www.bloecher.de/en/services//services) | [/en/services/](http://127.0.0.1:8000/en/services/) | 244/304 | 31% |
-| abweichend | [/en/services/3d-print/](https://www.bloecher.de/en/services/3d-print//3d-print) | [/en/services/3d-print/](http://127.0.0.1:8000/en/services/3d-print/) | 143/169 | 44% |
-| vergleichbar | [/en/services/3d-scan/](https://www.bloecher.de/en/services/3d-scan//3d-scan) | [/en/services/3d-scan/](http://127.0.0.1:8000/en/services/3d-scan/) | 208/138 | 73% |
-| vergleichbar | [/en/services/aluminium-sandcasting/](https://www.bloecher.de/en/services/aluminium-sandcasting//aluminium-sandcasting) | [/en/services/aluminium-sand-casting/](http://127.0.0.1:8000/en/services/aluminium-sand-casting/) | 655/334 | 57% |
-| abweichend | [/en/services/model-making/](https://www.bloecher.de/en/services/model-making//model-making) | [/en/services/model-making/](http://127.0.0.1:8000/en/services/model-making/) | 225/181 | 51% |
-| vergleichbar | [/en/services/temperature-control/](https://www.bloecher.de/en/services/temperature-control//temperature-control) | [/en/services/temperature-control/](http://127.0.0.1:8000/en/services/temperature-control/) | 165/152 | 57% |
-| vergleichbar | [/en/tools-and-molds/](https://www.bloecher.de/en/tools-and-molds//tools-and-molds) | [/en/tools-and-molds/](http://127.0.0.1:8000/en/tools-and-molds/) | 105/161 | 69% |
-| vergleichbar | [/ersatzteile-nach-bedarf-de/](https://www.bloecher.de/ersatzteile-nach-bedarf-de/) | [/ersatzteile-nach-bedarf/](http://127.0.0.1:8000/ersatzteile-nach-bedarf/) | 176/444 | 56% |
-| vergleichbar | [/guss-fuer-werkzeuge-formen/](https://www.bloecher.de/guss-fuer-werkzeuge-formen/) | [/guss-fuer-werkzeuge-formen/](http://127.0.0.1:8000/guss-fuer-werkzeuge-formen/) | 69/132 | 76% |
-| abweichend | [/impressum/](https://www.bloecher.de/impressum/) | [/impressum/](http://127.0.0.1:8000/impressum/) | 7/47 | 0% |
-| abweichend | [/jobs/](https://www.bloecher.de/jobs/) | [/jobs/](http://127.0.0.1:8000/jobs/) | 107/114 | 27% |
-| vergleichbar | [/leistungen/](https://www.bloecher.de/leistungen/) | [/leistungen/](http://127.0.0.1:8000/leistungen/) | 144/416 | 59% |
-| abweichend | [/leistungen/3d-druck/](https://www.bloecher.de/leistungen/3d-druck/) | [/leistungen/3d-druck/](http://127.0.0.1:8000/leistungen/3d-druck/) | 125/238 | 54% |
-| vergleichbar | [/leistungen/3d-scannen/](https://www.bloecher.de/leistungen/3d-scannen/) | [/leistungen/3d-scannen/](http://127.0.0.1:8000/leistungen/3d-scannen/) | 192/182 | 58% |
-| abweichend | [/leistungen/aluminium-sandguss/](https://www.bloecher.de/leistungen/aluminium-sandguss/) | [/leistungen/aluminium-sandguss/](http://127.0.0.1:8000/leistungen/aluminium-sandguss/) | 648/556 | 54% |
-| vergleichbar | [/leistungen/modellbau/](https://www.bloecher.de/leistungen/modellbau/) | [/leistungen/modellbau/](http://127.0.0.1:8000/leistungen/modellbau/) | 174/230 | 57% |
-| abweichend | [/leistungen/technologie/](https://www.bloecher.de/leistungen/technologie/) | [/leistungen/](http://127.0.0.1:8000/leistungen/) | 44/416 | 38% |
-| vergleichbar | [/leistungen/temperierung/](https://www.bloecher.de/leistungen/temperierung/) | [/leistungen/temperierung/](http://127.0.0.1:8000/leistungen/temperierung/) | 115/165 | 63% |
-| vergleichbar | [/prototypen-ersatzteil/](https://www.bloecher.de/prototypen-ersatzteil/) | [/prototypen-ersatzteil/](http://127.0.0.1:8000/prototypen-ersatzteil/) | 175/455 | 59% |
-| abweichend | [/unternehmen/](https://www.bloecher.de/unternehmen/) | [/unternehmen/](http://127.0.0.1:8000/unternehmen/) | 92/166 | 31% |
-| vergleichbar | [/unternehmen/anfahrt/](https://www.bloecher.de/unternehmen/anfahrt/) | [/unternehmen/anfahrt/](http://127.0.0.1:8000/unternehmen/anfahrt/) | 95/118 | 72% |
-| vergleichbar | [/unternehmen/kontakt/](https://www.bloecher.de/unternehmen/kontakt/) | [/unternehmen/kontakt/](http://127.0.0.1:8000/unternehmen/kontakt/) | 27/30 | 61% |
-| abweichend | [/unternehmen/zertifizierung/](https://www.bloecher.de/unternehmen/zertifizierung/) | [/unternehmen/zertifizierung/](http://127.0.0.1:8000/unternehmen/zertifizierung/) | 178/149 | 33% |
+| vergleichbar | [/en/foundry/](https://www.bloecher.de/en/foundry//foundry) | [/en/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/) | 15/239 | 56% |
+| abweichend | [/en/prototypes-and-spare-parts/](https://www.bloecher.de/en/prototypes-and-spare-parts//prototypes-and-spare-parts) | [/en/prototypes-and-spare-parts/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/prototypes-and-spare-parts/) | 205/246 | 40% |
+| abweichend | [/en/services/](https://www.bloecher.de/en/services//services) | [/en/services/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/) | 244/304 | 31% |
+| abweichend | [/en/services/3d-print/](https://www.bloecher.de/en/services/3d-print//3d-print) | [/en/services/3d-print/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/3d-print/) | 143/169 | 44% |
+| vergleichbar | [/en/services/3d-scan/](https://www.bloecher.de/en/services/3d-scan//3d-scan) | [/en/services/3d-scan/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/3d-scan/) | 208/138 | 73% |
+| vergleichbar | [/en/services/aluminium-sandcasting/](https://www.bloecher.de/en/services/aluminium-sandcasting//aluminium-sandcasting) | [/en/services/aluminium-sand-casting/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/aluminium-sand-casting/) | 655/334 | 57% |
+| abweichend | [/en/services/model-making/](https://www.bloecher.de/en/services/model-making//model-making) | [/en/services/model-making/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/model-making/) | 225/181 | 51% |
+| vergleichbar | [/en/services/temperature-control/](https://www.bloecher.de/en/services/temperature-control//temperature-control) | [/en/services/temperature-control/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/temperature-control/) | 165/152 | 57% |
+| vergleichbar | [/en/tools-and-molds/](https://www.bloecher.de/en/tools-and-molds//tools-and-molds) | [/en/tools-and-molds/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/tools-and-molds/) | 105/161 | 69% |
+| vergleichbar | [/ersatzteile-nach-bedarf-de/](https://www.bloecher.de/ersatzteile-nach-bedarf-de/) | [/ersatzteile-nach-bedarf/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/ersatzteile-nach-bedarf/) | 176/444 | 56% |
+| vergleichbar | [/guss-fuer-werkzeuge-formen/](https://www.bloecher.de/guss-fuer-werkzeuge-formen/) | [/guss-fuer-werkzeuge-formen/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/guss-fuer-werkzeuge-formen/) | 69/132 | 76% |
+| abweichend | [/impressum/](https://www.bloecher.de/impressum/) | [/impressum/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/impressum/) | 7/47 | 0% |
+| abweichend | [/jobs/](https://www.bloecher.de/jobs/) | [/jobs/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/jobs/) | 107/114 | 27% |
+| vergleichbar | [/leistungen/](https://www.bloecher.de/leistungen/) | [/leistungen/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/) | 144/416 | 59% |
+| abweichend | [/leistungen/3d-druck/](https://www.bloecher.de/leistungen/3d-druck/) | [/leistungen/3d-druck/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/3d-druck/) | 125/238 | 54% |
+| vergleichbar | [/leistungen/3d-scannen/](https://www.bloecher.de/leistungen/3d-scannen/) | [/leistungen/3d-scannen/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/3d-scannen/) | 192/182 | 58% |
+| abweichend | [/leistungen/aluminium-sandguss/](https://www.bloecher.de/leistungen/aluminium-sandguss/) | [/leistungen/aluminium-sandguss/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/aluminium-sandguss/) | 648/556 | 54% |
+| vergleichbar | [/leistungen/modellbau/](https://www.bloecher.de/leistungen/modellbau/) | [/leistungen/modellbau/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/modellbau/) | 174/230 | 57% |
+| abweichend | [/leistungen/technologie/](https://www.bloecher.de/leistungen/technologie/) | [/leistungen/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/) | 44/416 | 38% |
+| vergleichbar | [/leistungen/temperierung/](https://www.bloecher.de/leistungen/temperierung/) | [/leistungen/temperierung/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/temperierung/) | 115/165 | 63% |
+| vergleichbar | [/prototypen-ersatzteil/](https://www.bloecher.de/prototypen-ersatzteil/) | [/prototypen-ersatzteil/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/prototypen-ersatzteil/) | 175/455 | 59% |
+| abweichend | [/unternehmen/](https://www.bloecher.de/unternehmen/) | [/unternehmen/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/) | 92/166 | 31% |
+| vergleichbar | [/unternehmen/anfahrt/](https://www.bloecher.de/unternehmen/anfahrt/) | [/unternehmen/anfahrt/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/anfahrt/) | 95/118 | 72% |
+| vergleichbar | [/unternehmen/kontakt/](https://www.bloecher.de/unternehmen/kontakt/) | [/unternehmen/kontakt/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/kontakt/) | 27/30 | 61% |
+| abweichend | [/unternehmen/zertifizierung/](https://www.bloecher.de/unternehmen/zertifizierung/) | [/unternehmen/zertifizierung/](https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/zertifizierung/) | 178/149 | 33% |
 
 ## Auffällige Inhaltsunterschiede
 

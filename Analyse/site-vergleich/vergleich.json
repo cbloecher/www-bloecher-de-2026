@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-23T06:27:09+00:00",
+  "generated": "2026-11-23T06:41:12+00:00",
   "old_base": "https://www.bloecher.de",
   "new_base": "http://127.0.0.1:8000",
   "comparisons": [
@@ -23,7 +23,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/",
         "path": "/",
         "status": "ok",
         "title": "Giesserei Blöcher GmbH · Aluminium-Sandguss aus Biedenkopf",
@@ -113,7 +113,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/datenschutzerklaerung/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/datenschutzerklaerung/",
         "path": "/datenschutzerklaerung/",
         "status": "ok",
         "title": "Datenschutzerklärung · Giesserei Blöcher GmbH",
@@ -193,7 +193,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/about-us/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/",
         "path": "/en/about-us/",
         "status": "ok",
         "title": "About us · Giesserei Blöcher GmbH",
@@ -272,7 +272,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/about-us/contact-us/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/contact-us/",
         "path": "/en/about-us/contact-us/",
         "status": "ok",
         "title": "Contact · Giesserei Blöcher GmbH",
@@ -339,7 +339,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/about-us/how-to-find-us/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/how-to-find-us/",
         "path": "/en/about-us/how-to-find-us/",
         "status": "ok",
         "title": "How to find us · Giesserei Blöcher GmbH",
@@ -414,7 +414,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/about-us/quality-management/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/about-us/quality-management/",
         "path": "/en/about-us/quality-management/",
         "status": "ok",
         "title": "Quality and Certification · Giesserei Blöcher GmbH",
@@ -510,7 +510,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/",
         "path": "/en/",
         "status": "ok",
         "title": "Giesserei Blöcher GmbH · Aluminium Sand Casting from Biedenkopf",
@@ -631,7 +631,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/prototypes-and-spare-parts/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/prototypes-and-spare-parts/",
         "path": "/en/prototypes-and-spare-parts/",
         "status": "ok",
         "title": "Prototypes + Spare Parts · Giesserei Blöcher GmbH",
@@ -756,7 +756,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/",
         "path": "/en/services/",
         "status": "ok",
         "title": "Services · Giesserei Blöcher GmbH",
@@ -869,7 +869,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/3d-print/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/3d-print/",
         "path": "/en/services/3d-print/",
         "status": "ok",
         "title": "3D Sand Printing · Giesserei Blöcher GmbH",
@@ -949,7 +949,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/3d-scan/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/3d-scan/",
         "path": "/en/services/3d-scan/",
         "status": "ok",
         "title": "3D Scanning · Giesserei Blöcher GmbH",
@@ -1049,7 +1049,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/aluminium-sand-casting/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/aluminium-sand-casting/",
         "path": "/en/services/aluminium-sand-casting/",
         "status": "ok",
         "title": "Aluminium Sand Casting · Giesserei Blöcher GmbH",
@@ -1158,7 +1158,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/model-making/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/model-making/",
         "path": "/en/services/model-making/",
         "status": "ok",
         "title": "Model Making · Giesserei Blöcher GmbH",
@@ -1231,7 +1231,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/services/temperature-control/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/services/temperature-control/",
         "path": "/en/services/temperature-control/",
         "status": "ok",
         "title": "Temperature Control · Giesserei Blöcher GmbH",
@@ -1306,7 +1306,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/en/tools-and-molds/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/en/tools-and-molds/",
         "path": "/en/tools-and-molds/",
         "status": "ok",
         "title": "Tools + Molds · Giesserei Blöcher GmbH",
@@ -1425,7 +1425,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/ersatzteile-nach-bedarf/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/ersatzteile-nach-bedarf/",
         "path": "/ersatzteile-nach-bedarf/",
         "status": "ok",
         "title": "Ersatzteile nach Bedarf · Giesserei Blöcher GmbH",
@@ -1548,7 +1548,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/guss-fuer-werkzeuge-formen/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/guss-fuer-werkzeuge-formen/",
         "path": "/guss-fuer-werkzeuge-formen/",
         "status": "ok",
         "title": "Werkzeuge + Formen · Giesserei Blöcher GmbH",
@@ -1628,7 +1628,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/impressum/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/impressum/",
         "path": "/impressum/",
         "status": "ok",
         "title": "Impressum · Giesserei Blöcher GmbH",
@@ -1702,7 +1702,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/jobs/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/jobs/",
         "path": "/jobs/",
         "status": "ok",
         "title": "Jobs · Giesserei Blöcher GmbH",
@@ -1801,7 +1801,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/",
         "path": "/leistungen/",
         "status": "ok",
         "title": "Leistungen · Giesserei Blöcher GmbH",
@@ -1926,7 +1926,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/3d-druck/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/3d-druck/",
         "path": "/leistungen/3d-druck/",
         "status": "ok",
         "title": "3D-Sanddruck · Giesserei Blöcher GmbH",
@@ -2009,7 +2009,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/3d-scannen/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/3d-scannen/",
         "path": "/leistungen/3d-scannen/",
         "status": "ok",
         "title": "3D-Scannen · Giesserei Blöcher GmbH",
@@ -2127,7 +2127,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/aluminium-sandguss/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/aluminium-sandguss/",
         "path": "/leistungen/aluminium-sandguss/",
         "status": "ok",
         "title": "Aluminium-Sandguss · Giesserei Blöcher GmbH",
@@ -2242,7 +2242,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/modellbau/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/modellbau/",
         "path": "/leistungen/modellbau/",
         "status": "ok",
         "title": "Modellbau · Giesserei Blöcher GmbH",
@@ -2320,7 +2320,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/",
         "path": "/leistungen/",
         "status": "ok",
         "title": "Leistungen · Giesserei Blöcher GmbH",
@@ -2439,7 +2439,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/leistungen/temperierung/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/leistungen/temperierung/",
         "path": "/leistungen/temperierung/",
         "status": "ok",
         "title": "Temperierung · Giesserei Blöcher GmbH",
@@ -2535,7 +2535,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/prototypen-ersatzteil/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/prototypen-ersatzteil/",
         "path": "/prototypen-ersatzteil/",
         "status": "ok",
         "title": "Prototypen + Ersatzteile · Giesserei Blöcher GmbH",
@@ -2661,7 +2661,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/unternehmen/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/",
         "path": "/unternehmen/",
         "status": "ok",
         "title": "Unternehmen · Giesserei Blöcher GmbH",
@@ -2751,7 +2751,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/unternehmen/anfahrt/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/anfahrt/",
         "path": "/unternehmen/anfahrt/",
         "status": "ok",
         "title": "Anfahrt · Giesserei Blöcher GmbH",
@@ -2823,7 +2823,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/unternehmen/kontakt/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/kontakt/",
         "path": "/unternehmen/kontakt/",
         "status": "ok",
         "title": "Kontakt · Giesserei Blöcher GmbH",
@@ -2878,7 +2878,7 @@
         "error": null
       },
       "new": {
-        "url": "http://127.0.0.1:8000/unternehmen/zertifizierung/",
+        "url": "https://cbloecher.github.io/www-bloecher-de-2026/pico-corp/unternehmen/zertifizierung/",
         "path": "/unternehmen/zertifizierung/",
         "status": "ok",
         "title": "Qualität und Zertifizierung · Giesserei Blöcher GmbH",
