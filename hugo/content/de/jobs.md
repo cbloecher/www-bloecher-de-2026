@@ -37,11 +37,11 @@ Tätigkeiten rund um Schmelze und Gießprozess.
 
 ## Bewerbung und Kontakt
 
-Ob und welche Stellen aktuell zu besetzen sind, erfährst Du direkt bei uns.
+Ob und welche Stellen aktuell zu besetzen sind, erfahren Sie direkt bei uns.
 
 Für Bewerbungen, Initiativbewerbungen oder Fragen:
 
 **E-Mail:** [info@bloecher.de](mailto:info@bloecher.de)  
 **Telefon:** [+49 (0)6461 9551-0](tel:+49646195510)
 
-Weitere Kontaktdaten findest Du unter [Kontakt](/unternehmen/kontakt/).
+Weitere Kontaktdaten finden Sie unter [Kontakt](/unternehmen/kontakt/).
