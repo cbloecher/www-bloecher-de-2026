@@ -7,6 +7,7 @@ import argparse
 import concurrent.futures
 import difflib
 import html
+import hashlib
 import json
 import re
 import time
@@ -405,10 +406,12 @@ def render_diff_html(result: dict) -> str:
             review_control = ""
             if row["old"] and kind in {"missing", "changed"}:
                 review_row += 1
-                review_id = f"p{page_index}-r{review_row}"
+                review_id = hashlib.sha1((old_path + "\0" + row["old"]).encode("utf-8")).hexdigest()[:12]
                 review_records[review_id] = {
                     "page_old": old_path,
                     "page_new": new_path,
+                    "page_old_url": old["url"] if old else None,
+                    "page_new_url": new["url"] if new else None,
                     "status": kind,
                     "coverage": row["similarity"],
                     "old_text": row["old"],
