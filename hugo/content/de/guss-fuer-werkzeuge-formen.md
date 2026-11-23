@@ -41,7 +41,7 @@ migration:
   modified: "2024-02-20T19:08:32+00:00"
 ---
 
-Ein Schwerpunkt der Giesserei Blöcher ist Aluminium-Werkzeugguss für Formen und Werkzeuge.
+Giesserei Blöcher ist auf die Herstellung von Aluminium-Werkzeugguss für Formen und Werkzeuge spezialisiert.
 
 ## Typische Anwendungen
 
@@ -49,7 +49,7 @@ Aluminiumguss kommt bei unterschiedlichen Werkzeug- und Formanwendungen zum Eins
 
 - Thermoformwerkzeuge für Karosserieteile
 - Blasformen für Behälter
-- Rotationsformen für Hohlkörper
+- Rotationsgießformen für Hohlkörper
 - Verformwerkzeuge für Kabinenauskleidungen
 - Schäumformen für Abdeckungen und Instrumententafeln aus technischen Kunststoffen
 - Werkzeuge zur Formgebung von Naturfaser-Verbundmaterialien
