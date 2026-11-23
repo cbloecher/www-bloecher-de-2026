@@ -31,7 +31,7 @@ Die Verarbeitung erfolgt, soweit erforderlich, zur sicheren und störungsfreien 
 
 ## Kontaktaufnahme
 
-Wenn Du uns per E-Mail oder Telefon kontaktierst, verarbeiten wir die von Dir übermittelten Angaben zur Bearbeitung Deiner Anfrage.
+Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen übermittelten Angaben zur Bearbeitung Ihrer Anfrage.
 
 Soweit die Anfrage auf den Abschluss oder die Durchführung eines Vertrags gerichtet ist, erfolgt die Verarbeitung zur Durchführung vorvertraglicher Maßnahmen bzw. zur Vertragserfüllung. In anderen Fällen kann die Verarbeitung auf unserem berechtigten Interesse an der Bearbeitung Deiner Anfrage beruhen.
 
@@ -41,7 +41,7 @@ Der aktuelle statische Hugo-Neuaufbau setzt selbst keine Webanalyse und kein eig
 
 Vor dem Produktivstart ist zu prüfen, ob durch Hosting, eingebundene Dienste oder spätere Erweiterungen Cookies, Tracking, externe Schriftarten, Karten, Videos oder andere Drittanbieter-Dienste hinzukommen. In diesem Fall ist diese Datenschutzerklärung entsprechend zu ergänzen.
 
-## Deine Rechte
+## Ihre Rechte
 
 Im Rahmen der gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf:
 
@@ -54,4 +54,4 @@ Im Rahmen der gesetzlichen Voraussetzungen bestehen insbesondere Rechte auf:
 - Widerspruch gegen bestimmte Verarbeitungen
 - Beschwerde bei einer Datenschutz-Aufsichtsbehörde
 
-Für Fragen zum Datenschutz kannst Du Dich über die oben genannten Kontaktdaten an uns wenden.
+Für Fragen zum Datenschutz können Sie sich über die oben genannten Kontaktdaten an uns wenden.
