@@ -1,0 +1,81 @@
+name: Regenerate website content comparison
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/compare-websites.yml"
+
+permissions:
+  contents: write
+
+env:
+  HUGO_VERSION: "0.166.0"
+
+jobs:
+  compare:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install Hugo Extended
+        shell: bash
+        run: |
+          set -euxo pipefail
+          curl -L \
+            "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" \
+            -o /tmp/hugo.tar.gz
+          tar -xzf /tmp/hugo.tar.gz -C /tmp hugo
+          sudo install -m 0755 /tmp/hugo /usr/local/bin/hugo
+          hugo version
+
+      - name: Prepare Pico Corp theme
+        shell: bash
+        run: |
+          set -euxo pipefail
+          bash hugo/tools/setup-pico-corp-theme.sh
+
+      - name: Build Hugo locally
+        shell: bash
+        run: |
+          set -euxo pipefail
+          hugo \
+            --source ./hugo \
+            --destination "${GITHUB_WORKSPACE}/publish" \
+            --cleanDestinationDir \
+            --minify \
+            --baseURL "http://127.0.0.1:8000/"
+
+      - name: Run website comparison
+        shell: bash
+        run: |
+          set -euxo pipefail
+          python3 -m http.server 8000 --directory publish >/tmp/bloecher-http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for i in {1..20}; do
+            if curl --fail --silent http://127.0.0.1:8000/sitemap.xml >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          python3 tools/compare_websites.py \
+            --new "http://127.0.0.1:8000" \
+            --output "Analyse/site-vergleich"
+
+      - name: Commit updated comparison
+        shell: bash
+        run: |
+          set -euxo pipefail
+          git add Analyse/site-vergleich/README.md Analyse/site-vergleich/vergleich.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Analyse: Website-Vergleich aktualisieren"
+          git push
