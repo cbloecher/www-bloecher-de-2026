@@ -41,7 +41,7 @@ So lassen sich komplexe Geometrien und Kleinserien wirtschaftlich herstellen und
 
 Unsere Anlage arbeitet robotergestützt. Der Formsand wird schichtweise aufgetragen und anschließend entsprechend den digitalen Geometriedaten selektiv verfestigt.
 
-Bei dem eingesetzten Verfahren wird mit Furanbinder vorgemischter Quarzsand verwendet. An den Stellen, die Bestandteil der Form oder des Kerns werden sollen, wird gezielt Härter appliziert. Nur dort verfestigt sich der Sand. Diese Beschreibung präzisiert die frühere vereinfachte Darstellung, nach der das Bindersystem selbst selektiv aufgedruckt werde.
+Bei dem eingesetzten Verfahren wird mit Furanbinder vorgemischter Quarzsand verwendet. An den Stellen, die Bestandteil der Form oder des Kerns werden sollen, wird gezielt Härter appliziert. Nur dort verfestigt sich der Sand.
 
 Nach Abschluss des Bauprozesses werden die fertigen Sandformen und -kerne aus dem nicht verfestigten Sand entnommen und können direkt für den Guss eingesetzt werden.
 
