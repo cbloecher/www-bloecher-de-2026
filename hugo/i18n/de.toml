@@ -64,7 +64,7 @@ tags = "Schlagwörter"
 relatedArticles = "Weiterführende Beiträge"
 
 demoFormTitle = "Dieses Formular ist noch nicht verbunden."
-demoFormText = "Bis zur technischen Anbindung erreichst Du uns per E-Mail unter"
+demoFormText = "Bis zur technischen Anbindung erreichen Sie uns per E-Mail unter"
 leaveEmpty = "Dieses Feld leer lassen"
 formName = "Name"
 formEmail = "E-Mail"
